@@ -1,0 +1,70 @@
+/* Actions - Links with square icon */
+
+.action-link{
+  border:1px solid $grey;
+  box-shadow:0px 0px 2px $grey;
+  display:inline-block;
+  line-height:19px;
+  img{
+    width:19px;
+    margin-top:-2px;
+  }
+}
+
+.round-link-icon{
+  padding:10px;
+  line-height:15px;
+  border-radius:50%;
+  display:inline-block;
+  margin-right:8px;
+  img{
+    width:15px;
+  }
+}
+
+.status-link{
+  border-bottom-width:4px;
+  border-bottom-style:solid;
+  display:inline-block;
+  line-height:19px;
+  color:$black;
+  position:relative;
+  margin-right:8px;
+  sup{
+    position:absolute;
+    right: -10px;
+    top: 5px;
+  }
+  &:hover{
+    color:$black;
+  }
+}
+
+
+/* List of removable labels */
+
+.filter-selected {
+  margin:0 0 8px;
+  padding:0;
+
+  li{
+    display:inline-block;
+    text-decoration:none;
+    font-weight:400;
+    color:$white;
+    line-height:20px;
+    font-size:12px;
+    padding:0 16px 0 11px;
+    border-radius:10px;
+    margin-right:2px;
+
+    svg {
+      fill:none;
+      stroke:$black;
+      vertical-align:middle;
+      margin-right:9px;
+      margin-top:-2px;
+      cursor:pointer;
+    }
+  }
+}

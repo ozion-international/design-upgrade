@@ -1,0 +1,47 @@
+/* Links with title and icon vertical */
+
+.top-nav{
+	background-color:$blue;
+	text-align:center;
+	a{
+		padding:14px 20px 11px;
+		display:inline-block;
+		color:$white;
+		font-size:13px;
+		text-align:center;
+		text-decoration:none;
+
+		&:hover{
+			background-color:$light-blue;
+		}
+		
+	}
+
+	img{
+		width:40px;
+		display:block;
+		margin:0 auto 9px;
+	}
+}
+
+/* Light navigation */
+
+.light-nav{
+	background-color:$white;
+	a{
+		padding:12px 20px;
+		display:inline-block;
+		color:$black;
+		font-size:14px;
+		text-align:center;
+		text-decoration:none;
+		border-bottom:6px solid transparent;
+		margin-bottom:-3px;
+
+		&:hover,
+		&.active{
+			border-color:$blue;
+		}
+		
+	}
+}
