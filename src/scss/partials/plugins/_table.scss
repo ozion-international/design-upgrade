@@ -9,68 +9,413 @@
   max-width: 100%;
   background-color: $white;
   
-  th,
+
   td {
+    white-space:nowrap;
+    position:relative;
     padding: $table-cell-padding;
-    vertical-align: top;
+
+    .ico{
+      vertical-align:top;
+      img{
+        vertical-align:middle;
+        margin-top:-2px;
+      }
+    }
   }
 
+  .border-tr{
+      td{
+        &:first-child{
+        .border-line:before{
+            content:"";
+            width:1px;
+            height:100%;
+            top:-3px;
+            bottom:0;
+            left:0;
+            position:absolute;
+            @media screen and (-webkit-min-device-pixel-ratio:0) {
+              top:0;
+            }
+          }
+
+        }
+
+        &:last-child{
+          .border-line:after{
+            content:"";
+            width:1px;
+            height:100%;
+            top:-3px;
+            bottom:0;
+            right:0;
+            position:absolute;
+            @media screen and (-webkit-min-device-pixel-ratio:0) {
+              top:0;
+            }
+          }
+        }
+
+
+        &:after,
+        &:before{
+          height:1px;
+          position:absolute;
+          content:'';
+          width:100%;
+          left:0;
+          right:0;
+        }
+
+        &:before{
+          top:-3px;
+        }
+
+        &:after{
+          bottom:3px;
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+        &:before{
+          top:0px;
+        }
+
+        &:after{
+          bottom:0px;
+        }
+        }
+ 
+      }
+      
+    }
+
   thead th {
-    vertical-align: bottom;
+    vertical-align: top;
     border-bottom: 2px solid $dark-blue;
     color:$white;
     background-color:$dark-blue;
     font-family:$font-family-base-cond;
     font-weight:400;
+    font-size:13px;
+    line-height:16px;
+    padding: $table-cell-padding;
+    white-space:nowrap;
   }
 
   tbody tr{
+    font-size:12px;
+    line-height:16px;
+
   	&.active,
     &:hover{
-  		background-color:$blue;
-      color:$white;
+  		background-color:#acd7f7;
       td{
-        background-color:$blue;
-        color:$white;
       }
   	}
-    &:nth-of-type(odd) {
-      background-color: $grey;
+
+    &.even {
+      background-color: #f2f4f5;
+
+      &:hover{
+        background-color:#acd7f7;
+      }
     }
-    /*
-  	&:nth-of-type(odd) {
-    	background-color: #f1f3f4;
 
-	    td{
-        margin:0;
-        padding:0;
+    &.border{
+      &-tr{
+        td{
 
-        .solid{ 
-          padding: $table-cell-padding;
-          border-top-width:1px;
-          border-top-style: solid;
-          border-bottom-width:1px;
-          border-bottom-style: solid;
-        }
-
-        &:first-child{
-          .solid{ 
-            border-left-width:1px;
-            border-left-style: solid;
+          &:before,
+          &:after{
+            border-top-width:1px;
           }
-        }
 
-        &:last-child{
-          .solid{ 
-            border-right-width:1px;
-            border-right-style: solid;
+          &:first-child{
+            .border-line:before{
+              border-left-width:1px;
+            }
+          }
+
+          &:last-child{
+            .border-line:after{
+              border-right-width:1px;
+            }
           }
         }
       }
-  	}
-    */
+
+      &-red{
+        td{
+          &:before,
+          &:after{
+            border-top-color:$red;
+          }
+
+          &:first-child{
+            .border-line:before{
+              border-left-color:$red;
+            }
+          }
+
+          &:last-child{
+            .border-line:after{
+              border-right-color:$red;
+            }
+          }
+        }
+      }
+
+      &-black{
+        td{
+          &:before,
+          &:after{
+            border-top-color:$black;
+          }
+
+          &:first-child{
+            .border-line:before{
+              border-left-color:$black;
+            }
+          }
+
+          &:last-child{
+            .border-line:after{
+              border-right-color:$black;
+            }
+          }
+        }
+      }
+
+      &-white{
+        td{
+          &:before,
+          &:after{
+            border-top-color:$white;
+          }
+
+          &:first-child{
+            .border-line:before{
+              border-left-color:$white;
+            }
+          }
+
+          &:last-child{
+            .border-line:after{
+              border-right-color:$white;
+            }
+          }
+        }
+      }
+
+      &-green{
+        td{
+          &:before,
+          &:after{
+            border-top-color:$green;
+          }
+
+          &:first-child{
+            .border-line:before{
+              border-left-color:$green;
+            }
+          }
+
+          &:last-child{
+            .border-line:after{
+              border-right-color:$green;
+            }
+          }
+        }
+      }
+
+      &-yellow{
+        td{
+          &:before,
+          &:after{
+            border-top-color:$yellow;
+          }
+
+          &:first-child{
+            .border-line:before{
+              border-left-color:$yellow;
+            }
+          }
+
+          &:last-child{
+            .border-line:after{
+              border-right-color:$yellow;
+            }
+          }
+        }
+      }
+
+      &-blue{
+        td{
+          &:before,
+          &:after{
+            border-top-color:$blue;
+          }
+
+          &:first-child{
+            .border-line:before{
+              border-left-color:$blue;
+            }
+          }
+
+          &:last-child{
+            .border-line:after{
+              border-right-color:$blue;
+            }
+          }
+        }
+      }
+
+      &-light-blue{
+        td{
+          &:before,
+          &:after{
+            border-top-color:$light-blue;
+          }
+
+          &:first-child{
+            .border-line:before{
+              border-left-color:$light-blue;
+            }
+          }
+
+          &:last-child{
+            .border-line:after{
+              border-right-color:$light-blue;
+            }
+          }
+        }
+      }
+
+      &-dark-blue{
+        td{
+          &:before,
+          &:after{
+            border-top-color:$dark-blue;
+          }
+
+          &:first-child{
+            .border-line:before{
+              border-left-color:$dark-blue;
+            }
+          }
+
+          &:last-child{
+            .border-line:after{
+              border-right-color:$dark-blue;
+            }
+          }
+        }
+      }
+
+      &-grey{
+        td{
+          &:before,
+          &:after{
+            border-top-color:$grey;
+          }
+
+          &:first-child{
+            .border-line:before{
+              border-left-color:$grey;
+            }
+          }
+
+          &:last-child{
+            .border-line:after{
+              border-right-color:$grey;
+            }
+          }
+        }
+      }
+
+
+      &-dashed{
+        td{
+          &:before,
+          &:after{
+            border-top-style:dashed;
+          }
+
+          &:first-child{
+            .border-line:before{
+              border-left-style:dashed;
+            }
+          }
+
+          &:last-child{
+            .border-line:after{
+              border-right-style:dashed;
+            }
+          }
+        }
+      }
+
+      &-dotted{
+        td{
+          &:before,
+          &:after{
+            border-top-style:dotted;
+          }
+
+          &:first-child{
+            .border-line:before{
+              border-left-style:dotted;
+            }
+          }
+
+          &:last-child{
+            .border-line:after{
+              border-right-style:dotted;
+            }
+          }
+        }
+      }
+
+      &-solid{
+        td{
+          &:before,
+          &:after{
+            border-top-style:solid;
+          }
+
+          &:first-child{
+            .border-line:before{
+              border-left-style:solid;
+            }
+          }
+
+          &:last-child{
+            .border-line:after{
+              border-right-style:solid;
+            }
+          }
+        }
+      }
+
+    }
+
+
+
+
+
+
+
+
+    
+
   }
   tbody td {
   	border-top: 6px solid #f1f3f4;
+
+    label{
+      margin-top:-19px;
+      padding:0;
+    }
   }
 }
