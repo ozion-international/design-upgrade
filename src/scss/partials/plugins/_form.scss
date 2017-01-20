@@ -92,12 +92,12 @@ input[type=text]{
 
 /* Search Field */
 .search-field{
-	border-bottom:2px solid $grey;
+	border-bottom:1px solid $grey;
 	display:inline-block;
 	padding:8px 0px;
 
 	input[type=text]{
-		width:300px
+		width:200px
 	}
 
 	input[type=submit]{
@@ -106,6 +106,7 @@ input[type=text]{
 		width:26px;
 		height:26px;
 		padding:0;
+		cursor:pointer;
 	}
 }
 
@@ -114,12 +115,13 @@ input[type=text]{
   padding: 0;
   margin: 0;
   width: 200px;
-  border-bottom:2px solid $grey;
+  border-bottom:1px solid $grey;
   overflow: hidden;
-  background: url("/img/down-arrow.svg") 90% 50% / 16px no-repeat ;
+  font-size:12px;
+  background: url("/img/down-arrow.svg") 100% 50% / 16px no-repeat ;
 
   select {
-    padding: 5px 8px;
+    padding: 1px 4px;
     width: 130%;
     border: none;
     box-shadow: none;

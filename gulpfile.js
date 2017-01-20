@@ -14,6 +14,9 @@
     var cssmin = require('gulp-cssmin');
     var plumber = require('gulp-plumber');
     var argv = require('yargs').argv;
+    var svgstore = require('gulp-svgstore');
+    var svgmin = require('gulp-svgmin');
+    var path = require('path');
 
     /*Gulp plugin for minifay scss to css*/
     gulp.task('styles', function () {
@@ -90,6 +93,24 @@
             ])
         .pipe(gulp.dest(config.dist.img))
         ];
+    });
+
+    gulp.task('svgstore', function () {
+        return gulp
+        .src(config.src.img + '/**/*.svg')
+        .pipe(svgmin(function (file) {
+            var prefix = path.basename(file.relative, path.extname(file.relative));
+            return {
+                plugins: [{
+                    cleanupIDs: {
+                        prefix: prefix + '-',
+                        minify: true
+                    }
+                }]
+            }
+        }))
+        .pipe(svgstore())
+        .pipe(gulp.dest(config.dist.img));
     });
 
     gulp.task('files', function () {
@@ -180,8 +201,8 @@
         gulp.watch(config.src.img + '/**/*', ['images']);
     });
 
-    gulp.task('dev',['html','fonts','images','video','watch']);
-    gulp.task('build', ['html', 'scripts', 'exclude-files', 'styles', 'images', 'fonts', 'video']);
+    gulp.task('dev',['html','fonts','images','svgstore', 'video','watch']);
+    gulp.task('build', ['html', 'scripts', 'exclude-files', 'styles', 'images', 'svgstore', 'fonts', 'video']);
     gulp.task('b:html', ['html']);
     gulp.task('b:js', ['scripts']);
     gulp.task('b:css', ['styles']);

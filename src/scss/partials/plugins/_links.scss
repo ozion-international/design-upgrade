@@ -4,21 +4,21 @@
   border:1px solid $grey;
   box-shadow:0px 0px 2px $grey;
   display:inline-block;
-  line-height:19px;
+  margin-bottom:4px;
   img{
-    width:19px;
     margin-top:-2px;
   }
 }
 
 .round-link-icon{
-  padding:10px;
+  padding:5px;
   line-height:15px;
   border-radius:50%;
   display:inline-block;
   margin-right:8px;
   img{
     width:15px;
+    display:block;
   }
 }
 
@@ -29,7 +29,6 @@
   line-height:19px;
   color:$black;
   position:relative;
-  margin-right:8px;
   sup{
     position:absolute;
     right: -10px;
@@ -38,13 +37,38 @@
   &:hover{
     color:$black;
   }
+  &.disable{
+    opacity:0.2;
+  }
+}
+
+.link-with-sup{
+  color:$black;
+  position:relative;
+  width:30px;
+  height:37px;
+  display:inline-block;
+  vertical-align:top;
+  sup{
+    position:absolute;
+    right: -15px;
+    top: -1px;
+  }
+
+  &.notification{
+    background:transparent url('/img/top-icons.png') 0 50% no-repeat;
+  }
+
+  &.clock{
+    background:transparent url('/img/top-icons.png') -30px 50% no-repeat;
+  }
 }
 
 
 /* List of removable labels */
 
 .filter-selected {
-  margin:0 0 8px;
+  margin:0px;
   padding:0;
 
   li{
@@ -54,17 +78,31 @@
     color:$white;
     line-height:20px;
     font-size:12px;
-    padding:0 16px 0 11px;
+    padding:0 20px 0 11px;
     border-radius:10px;
-    margin-right:2px;
+    margin-right:6px;
+    margin-bottom:10px;
+    vertical-align:top;
 
     svg {
       fill:none;
       stroke:$black;
       vertical-align:middle;
-      margin-right:9px;
+      margin-right:5px;
       margin-top:-2px;
       cursor:pointer;
     }
+  }
+}
+
+
+.edit-stats{
+  width:20px;
+  height:20px;
+  background:url('/img/edit-stats.png') -20px 0 no-repeat;
+  display:inline-block;
+
+  &.checked{
+    background-position:0 0;
   }
 }

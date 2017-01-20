@@ -1,3 +1,7 @@
+body{
+  min-width:1024px;
+}
+
 .decoration-none{
   &:hover{
     text-decoration:none;
@@ -10,11 +14,14 @@
 .no-space{
   margin:0 !important;
   padding:0 !important;
+  background-color:#f1f3f4;
+
+
 
   td{
     margin:0 !important;
     padding:0 !important;
-
+    background-color:#f1f3f4;
     .dashed{ 
       padding: $table-cell-padding;
       border-top:1px dashed $red;
@@ -35,35 +42,48 @@
   }
 }
 
-.bg-white{ background-color:$white;}
-.bg-light-blue{ background-color:$light-blue;}
-.bg-blue{ background-color:$blue;}
-.bg-dark-blue{ background-color:$dark-blue;}
-.bg-green{ background-color:$green;}
-.bg-red{ background-color:$red;}
-.bg-grey{ background-color:$grey;}
-.bg-yellow{ background-color:$yellow;}
-.bg-black{ background-color:$black;}
+.no-wrap{
+  white-space:nowrap;
+}
+  
+.bg{
+  &-white{ background-color:$white;}
+  &-light-blue{ background-color:$light-blue;}
+  &-blue{ background-color:$blue;}
+  &-dark-blue{ background-color:$dark-blue;}
+  &-green{ background-color:$green;}
+  &-red{ background-color:$red;}
+  &-grey{ background-color:$grey;}
+  &-yellow{ background-color:$yellow;}
+  &-black{ background-color:$black;}
+}
 
-.font-white{color:$white;}
-.font-light-blue{ color:$light-blue;}
-.font-blue{ color:$blue;}
-.font-dark-blue{ color:$dark-blue;}
-.font-green{ color:$green;}
-.font-red{ color:$red;}
-.font-grey{ color:$grey;}
-.font-yellow{ color:$yellow;}
-.font-black{ color:$black;}
 
-.border-white{border-color:$white;}
-.border-light-blue{ border-color:$light-blue;}
-.border-blue{ border-color:$blue;}
-.border-dark-blue{ border-color:$dark-blue;}
-.border-green{ border-color:$green;}
-.border-red{ border-color:$red;}
-.border-grey{ border-color:$grey;}
-.border-yellow{ border-color:$yellow;}
-.border-black{ border-color:$black;}
+.font{
+  &-white{ color:$white !important;}
+  &-light-blue{ color:$light-blue !important;}
+  &-blue{ color:$blue !important;}
+  &-dark-blue{ color:$dark-blue !important;}
+  &-green{ color:$green !important;}
+  &-red{ color:$red !important;}
+  &-grey{ color:$grey !important;}
+  &-yellow{ color:$yellow !important;}
+  &-black{ color:$black !important;}
+}
+
+
+.border{
+  &-white{ border-color:$white;}
+  &-light-blue{ border-color:$light-blue;}
+  &-blue{ border-color:$blue;}
+  &-dark-blue{ border-color:$dark-blue;}
+  &-green{ border-color:$green;}
+  &-red{ border-color:$red;}
+  &-grey{ border-color:$grey;}
+  &-yellow{ border-color:$yellow;}
+  &-black{ border-color:$black;}
+}
+
 
 
 /* Vertical text */
@@ -80,3 +100,15 @@
   font-size:14px;
   font-family:$font-family-base-cond;
 }
+
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
