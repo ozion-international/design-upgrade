@@ -1,0 +1,59 @@
+
+
+.fill{
+  &-white{ 
+  	fill:$white;
+  	.shape{
+  		fill:$white;
+  	}
+  }
+  &-light-blue{ 
+  	fill:$light-blue;
+  	.shape{
+  		fill:$light-blue;
+  	}
+  }
+  &-blue{ 
+  	fill:$blue;
+  	.shape{
+  		fill:$blue;
+  	}
+  }
+  &-dark-blue{ 
+  	fill:$dark-blue;
+  	.shape{
+  		fill:$dark-blue;
+  	}
+  }
+  &-green{ 
+  	fill:$green;
+  	.shape{
+  		fill:$green;
+  	}
+  }
+  &-red{ 
+  	fill:$red;
+  	.shape{
+  		fill:$red;
+  	}
+  }
+  &-grey{ 
+  	fill:$grey;
+  	.shape{
+  		fill:$grey;
+  	}
+  }
+  &-yellow{ 
+  	fill:$yellow;
+  	.shape{
+  		fill:$yellow;
+  	}
+  }
+  &-black{ 
+  	fill:$black;
+  	.shape{
+  		fill:$black;
+  	}
+  }
+}
+	
