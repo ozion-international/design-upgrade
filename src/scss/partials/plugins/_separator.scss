@@ -1,0 +1,97 @@
+/* Separator with title */
+
+.separator-line{
+  position:relative;
+  text-align:center;
+  overflow:hidden;
+
+  &:before, &:after {
+    content: "";
+    display: inline-block;
+    width: 50%;
+    margin: 0 20px 0 -55%;
+    vertical-align: middle;
+  }
+
+  &:after {
+    margin: 0 -55% 0 20px;
+  }
+
+  &.line-light{
+    &:after,
+    &:before{
+      border-bottom: 3px solid;
+    }
+  }
+
+  &.line-bold{
+    font-size:12px;
+    &:after,
+    &:before{
+      border-bottom: 6px solid;
+    }
+  }
+
+  &.line-white{
+    &:after,
+    &:before{
+      border-color:$white;
+    }
+  }
+
+  &.line-light-blue{
+    &:after,
+    &:before{
+      border-color:$light-blue;
+    }
+  }
+
+  &.line-blue{
+    &:after,
+    &:before{
+      border-color:$blue;
+    }
+  }
+
+  &.line-dark-blue{
+    &:after,
+    &:before{
+      border-color:$dark-blue;
+    }
+  }
+
+  &.line-green{
+    &:after,
+    &:before{
+      border-color:$green;
+    }
+  }
+
+  &.line-red{
+    &:after,
+    &:before{
+      border-color:$red;
+    }
+  }
+
+  &.line-grey{
+    &:after,
+    &:before{
+      border-color:$grey;
+    }
+  }
+
+  &.line-yellow{
+    &:after,
+    &:before{
+      border-color:$yellow;
+    }
+  }
+
+  &.line-black{
+    &:after,
+    &:before{
+      border-color:$black;
+    }
+  }
+}

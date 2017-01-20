@@ -1,0 +1,279 @@
+@font-face {
+    font-family:'Futura LT Com';
+    src: url('../fonts/Futura LT Com Medium.eot');
+    src: url('../fonts/Futura LT Com Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Futura LT Com Medium.woff2') format('woff2'),
+        url('../fonts/Futura LT Com Medium.woff') format('woff'),
+        url('../fonts/Futura LT Com Medium.ttf') format('truetype'),
+        url('../fonts/Futura LT Com Medium.svg#Futura LT Com Medium') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+    font-family:'Futura LT Com';
+    src: url('../fonts/Futura LT Com Medium Oblique.eot');
+    src: url('../fonts/Futura LT Com Medium Oblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Futura LT Com Medium Oblique.woff2') format('woff2'),
+        url('../fonts/Futura LT Com Medium Oblique.woff') format('woff'),
+        url('../fonts/Futura LT Com Medium Oblique.ttf') format('truetype'),
+        url('../fonts/Futura LT Com Medium Oblique.svg#Futura LT Com Medium Oblique') format('svg');
+    font-weight: 400;
+    font-style: oblique;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+    font-family:'Futura LT Com';
+    src: url('../fonts/Futura LT Com Bold.eot');
+	src: url('../fonts/Futura LT Com Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Futura LT Com Bold.woff2') format('woff2'),
+		url('../fonts/Futura LT Com Bold.woff') format('woff'),
+		url('../fonts/Futura LT Com Bold.ttf') format('truetype'),
+		url('../fonts/Futura LT Com Bold.svg#Futura LT Com Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+    font-family:'Futura LT Com';
+    src: url('../fonts/Futura LT Com Bold Oblique.eot');
+	src: url('../fonts/Futura LT Com Bold Oblique.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Futura LT Com Bold Oblique.woff2') format('woff2'),
+		url('../fonts/Futura LT Com Bold Oblique.woff') format('woff'),
+		url('../fonts/Futura LT Com Bold Oblique.ttf') format('truetype'),
+		url('../fonts/Futura LT Com Bold Oblique.svg#Futura LT Com Bold Oblique') format('svg');
+    font-weight: 700;
+    font-style: oblique;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+    font-family:'Futura LT Com';
+    src: url('../fonts/Futura LT Com ExtraBold.eot');
+    src: url('../fonts/Futura LT Com ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Futura LT Com ExtraBold.woff2') format('woff2'),
+        url('../fonts/Futura LT Com ExtraBold.woff') format('woff'),
+        url('../fonts/Futura LT Com ExtraBold.ttf') format('truetype'),
+        url('../fonts/Futura LT Com ExtraBold.svg#Futura LT Com ExtraBold') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+    font-family:'Futura LT Com';
+    src: url('../fonts/Futura LT Com ExtraBold Oblique.eot');
+    src: url('../fonts/Futura LT Com ExtraBold Oblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Futura LT Com ExtraBold Oblique.woff2') format('woff2'),
+        url('../fonts/Futura LT Com ExtraBold Oblique.woff') format('woff'),
+        url('../fonts/Futura LT Com ExtraBold Oblique.ttf') format('truetype'),
+        url('../fonts/Futura LT Com ExtraBold Oblique.svg#Futura LT Com ExtraBold Oblique') format('svg');
+    font-weight: 900;
+    font-style: oblique;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+    font-family:'Futura LT Com';
+    src: url('../fonts/Futura LT Com Light.eot');
+    src: url('../fonts/Futura LT Com Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Futura LT Com Light.woff2') format('woff2'),
+        url('../fonts/Futura LT Com Light.woff') format('woff'),
+        url('../fonts/Futura LT Com Light.ttf') format('truetype'),
+        url('../fonts/Futura LT Com Light.svg#Futura LT Com Light') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+    font-family:'Futura LT Com';
+    src: url('../fonts/Futura LT Com Light Oblique.eot');
+    src: url('../fonts/Futura LT Com Light Oblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Futura LT Com Light Oblique.woff2') format('woff2'),
+        url('../fonts/Futura LT Com Light Oblique.woff') format('woff'),
+        url('../fonts/Futura LT Com Light Oblique.ttf') format('truetype'),
+        url('../fonts/Futura LT Com Light Oblique.svg#Futura LT Com Light Oblique') format('svg');
+    font-weight: 100;
+    font-style: oblique;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+    font-family:'Futura LT Com Cond';
+    src: url('../fonts/Futura LT Com Bold Condensed.eot');
+    src: url('../fonts/Futura LT Com Bold Condensed.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Futura LT Com Bold Condensed.woff2') format('woff2'),
+        url('../fonts/Futura LT Com Bold Condensed.woff') format('woff'),
+        url('../fonts/Futura LT Com Bold Condensed.ttf') format('truetype'),
+        url('../fonts/Futura LT Com Bold Condensed.svg#Futura LT Com Bold Condensed') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+    font-family:'Futura LT Com Cond';
+    src: url('../fonts/Futura LT Com Bold Condensed Oblique.eot');
+    src: url('../fonts/Futura LT Com Bold Condensed Oblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Futura LT Com Bold Condensed Oblique.woff2') format('woff2'),
+        url('../fonts/Futura LT Com Bold Condensed Oblique.woff') format('woff'),
+        url('../fonts/Futura LT Com Bold Condensed Oblique.ttf') format('truetype'),
+        url('../fonts/Futura LT Com Bold Condensed Oblique.svg#Futura LT Com Bold Condensed Oblique') format('svg');
+    font-weight: 700;
+    font-style: oblique;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+    font-family:'Futura LT Com Cond';
+    src: url('../fonts/Futura LT Com ExtraBold Condensed.eot');
+    src: url('../fonts/Futura LT Com ExtraBold Condensed.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Futura LT Com ExtraBold Condensed.woff2') format('woff2'),
+        url('../fonts/Futura LT Com ExtraBold Condensed.woff') format('woff'),
+        url('../fonts/Futura LT Com ExtraBold Condensed.ttf') format('truetype'),
+        url('../fonts/Futura LT Com ExtraBold Condensed.svg#Futura LT Com ExtraBold Condensed') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+    font-family:'Futura LT Com Cond';
+    src: url('../fonts/Futura LT Com ExtraBold Condensed Oblique.eot');
+    src: url('../fonts/Futura LT Com ExtraBold Condensed Oblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Futura LT Com ExtraBold Condensed Oblique.woff2') format('woff2'),
+        url('../fonts/Futura LT Com ExtraBold Condensed Oblique.woff') format('woff'),
+        url('../fonts/Futura LT Com ExtraBold Condensed Oblique.ttf') format('truetype'),
+        url('../fonts/Futura LT Com ExtraBold Condensed Oblique.svg#Futura LT Com ExtraBold Condensed Oblique') format('svg');
+    font-weight: 900;
+    font-style: oblique;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+    font-family:'Futura LT Com Cond';
+    src: url('../fonts/Futura LT Com Light Condensed.eot');
+    src: url('../fonts/Futura LT Com Light Condensed.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Futura LT Com Light Condensed.woff2') format('woff2'),
+        url('../fonts/Futura LT Com Light Condensed.woff') format('woff'),
+        url('../fonts/Futura LT Com Light Condensed.ttf') format('truetype'),
+        url('../fonts/Futura LT Com Light Condensed.svg#Futura LT Com Light Condensed') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+    font-family:'Futura LT Com Cond';
+    src: url('../fonts/Futura LT Com Light Condensed Oblique.eot');
+    src: url('../fonts/Futura LT Com Light Condensed Oblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Futura LT Com Light Condensed Oblique.woff2') format('woff2'),
+        url('../fonts/Futura LT Com Light Condensed Oblique.woff') format('woff'),
+        url('../fonts/Futura LT Com Light Condensed Oblique.ttf') format('truetype'),
+        url('../fonts/Futura LT Com Light Condensed Oblique.svg#Futura LT Com Light Condensed Oblique') format('svg');
+    font-weight: 100;
+    font-style: oblique;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+    font-family:'Futura LT Com Cond';
+    src: url('../fonts/Futura LT Com Medium Condensed.eot');
+    src: url('../fonts/Futura LT Com Medium Condensed.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Futura LT Com Medium Condensed.woff2') format('woff2'),
+        url('../fonts/Futura LT Com Medium Condensed.woff') format('woff'),
+        url('../fonts/Futura LT Com Medium Condensed.ttf') format('truetype'),
+        url('../fonts/Futura LT Com Medium Condensed.svg#Futura LT Com Medium Condensed') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+    font-family:'Futura LT Com Cond';
+    src: url('../fonts/Futura LT Com Medium Condensed Oblique.eot');
+    src: url('../fonts/Futura LT Com Medium Condensed Oblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Futura LT Com Medium Condensed Oblique.woff2') format('woff2'),
+        url('../fonts/Futura LT Com Medium Condensed Oblique.woff') format('woff'),
+        url('../fonts/Futura LT Com Medium Condensed Oblique.ttf') format('truetype'),
+        url('../fonts/Futura LT Com Medium Condensed Oblique.svg#Futura LT Com Medium Condensed Oblique') format('svg');
+    font-weight: 400;
+    font-style: oblique;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+    font-family:'Futura LT Com Book';
+    src: url('../fonts/Futura LT Com Book.eot');
+	src: url('../fonts/Futura LT Com Book.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Futura LT Com Book.woff2') format('woff2'),
+		url('../fonts/Futura LT Com Book.woff') format('woff'),
+		url('../fonts/Futura LT Com Book.ttf') format('truetype'),
+		url('../fonts/Futura LT Com Book.svg#Futura LT Com Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+    font-family:'Futura LT Com Book';
+    src: url('../fonts/Futura LT Com Book Oblique.eot');
+	src: url('../fonts/Futura LT Com Book Oblique.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Futura LT Com Book Oblique.woff2') format('woff2'),
+		url('../fonts/Futura LT Com Book Oblique.woff') format('woff'),
+		url('../fonts/Futura LT Com Book Oblique.ttf') format('truetype'),
+		url('../fonts/Futura LT Com Book Oblique.svg#Futura LT Com Book Oblique') format('svg');
+    font-weight: normal;
+    font-style: oblique;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+    font-family:'Futura LT Com Heavy';
+    src: url('../fonts/Futura LT Com Heavy.eot');
+	src: url('../fonts/Futura LT Com Heavy.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Futura LT Com Heavy.woff2') format('woff2'),
+		url('../fonts/Futura LT Com Heavy.woff') format('woff'),
+		url('../fonts/Futura LT Com Heavy.ttf') format('truetype'),
+		url('../fonts/Futura LT Com Heavy.svg#Futura LT Com Heavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+    font-family:'Futura LT Com Heavy';
+    src: url('../fonts/Futura LT Com Heavy Oblique.eot');
+	src: url('../fonts/Futura LT Com Heavy Oblique.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Futura LT Com Heavy Oblique.woff2') format('woff2'),
+		url('../fonts/Futura LT Com Heavy Oblique.woff') format('woff'),
+		url('../fonts/Futura LT Com Heavy Oblique.ttf') format('truetype'),
+		url('../fonts/Futura LT Com Heavy Oblique.svg#Futura LT Com Heavy Oblique') format('svg');
+    font-weight: normal;
+    font-style: oblique;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}

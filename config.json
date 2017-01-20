@@ -1,0 +1,40 @@
+{
+	"server": {
+        "port": 9001,
+        "root": "dist",
+		"directory": "src/app"
+    },
+    "tmp": {
+        "tmp":".tmp",
+        "css": ".tmp/css"
+    },
+    "src": {
+        "root": "src",
+        "fonts": "src/fonts",
+        "video": "src/video",
+        "scss": "src/scss",
+        "js": "src/js",
+        "files":"src/files",
+        "img": "src/img"
+    },
+    "dist": {
+        "root": "dist",
+        "img": "dist/img",
+        "css": "dist/css",
+        "js": "dist/js",
+        "html": "dist/",
+        "files":"dist/files",
+        "fonts": "dist/fonts",
+        "video": "dist/video"
+    },
+    "stylesTask": {
+        "style": "expanded",
+        "precision": 10
+    },
+    "imagesTask": {
+        "optimizationLevel": 3,
+        "progressive": true,
+        "interlaced": true
+    }
+
+}
