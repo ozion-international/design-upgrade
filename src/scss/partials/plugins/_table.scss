@@ -8,6 +8,22 @@
   width: 100%;
   max-width: 100%;
   background-color: $white;
+
+  .info-flight {
+    td{
+     border: 0 none;
+     margin: 0;
+     padding: 0;
+     vertical-align:top;
+
+     &:after,
+     &:before {
+      border: none;
+      border-color: transparent
+     }
+    }
+
+  }
   
 
   td {
@@ -140,6 +156,17 @@
           &:last-child{
             .border-line:after{
               border-right-width:1px;
+            }
+          }
+        }
+      }
+
+      &-tr{
+        .info-flight{
+          td{
+            &:before,
+            &:after{
+              border:none;
             }
           }
         }

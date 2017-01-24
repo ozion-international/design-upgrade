@@ -14,14 +14,11 @@ body{
 .no-space{
   margin:0 !important;
   padding:0 !important;
-  background-color:#f1f3f4;
-
-
 
   td{
     margin:0 !important;
     padding:0 !important;
-    background-color:#f1f3f4;
+    background-color: transparent;
     .dashed{ 
       padding: $table-cell-padding;
       border-top:1px dashed $red;
@@ -54,6 +51,7 @@ body{
   &-green{ background-color:$green;}
   &-red{ background-color:$red;}
   &-grey{ background-color:$grey;}
+  &-light-grey{ background-color:$light-grey;}
   &-yellow{ background-color:$yellow;}
   &-black{ background-color:$black;}
 }
@@ -62,7 +60,7 @@ body{
 .font{
   &-white{ color:$white !important;}
   &-light-blue{ color:$light-blue !important;}
-  &-blue{ color:$blue !important;}
+  &-blue{ color:$blue;}
   &-dark-blue{ color:$dark-blue !important;}
   &-green{ color:$green !important;}
   &-red{ color:$red !important;}
@@ -112,3 +110,8 @@ body{
   }
 * html .clearfix             { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+.text-left        { text-align: left !important; }
+.text-right        { text-align: right !important; }
+.text-center        { text-align: center !important; }
