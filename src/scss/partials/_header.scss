@@ -57,10 +57,19 @@ header{
 		border-left:1px solid $grey;
 		min-height:73px;
 		vertical-align:top;
-		padding:20px 20px 0 16px;
+		padding:25px 20px 0 16px;
 	}
 
-
+	.list-of-agents {
+		text-align: center;
+		border-bottom: 2px solid $dark-blue;
+		padding: 5px 0 1px 0;
+		span{
+			font-size: 18px;
+			line-height: 33px;
+			letter-spacing: 2px;
+		}
+	}
 }
 
 .logo{
@@ -107,7 +116,7 @@ header{
 	padding:0px 18px;
 
 	.slider{
-		padding-top:14px;
+		padding-top:24px;
 		.status-link{
 			margin-right:18px;
 			&:first-child{
@@ -171,12 +180,14 @@ header{
 	.select-filter-group{
 		margin-left:216px;
 		padding-top:28px;
+		padding-bottom:11px;
 		
 		&:after {
 			content: '';
 			display: block;
 			clear: both;
 		}
+
 
 		.select-custom{
 			float:left;
@@ -193,6 +204,7 @@ header{
 
 
 }
+
 
 
 section{
