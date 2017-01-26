@@ -71,15 +71,16 @@ body{
 
 
 .border{
-  &-white{ border-color:$white;}
-  &-light-blue{ border-color:$light-blue;}
-  &-blue{ border-color:$blue;}
-  &-dark-blue{ border-color:$dark-blue;}
-  &-green{ border-color:$green;}
-  &-red{ border-color:$red;}
-  &-grey{ border-color:$grey;}
-  &-yellow{ border-color:$yellow;}
-  &-black{ border-color:$black;}
+  &-white{ border-color:$white!important;}
+  &-light-blue{ border-color:$light-blue!important;}
+  &-blue{ border-color:$blue!important;}
+  &-dark-blue{ border-color:$dark-blue!important;}
+  &-green{ border-color:$green!important;}
+  &-red{ border-color:$red!important;}
+  &-light-grey{ border-color:$light-grey!important;}
+  &-grey{ border-color:$grey!important;}
+  &-yellow{ border-color:$yellow!important;}
+  &-black{ border-color:$black!important;}
 }
 
 
@@ -96,7 +97,7 @@ body{
   position: absolute;
   padding: 5px 14.5px;
   margin: 3px 0;
-  left: -15px;
+  left: -18px;
   font-family:$font-family-base-cond;
 }
 

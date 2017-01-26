@@ -94,3 +94,169 @@ body{
 		}
 	}
 }
+
+/*agents home style*/
+.info-container {
+	margin-bottom: 28px;
+}
+
+.personal-info{
+	display: inline-block;
+	margin-right: 95px;
+	.refresh{
+		border: none;
+		outline: none;
+		font-size: 12px;
+		font-weight: 300;
+		letter-spacing: 1px;
+		line-height: 15px;
+		padding: 10px 18px 8px 24px;
+		margin-right: 85px;
+		cursor: pointer;
+
+		img{
+			display: inline-block;
+			vertical-align:top;
+			margin-left: 8px;
+		}
+	}
+
+	input{
+		background-color: $white;
+		width: 160px;
+		padding: 5px 11px 6px 11px; 
+		font-size: 13px;
+		outline: none;
+		letter-spacing: 1px;
+		margin-right: 6px;
+	}
+	input,
+	textarea {
+		color: $blue;
+		text-shadow: 0px 0px 0px #000;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.btn{
+		&.search{
+			padding: 3px 8px 5px 0px;
+			cursor: pointer;
+		}
+	}
+}
+
+.select-block{
+	display: inline-block;
+	vertical-align: middle;
+
+	.custome-select{
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		border: none;
+		border-radius: 0;
+		outline: none;
+		letter-spacing: 1px;
+		width: 160px;
+		font-size: 14px;
+		padding: 5px 7px 2px 8px;
+		box-shadow: 1px 1px 17px 0px rgba(172, 176, 178, 0.75);
+		background: $white url('../img/arrow-down.png') 92% 50% no-repeat;
+		margin-right: 36px;
+
+		&.strong{
+			font-weight: 700;
+		}
+
+	}
+}
+.jalon {
+	border-width: 2px;
+	border-style: solid;
+	min-width: 55px;
+	height: 23px;
+	text-align: center;
+	display: inline-block;
+	padding-top: 2px;
+}
+.text-centering {
+	display: inline-block;
+	text-align:center;
+}
+.no-space-td {
+	padding:0;
+}
+
+.vh {
+	width: 690px;
+}
+
+	.ratio-box {
+		label {
+			&:before {
+				border: 2px solid $grey!important;
+			}
+		}
+
+		input[type=radio]:checked+label:after {
+				background-color: $grey;
+			}
+	}
+
+
+/*affectation*/
+
+.affectation-home {
+	padding-top: 26px;
+	padding-left: 31px;
+	padding-right: 31px;
+
+
+	.table-wrapp {
+		margin-bottom: 24px;
+	}
+}
+
+.arrival-info {
+	border-top: 1px solid $grey;
+	border-bottom: 1px solid $grey;
+	margin-left:8px;
+	margin-right: 8px;
+	padding: 24px 13px;
+
+	.color-block {
+		padding: 1.5px 27px;
+	}
+
+	.affectation-icon {
+		display: inline-block;
+		margin-right: auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

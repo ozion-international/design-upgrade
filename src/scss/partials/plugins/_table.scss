@@ -19,25 +19,33 @@
      &:after,
      &:before {
       border: none;
-      border-color: transparent
+      border-top-style: none;
+      border-color: transparent;
      }
-    }
 
+    }
   }
 
   .table-stretch-container {
-    width: 680px;
-    tr {
-      padding: 0;
-      margin: 0;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+
+    tr{
+      border-bottom: 3px solid transparent;
     }
-    td {
-      border: none;
+    .table-stretch{
+      tr{
+        border: none;
+      }
     }
   }
 
   .table-stretch {
-    width: 680px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    td {
+      border: none;
+    }
     .w-40,
     .w-60,
     .w-70,
@@ -62,6 +70,11 @@
     position:relative;
     padding: $table-cell-padding;
 
+    &.no-space-td {
+      padding:0;
+      margin: 0;
+    }
+
     .ico{
       vertical-align:top;
       img{
@@ -72,46 +85,54 @@
   }
 
   .separator-th{
-    width: 680px;
+    width: 690px;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
     th{
        position: relative;
       &:after{
       position:absolute;
       content:'|';
-      right:6px;
+      right:-1px;
       width:4px;
       height:20px;
       }
     } 
   }
 
-  .w-40 {
+  .wh-40 {
     width: 40px;
   }
 
-  .w-60 {
+  .wh-60 {
     width: 60px;
   }
 
-  .w-70 {
-    width: 70px;
-  }
-
-  .w-90 {
+  .wh-70 {
     width: 90px;
   }
 
-  .w-100 {
-    width: 100px!important;
-    padding-left: 30px;
-    padding-right: 10px;
+  .wh-90 {
+    width: 90px;
+
+    &.fixing-space {
+      padding-left: 26px;
+      padding-right: 0;
+    }
   }
 
-  .w-160 {
-    width: 160px;
+  .wh-100 {
+    width: 100px;
+
+    &.fixing-space {
+      padding-left: 36px;
+      padding-right: 0;
+    }
   }
 
-
+  .wh-160 {
+    width: 140px;
+  }
 
   .border-tr{
       td{
@@ -231,6 +252,23 @@
               border-right-width:1px;
             }
           }
+            .table-stretch-container {
+                tr {
+                  padding: 0;
+                  margin: 0;
+                }
+    
+                td {
+                  border: none;
+
+                  &:before,
+                  &:after {
+                    border: none;
+                    border-top-style: none;
+                    border-color: transparent;
+                  }
+                }
+            }
         }
       }
 
