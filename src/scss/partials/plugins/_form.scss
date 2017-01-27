@@ -97,6 +97,7 @@ input[type=text]{
 	padding:8px 0px;
 
 	input[type=text]{
+		vertical-align:top;
 		width:200px
 	}
 
@@ -107,6 +108,7 @@ input[type=text]{
 		height:26px;
 		padding:0;
 		cursor:pointer;
+		vertical-align:top;
 	}
 }
 

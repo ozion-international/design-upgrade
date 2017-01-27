@@ -17,12 +17,20 @@
     margin: 0 -55% 0 20px;
   }
 
+  &.line-super-light{
+    &:after,
+    &:before{
+      border-bottom: 1px solid;
+    }
+  }
+
   &.line-light{
     &:after,
     &:before{
       border-bottom: 3px solid;
     }
   }
+
 
   &.line-bold{
     font-size:12px;

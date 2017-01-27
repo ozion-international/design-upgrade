@@ -19,10 +19,49 @@
      &:after,
      &:before {
       border: none;
-      border-color: transparent
+      border-top-style: none;
+      border-color: transparent;
      }
-    }
 
+    }
+  }
+
+  .table-stretch-container {
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+
+    tr{
+      border-bottom: 3px solid transparent;
+    }
+    .table-stretch{
+      tr{
+        border: none;
+      }
+    }
+  }
+
+  .table-stretch {
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    td {
+      border: none;
+    }
+    .w-40,
+    .w-60,
+    .w-70,
+    .w-90,
+    .w-100,
+    .w-160,
+    .w-680 {
+      border: 0 none;
+
+      &:after,
+      &:before {
+        border: none;
+        border-color: transparent
+
+      }
+    }
   }
   
 
@@ -31,6 +70,11 @@
     position:relative;
     padding: $table-cell-padding;
 
+    &.no-space-td {
+      padding:0;
+      margin: 0;
+    }
+
     .ico{
       vertical-align:top;
       img{
@@ -38,6 +82,56 @@
         margin-top:-2px;
       }
     }
+  }
+
+  .separator-th{
+    width: 690px;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    th{
+       position: relative;
+      &:after{
+      position:absolute;
+      content:'|';
+      right:-1px;
+      width:4px;
+      height:20px;
+      }
+    } 
+  }
+
+  .wh-40 {
+    width: 40px;
+  }
+
+  .wh-60 {
+    width: 60px;
+  }
+
+  .wh-70 {
+    width: 90px;
+  }
+
+  .wh-90 {
+    width: 90px;
+
+    &.fixing-space {
+      padding-left: 26px;
+      padding-right: 0;
+    }
+  }
+
+  .wh-100 {
+    width: 100px;
+
+    &.fixing-space {
+      padding-left: 36px;
+      padding-right: 0;
+    }
+  }
+
+  .wh-160 {
+    width: 140px;
   }
 
   .border-tr{
@@ -158,6 +252,23 @@
               border-right-width:1px;
             }
           }
+            .table-stretch-container {
+                tr {
+                  padding: 0;
+                  margin: 0;
+                }
+    
+                td {
+                  border: none;
+
+                  &:before,
+                  &:after {
+                    border: none;
+                    border-top-style: none;
+                    border-color: transparent;
+                  }
+                }
+            }
         }
       }
 
