@@ -16,15 +16,15 @@ input[type=radio] {
 	    padding-left:30px;
 	    cursor: pointer;
 	    position: relative;
-	    line-height:20px;
+	    line-height:16px;
 	    color:$black;
 
 	    &:before{
 	    	content: '';
 		    display: block;
 		    vertical-align: middle;
-		    width: 20px;
-		    height: 20px;
+		    width: 16px;
+		    height: 16px;
 		    padding: 2px;
 		    margin-right: 10px;
 		    text-align: center;
@@ -36,14 +36,14 @@ input[type=radio] {
 	    	content: '';
 		    display: inline-block;
 		    vertical-align: middle;
-		    width: 12px;
-		    height: 12px;
+		    width: 10px;
+		    height: 10px;
 		    padding: 2px;
 		    margin-right: 10px;
 		    text-align: center;
 		    position:absolute;
-		    left:4px;
-		    top:4px;
+		    left:3px;
+		    top:3px;
 	    }
     }
 
@@ -101,8 +101,9 @@ input[type=text]{
 		width:200px
 	}
 
-	input[type=submit]{
-		background:transparent url('/img/search.svg') 50% / 20px no-repeat;
+	input[type=submit],
+	button[type=submit]{
+		background:transparent none;
 		border: none;
 		width:26px;
 		height:26px;

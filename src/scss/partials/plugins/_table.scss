@@ -29,10 +29,9 @@
   .table-stretch-container {
     border-right: 5px solid transparent;
     border-left: 5px solid transparent;
+    border-top:0px solid transparent;
+    border-bottom:0px solid transparent;
 
-    tr{
-      border-bottom: 3px solid transparent;
-    }
     .table-stretch{
       tr{
         border: none;
@@ -52,7 +51,7 @@
     .w-90,
     .w-100,
     .w-160,
-    .w-680 {
+    .vh {
       border: 0 none;
 
       &:after,
@@ -108,10 +107,6 @@
     width: 60px;
   }
 
-  .wh-70 {
-    width: 90px;
-  }
-
   .wh-90 {
     width: 90px;
 
@@ -130,7 +125,7 @@
     }
   }
 
-  .wh-160 {
+  .wh-140 {
     width: 140px;
   }
 
@@ -187,13 +182,13 @@
         }
 
         @media screen and (-webkit-min-device-pixel-ratio:0) {
-        &:before{
-          top:0px;
-        }
+          &:before{
+            top:0px;
+          }
 
-        &:after{
-          bottom:0px;
-        }
+          &:after{
+            bottom:0px;
+          }
         }
  
       }
@@ -217,8 +212,7 @@
     font-size:12px;
     line-height:16px;
 
-  	&.active,
-    &:hover{
+  	&.active{
   		background-color:#acd7f7;
       td{
       }
@@ -226,15 +220,11 @@
 
     &.even {
       background-color: #f2f4f5;
-
-      &:hover{
-        background-color:#acd7f7;
-      }
     }
 
     &.border{
       &-tr{
-        td{
+        > td{
 
           &:before,
           &:after{
@@ -252,23 +242,7 @@
               border-right-width:1px;
             }
           }
-            .table-stretch-container {
-                tr {
-                  padding: 0;
-                  margin: 0;
-                }
-    
-                td {
-                  border: none;
-
-                  &:before,
-                  &:after {
-                    border: none;
-                    border-top-style: none;
-                    border-color: transparent;
-                  }
-                }
-            }
+            
         }
       }
 
@@ -284,7 +258,7 @@
       }
 
       &-red{
-        td{
+        > td{
           &:before,
           &:after{
             border-top-color:$red;
@@ -305,7 +279,7 @@
       }
 
       &-black{
-        td{
+        > td{
           &:before,
           &:after{
             border-top-color:$black;
@@ -326,7 +300,7 @@
       }
 
       &-white{
-        td{
+        > td{
           &:before,
           &:after{
             border-top-color:$white;
@@ -347,7 +321,7 @@
       }
 
       &-green{
-        td{
+        > td{
           &:before,
           &:after{
             border-top-color:$green;
@@ -368,7 +342,7 @@
       }
 
       &-yellow{
-        td{
+        > td{
           &:before,
           &:after{
             border-top-color:$yellow;
@@ -389,7 +363,7 @@
       }
 
       &-blue{
-        td{
+        > td{
           &:before,
           &:after{
             border-top-color:$blue;
@@ -410,7 +384,7 @@
       }
 
       &-light-blue{
-        td{
+        > td{
           &:before,
           &:after{
             border-top-color:$light-blue;
@@ -431,7 +405,7 @@
       }
 
       &-dark-blue{
-        td{
+        > td{
           &:before,
           &:after{
             border-top-color:$dark-blue;
@@ -452,7 +426,7 @@
       }
 
       &-grey{
-        td{
+        > td{
           &:before,
           &:after{
             border-top-color:$grey;
@@ -474,7 +448,7 @@
 
 
       &-dashed{
-        td{
+        > td{
           &:before,
           &:after{
             border-top-style:dashed;
@@ -495,7 +469,7 @@
       }
 
       &-dotted{
-        td{
+        > td{
           &:before,
           &:after{
             border-top-style:dotted;
@@ -516,7 +490,7 @@
       }
 
       &-solid{
-        td{
+        > td{
           &:before,
           &:after{
             border-top-style:solid;
@@ -537,18 +511,8 @@
       }
 
     }
-
-
-
-
-
-
-
-
-    
-
   }
-  tbody td {
+  > tbody > tr > td {
   	border-top: 6px solid #f1f3f4;
 
     label{
