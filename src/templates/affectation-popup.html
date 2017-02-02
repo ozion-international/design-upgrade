@@ -1,5 +1,5 @@
-<div class="popup">
-  <div class="popup-container">
+<div id="popup" class="popup">
+  <div class="popup-container bg-light-grey">
     <section class="affectation-home">
       <div class="table-responsive">
         <div class="table-wrapp">
@@ -29,9 +29,7 @@
                 <span class="font-dark-blue">09:50</span>
             </td>
             <td>
-              
                 <strong class="font-dark-blue">A</strong>
-           
             </td>
             <td>
                <a class="status-link border-blue" href="#">
@@ -122,14 +120,18 @@
                       </strong> <br> 
                       <small class="font-grey">07 06 2016<br>2E/F15/532</small>
                     </td>
-                    <td class="text-center">
+                    <td class="text-center v-align-middle">
                       <strong><span class="font-dark-blue">(LYS)</span></strong><br>
                       <small class="font-grey"><span class="font-blue">12:15</span></small>
                     </td>
                   </tr>
                 </table>
             </td>
-            <td><span class="edit-stats"><svg class="fill-black" width="19" height="20"><use xlink:href='/img/img.svg#un-check'></svg></span></td>
+            <td>
+              <a href="#" class="edit-stats">
+              <svg class="fill-black" width="19" height="20"><use xlink:href='/img/img.svg#un-check'></svg>
+            </a>
+          </td>
           </tr>
         </tbody>
       </table>
@@ -145,6 +147,7 @@
               <tr>
                 <th>CHOIX</th>
                 <th>AFFECTATION</th>
+                <th></th>
                 <th>TACHES</th>
                 <th>JALONS</th>
                 <th>DEBUT</th>
@@ -157,14 +160,16 @@
               <tr class="border-tr even border-solid border-white">
                 <td>
                     <span class="ratio-box">
-                      <input id="radio-31" name="radio-group1" type="radio">
-                      <label for="radio-31"></label>
+                      <input id="radio-1" name="radio-group1" type="radio">
+                      <label for="radio-1"></label>
                     </span>
                 </td>
                 <td>
                     <span class="font-grey">Assigné à l’agent</span>
                     <span class="font-light-blue">LEFEBRE Virgil</span>
-                    <span class="affectation-icon">
+                </td>
+                <td>
+                   <span class="affectation-icon">
                       <svg class="fill-blue" width="37" height="25"><use xlink:href='/img/img.svg#passenger'></svg>
                     </span>
                 </td>
@@ -172,7 +177,7 @@
                     <strong class="font-dark-blue">ARRIVEE</strong>
                 </td>
                 <td>
-                    <span class="font-green">INITA - GO A - MISE A - SORTIR - CORNIR</span>
+                    <span class="font-green">INITA <strong class="font-black">-</strong> GO A <strong class="font-black">-</strong>  MISE A <strong class="font-black">-</strong>  SORTIR <strong class="font-black">-</strong>  CORNIR</span>
                 </td>
                  <td>
                     <span class="font-grey">07 06 2016</span>
@@ -198,14 +203,17 @@
               <tr class="border-tr">
                 <td>
                     <span class="ratio-box">
-                      <input id="radio-31" name="radio-group1" type="radio">
-                      <label for="radio-31"></label>
+                      <input id="radio-2" name="radio-group1" type="radio">
+                      <label for="radio-2"></label>
                     </span>
                 </td>
                 <td>
                     <span class="font-grey">Assigné à l’agent</span>
                     <span class="font-light-blue">ANDRANI Francois</span>
-                    <span class="text-right">
+                   
+                </td>
+                <td>
+                   <span class="text-right">
                       <svg class="fill-red" width="37" height="25"><use xlink:href='/img/img.svg#helping-wheelchair'></svg>
                     </span>
                 </td>
@@ -213,7 +221,7 @@
                     <strong class="font-dark-blue">TRANSFERT</strong>
                 </td>
                 <td>
-                    <span class="font-green">DEBCNX - FINCNX</span>
+                    <span class="font-green">DEBCNX <strong class="font-black"> - </strong>  FINCNX</span>
                 </td>
                  <td>
                     <span class="font-grey">07 06 2016</span>
@@ -239,14 +247,17 @@
                <tr class="border-tr even">
                 <td>
                     <span class="ratio-box">
-                      <input id="radio-31" name="radio-group1" type="radio">
-                      <label for="radio-31"></label>
+                      <input id="radio-3" name="radio-group1" type="radio">
+                      <label for="radio-3"></label>
                     </span>
                 </td>
                 <td>
                     <span class="font-grey">Assigné à l’agent</span>
                     <span class="font-light-black">ABRY Philippe</span>
-                    <span class="text-right">
+                    
+                </td>
+                <td>
+                  <span class="text-right">
                       <svg class="fill-black" width="37" height="25"><use xlink:href='/img/img.svg#passenger'></svg>
                     </span>
                 </td>
@@ -254,7 +265,7 @@
                     <strong class="font-dark-black">EMBARQUEMENT</strong>
                 </td>
                 <td>
-                    <span class="font-grey">PEMBR - FINI</span>
+                    <span class="font-grey">PEMBR <strong class="font-black">-</strong>  FINI</span>
                 </td>
                  <td>
                     <span class="font-grey">07 06 2016</span>
@@ -280,14 +291,17 @@
               <tr class="border-tr">
                 <td>
                     <span class="ratio-box">
-                      <input id="radio-31" name="radio-group1" type="radio">
-                      <label for="radio-31"></label>
+                      <input id="radio-4" name="radio-group1" type="radio">
+                      <label for="radio-4"></label>
                     </span>
                 </td>
                 <td>
                     <span class="font-grey">Assigné à l’agent</span>
                     <span class="font-light-blue">FRANÇOIS Brice</span>
-                    <span class="text-right">
+                   
+                </td>
+                <td>
+                   <span class="text-right">
                       <svg class="fill-blue" width="37" height="25"><use xlink:href='/img/img.svg#bus'></svg>
                     </span>
                 </td>
@@ -295,7 +309,7 @@
                     <strong class="font-dark-blue">MISE EN SALLE</strong>
                 </td>
                 <td>
-                    <span class="font-grey">DEPVEH - ABOARD - ENDD</span>
+                    <span class="font-grey">DEPVEH <strong class="font-black">-</strong>  ABOARD <strong class="font-black">-</strong>  ENDD</span>
                 </td>
                  <td>
                     <span class="font-grey">07 06 2016</span>
@@ -319,5 +333,833 @@
         </div>
         </section>
       </div>
+
+    <section class="affectation-home">
+    <div class="info-container">
+      <form class="personal-info">
+        <button class="refresh bg-grey font-white">
+          REFRESH
+          <svg class="fill-white refresh-svg" width="13" height="13"><use xlink:href='/img/img.svg#refresh'></svg>
+        </button>
+      </form>
+      <div class="select-block">
+        <div class="custome-select">
+          <select>
+            <option>TRI MISSION</option>
+            <option>TRI MISSION 2</option>
+            <option>TRI MISSION 3</option>
+          </select>
+           <span class="arrow-normal">
+             <svg class="fill-black" width="14" height="14"><use xlink:href='/img/img.svg#arrow-bottom-fill'></svg>
+           </span>
+        </div>
+        <div class="custome-select">
+           <select class="custome-select">
+            <option>FILTRE AGENT</option>
+            <option>FILTRE AGENT 2</option>
+            <option>FILTRE AGENT 3</option>
+        </select>
+         <span class="arrow-normal">
+             <svg class="fill-black" width="14" height="14"><use xlink:href='/img/img.svg#arrow-bottom-fill'></svg>
+           </span>
+        </div>
+       <div class="custome-select">
+         <select class="custome-select strong">
+            <option>ZONE</option>
+            <option>ZONE 2</option>
+            <option>ZONE 3</option>
+        </select>
+         <span class="arrow-normal">
+             <svg class="fill-black" width="14" height="14"><use xlink:href='/img/img.svg#arrow-bottom-fill-strong'></svg>
+           </span>
+       </div>
+      </div>
+    </div>
+
+    <div class="table-responsive">
+      <table class="table table-striped table-agents">
+      <thead>
+        <tr>
+          <th>AP</th>
+          <th>RENF</th>
+          <th>AGENT</th>
+          <th>ZONE</th>
+          <th>TÉLÉPHONE</th>
+          <th>ÉTAT PDA</th>
+          <th class="no-space wh">
+            <table class="no-space separator-th table-stretch vh">
+              <tr>
+                <th class="wh-100 text-center">VOL ARR. T</th>
+                <th class="wh-60 text-center">SAT </th>
+                <th class="wh-40 text-center">P </th>
+                <th class="wh-90 text-center">JALON </th>
+                <th class="wh-60 text-center">HJ </th>
+                <th class="wh-90 text-center">VOL DEP. T </th>
+                <th class="wh-60 text-center">SAT </th>
+                <th class="wh-40 text-center">P </th>
+                <th class="wh-140 ">PAX</th>
+              </tr>
+            </table>
+          </th>
+          <th>PS: DÉBUT - FIN</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!--first-type-->
+       <tr class="border-tr border-solid border-white even">
+         <td>
+           <div class="border-line ratio-box">
+           <span class="ratio-box">
+            <input id="radio-5" name="radio-group1" type="radio">
+            <label for="radio-5"></label>
+           </span>
+         </div>
+         </td>
+         <td>
+            <input id="checkbox-11" name="checkbox-1" type="checkbox">
+            <label for="checkbox-11"></label>
+         </td>
+         <td>
+           <span class="font-red">YACOUBHI Saharan</span>
+         </td>
+         <td>
+           <span class="font-dark-blue">Acc AC</span>
+         </td>
+         <td>
+           <span class="font-blue">098</span><br>
+           <span class="font-dark-blue">07 55 67 34 41</span>
+         </td>
+         <td>
+           <span class="font-green">14 : 45</span>
+         </td>
+         <td class="no-space-td wh">
+           <table class="table-stretch separator-table vh">
+              <tr>
+                <td class="wh-100 fixing-space border-td-after">
+                   <strong class="font-red">OS411</strong><br>
+                   <span class="font-grey">2E</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">C45</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">A40</span>
+                 </td>
+                 <td class="wh-90 text-center no-space"><span class="border-red jalon">FINI</span></td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-blue">10 : 45</span>
+                 </td>
+                 <td class="wh-90 fixing-space"> 
+                   <strong class="font-green">SU636</strong><br>
+                   <span class="font-grey">2E</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">C45</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">A40</span>
+                 </td>
+                 <td class="wh-140 border-td-before">
+                   <span class="font-blue">VALBRUGUEU<br>Vladimir</span>
+                 </td>
+              </tr>
+            </table>
+         </td>
+         <td>
+           <div class="border-line">
+           <span class="font-dark-blue text-centering">
+            08:17 - 14:00<br>
+            dans 97 min
+          </span><br>
+        </div>
+         </td>
+       </tr>
+
+        <tr class="border-tr">
+         <td>
+           <div class="border-line">
+           <span class="ratio-box">
+            <input id="radio-6" name="radio-group1" type="radio">
+            <label for="radio-6"></label>
+           </span>
+         </div>
+         </td>
+         <td>
+            <input id="checkbox-21" name="checkbox-1" type="checkbox">
+            <label for="checkbox-21"></label>
+         </td>
+         <td>
+           <span class="font-red">SAIDOU Aicha</span>
+         </td>
+         <td>
+           <span class="font-dark-blue">Acc AC</span>
+         </td>
+         <td>
+           <span class="font-blue">034</span><br>
+           <span class="font-dark-blue">07 45 12 56 89</span>
+         </td>
+         <td>
+           <span class="font-green">12 : 45</span>
+         </td>
+         <td class="no-space-td vh">
+          <table class="table-stretch-container border-light-grey vh">
+            <tr class="border border-light-grey border-tr-bottom">
+              <td class="wh-100 fixing-space">
+               <strong class="font-red">AF385</strong><br>
+               <span class="font-grey">2A</span>
+               </td>
+               <td class="wh-60 text-center no-space">
+                 <span class="font-grey">S46</span>
+               </td>
+               <td class="wh-40 text-center no-space">
+                 <span class="font-grey">C85</span>
+               </td>
+               <td class="wh-90 text-center no-space"><span class="border-yellow jalon">FINI</span></td>
+               <td class="wh-60 text-center no-space">
+                 <span class="font-blue">12 : 45</span>
+               </td>
+               <td class="wh-90 fixing-space"> 
+                 <strong class="font-green">AH103</strong><br>
+                 <span class="font-grey">2A</span>
+               </td>
+               <td class="wh-60 text-center no-space">
+                 <span class="font-grey">S46</span>
+               </td>
+               <td class="wh-40 text-center no-space">
+                 <span class="font-grey">C85</span>
+               </td>
+               <td class="wh-140">
+                 <span class="font-blue">SMIRNOV Alex</span>
+               </td>
+            </tr>
+            <tr class="border border-light-grey border-tr-bottom">
+              <td class="wh-100 fixing-space">
+               <strong class="font-red">AF385</strong><br>
+               <span class="font-grey">2A</span>
+               </td>
+               <td class="wh-60 text-center no-space">
+                 <span class="font-grey">VGJ</span>
+               </td>
+               <td class="wh-40 text-center no-space">
+                 <span class="font-grey">C85</span>
+               </td>
+               <td class="wh-90 text-center no-space">
+                 <span class="border-green jalon">END</span>
+               </td>
+               <td class="wh-60 text-center no-space">
+                 <span class="font-blue">12 : 45</span>
+               </td>
+               <td class="wh-90 fixing-space"> 
+                 <strong class="font-green">AH103</strong><br>
+                 <span class="font-grey">2A</span>
+               </td>
+               <td class="wh-60 text-center no-space">
+                 <span class="font-grey">VGJ</span>
+               </td>
+               <td class="wh-40 text-center no-space">
+                 <span class="font-grey">C85</span>
+               </td>
+               <td class="wh-140">
+                 <span class="font-blue">SMIRNOV Alex</span>
+               </td>
+            </tr>
+            <tr class="border border-light-grey border-tr-bottom">
+              <td class="wh-100 fixing-space">
+               </td>
+               <td class="wh-60 text-center no-space">
+                 <span class="font-grey">07U</span>
+               </td>
+               <td class="wh-40 text-center no-space">
+                 <span class="font-grey">C85</span>
+               </td>
+               <td class="wh-90 text-center no-space">
+                 <span class="border-yellow jalon">END</span>
+               </td>
+               <td class="wh-60 text-center no-space">
+                 <span class="font-blue">12 : 45</span>
+               </td>
+               <td class="wh-90 fixing-space"> 
+                 <strong class="font-green">AH103</strong><br>
+               </td>
+               <td class="wh-60 text-center no-space">
+                 <span class="font-grey">07U</span>
+               </td>
+               <td class="wh-40 text-center no-space">
+                 <span class="font-grey">C85</span>
+               </td>
+               <td class="wh-140">
+                 <span class="font-blue">SMIRNOV Alex</span>
+               </td>
+            </tr>
+            <tr class="border">
+              <td class="wh-100 fixing-space">
+               </td>
+               <td class="wh-60 text-center no-space">
+                 <span class="font-grey">58B</span>
+               </td>
+               <td class="wh-40 text-center no-space">
+                 <span class="font-grey">C85</span>
+               </td>
+               <td class="wh-90 text-center no-space">
+                 <span class="border-green jalon">END</span>
+               </td>
+               <td class="wh-60 text-center no-space">
+                 <span class="font-blue">12 : 45</span>
+               </td>
+               <td class="wh-90 fixing-space"> 
+                 <strong class="font-green">AH103</strong><br>
+               </td>
+               <td class="wh-60 text-center no-space">
+                 <span class="font-grey">56B</span>
+               </td>
+               <td class="wh-40 text-center no-space">
+                 <span class="font-grey">C85</span>
+               </td>
+               <td class="wh-140">
+                 <span class="font-blue">SMIRNOV Alex</span>
+               </td>
+            </tr>
+          </table>
+         </td>
+         <td>
+           <div class="border-line">
+           <span class="font-dark-blue text-centering">
+            08:17 - 14:00<br>
+            dans 97 min
+          </span><br>
+        </div>
+         </td>
+       </tr>
+
+       <!--second-type-->
+        <tr class="border-tr border-solid border-white even" rowspan="6">
+         <td>
+           <div class="border-line">
+           <span class="ratio-box">
+            <input id="radio-7" name="radio-group1" type="radio">
+            <label for="radio-7"></label>
+           </span>
+         </div>
+         </td>
+         <td>
+            <input id="checkbox-31" name="checkbox-1" type="checkbox">
+            <label for="checkbox-31"></label>
+         </td>
+         <td>
+           <span class="font-green">BENJERT Icham</span>
+         </td>
+         <td>
+           <span class="font-dark-blue">2D</span>
+         </td>
+         <td>
+           <span class="font-blue">078</span><br>
+           <span class="font-dark-blue">07 43 23 78 06</span>
+         </td>
+         <td>
+           <span class="font-green">12 : 45</span>
+         </td>
+         <td class="no-space-td vh">
+           <table class="table-stretch vh">
+            <tr class="no-space bg-light-grey">
+              <td class="vh" colspan="10">
+                <div class="separator-line line-super-light line-grey"><span class="font-grey">Tache(s) realisee(s): <strong class="font-black">2</strong></span></div>
+              </td>
+             </tr>
+              <tr class="bg-white">
+                <td class="wh-100 fixing-space">
+                   <p class="rotate-text bg-blue font-white">EN COURS</p>
+                   <span class="font-grey">
+                    <strong class="font-red">GB132</strong><br>
+                    2D
+                   </span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">F86</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">C32</span>
+                 </td>
+                 <td class="wh-90 text-center no-space">
+                   <span class="border-yellow jalon">END</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-blue">12 : 30</span>
+                 </td>
+                 <td class="wh-90 fixing-space"> 
+                   <strong class="font-green">EF568</strong><br>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">37H</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">B28</span>
+                 </td>
+                 <td class="wh-140">
+                   <span class="font-blue">LABATIER<br>Philippe</span>
+                 </td>
+              </tr>
+            </table>
+         </td>
+         <td>
+           <div class="border-line">
+           <span class="font-dark-blue text-centering">
+            08:17 - 14:00<br>
+            dans 97 min
+          </span><br>
+        </div>
+         </td>
+       </tr>
+
+        <tr class="border-tr">
+         <td>
+           <div class="border-line">
+           <span class="ratio-box">
+            <input id="radio-8" name="radio-group1" type="radio">
+            <label for="radio-8"></label>
+           </span>
+         </div>
+         </td>
+         <td>
+              <input id="checkbox-41" name="checkbox-1" type="checkbox">
+              <label for="checkbox-41"></label>
+         </td>
+         <td>
+           <span class="font-red">ADREANI Izia</span>
+         </td>
+         <td>
+           <span class="font-dark-blue">2A</span>
+         </td>
+         <td>
+           <span class="font-blue">014</span><br>
+           <span class="font-dark-blue">07 67 95 37 52</span>
+         </td>
+         <td>
+           <span class="font-green">12 : 45</span>
+         </td>
+         <td class="no-space-td vh">
+           <table class="table-stretch vh">
+              <tr>
+                <td class="wh-100 fixing-space">
+                   <strong class="font-red">ER456</strong><br>
+                   <span class="font-grey">34T</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">F23</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">A39</span>
+                 </td>
+                 <td class="wh-90 text-center no-space">
+                   <span class="border-yellow jalon">PEMB</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-red">12 : 20</span>
+                 </td>
+                 <td class="wh-90 fixing-space"> 
+                   <strong class="font-green">XF534</strong><br>
+                   <span class="font-grey">2D</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">F23</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">A39</span>
+                 </td>
+                 <td class="wh-140">
+                   <span class="font-blue">BOUCHER<br>Henri</span>
+                 </td>
+              </tr>
+            </table>
+         </td>
+         <td>
+           <div class="border-line">
+           <span class="font-dark-blue text-centering">
+            08:17 - 14:00<br>
+            dans 97 min
+          </span><br>
+        </div>
+         </td>
+       </tr>
+
+       <tr class="border-tr border-solid border-white even" rowspan="6">
+         <td>
+           <div class="border-line">
+           <span class="ratio-box">
+            <input id="radio-9" name="radio-group1" type="radio">
+            <label for="radio-9"></label>
+           </span>
+         </div>
+         </td>
+         <td>
+            <input id="checkbox-51" name="checkbox-1" type="checkbox">
+            <label for="checkbox-51"></label>
+         </td>
+         <td>
+           <span class="font-green">PHILIPPOTI Jean Marc</span>
+         </td>
+         <td>
+           <span class="font-dark-blue">T2 ABCD</span>
+         </td>
+         <td>
+           <span class="font-blue">070</span><br>
+           <span class="font-dark-blue">07 32 11 59 04</span>
+         </td>
+         <td>
+           <span class="font-green">12 : 45</span>
+         </td>
+         <td class="no-space-td vh">
+           <table class="table-stretch vh">
+            <tr class="no-space bg-light-grey">
+              <td class="vh" colspan="10">
+                <div class="separator-line line-super-light line-grey"><span class="font-grey">Tache(s) realisee(s): <strong class="font-black">4</strong></span></div>
+              </td>
+             </tr>
+              <tr class="bg-white">
+                <td class="wh-100 fixing-space">
+                   <p class="rotate-text bg-blue font-white">EN COURS</p>
+                   <span class="font-grey">
+                    <strong class="font-red">IZ301</strong><br>
+                    2D
+                   </span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">A80</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">C78</span>
+                 </td>
+                 <td class="wh-90 text-center no-space">
+                   <span class="border-yellow jalon">FINI</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-blue">12 : 30</span>
+                 </td>
+                 <td class="wh-90 fixing-space"> 
+                   <strong class="font-green">EF340</strong><br>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">37H</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">F64</span>
+                 </td>
+                 <td class="wh-140">
+                   <span class="font-blue">BIR<br>Francis</span>
+                 </td>
+              </tr>
+            </table>
+         </td>
+         <td>
+           <div class="border-line">
+           <span class="font-dark-blue text-centering">
+            08:17 - 14:00<br>
+            dans 97 min
+          </span><br>
+        </div>
+         </td>
+       </tr>
+
+        <tr class="border-tr" rowspan="6">
+         <td>
+           <div class="border-line">
+           <span class="ratio-box">
+            <input id="radio-10" name="radio-group1" type="radio">
+            <label for="radio-10"></label>
+           </span>
+         </div>
+         </td>
+         <td>
+            <input id="checkbox-61" name="checkbox-1" type="checkbox">
+            <label for="checkbox-61"></label>
+         </td>
+         <td>
+           <span class="font-green">TOUBISSRHA Virginie</span>
+         </td>
+         <td>
+           <span class="font-dark-blue">2C</span>
+         </td>
+         <td>
+           <span class="font-blue">093</span><br>
+           <span class="font-dark-blue">07 21 44 83 68</span>
+         </td>
+         <td>
+           <span class="font-green">12 : 45</span>
+         </td>
+         <td class="no-space-td vh">
+           <table class="table-stretch vh">
+            <tr class="no-space bg-white">
+              <td class="vh" colspan="10">
+                <div class="separator-line line-super-light line-grey"><span class="font-grey">Tache(s) realisee(s): <strong class="font-black">1</strong></span></div>
+              </td>
+             </tr>
+              <tr>
+                <td class="wh-100 fixing-space">
+                   <p class="rotate-text bg-blue font-white">EN COURS</p>
+                   <span class="font-grey">
+                    <strong class="font-red">TY210</strong><br>
+                    2D
+                   </span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">F86</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">C32</span>
+                 </td>
+                 <td class="wh-90 text-center no-space">
+                   <span class="border-red jalon">END</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-blue">12 : 30</span>
+                 </td>
+                 <td class="wh-90 fixing-space"> 
+                   <strong class="font-green">UI809</strong><br>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">45F</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">FG56</span>
+                 </td>
+                 <td class="w-160">
+                   <span class="font-blue">MAMOUDA<br>Imani</span>
+                 </td>
+              </tr>
+            </table>
+         </td>
+         <td>
+           <div class="border-line">
+           <span class="font-dark-blue text-centering">
+            08:17 - 14:00<br>
+            dans 97 min
+          </span><br>
+        </div>
+         </td>
+       </tr>
+
+        <tr class="border-tr border-solid border-white even">
+         <td>
+           <div class="border-line">
+           <span class="ratio-box">
+            <input id="radio-11" name="radio-group1" type="radio">
+            <label for="radio-11"></label>
+           </span>
+         </div>
+         </td>
+         <td>
+              <input id="checkbox-71" name="checkbox-1" type="checkbox">
+              <label for="checkbox-71"></label>
+         </td>
+         <td>
+           <span class="font-red">BREGUIER Yves</span>
+         </td>
+         <td>
+           <span class="font-dark-blue">2A</span>
+         </td>
+         <td>
+           <span class="font-blue">098</span><br>
+           <span class="font-dark-blue">07 55 88 92 13</span>
+         </td>
+         <td>
+           <span class="font-green">12 : 45</span>
+         </td>
+         <td class="no-space-td vh">
+           <table class="table-stretch separator-table vh">
+              <tr>
+                <td class="wh-100 fixing-space border-td-after">
+                   <strong class="font-red">JIY123</strong><br>
+                   <span class="font-grey">1F</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">098</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">D58</span>
+                 </td>
+                 <td class="wh-90 text-center no-space">
+                   <span class="border-yellow jalon">PEMB</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-red">12 : 10</span>
+                 </td>
+                 <td class="wh-90 fixing-space"> 
+                   <strong class="font-green">ZEA321</strong><br>
+                   <span class="font-grey">1F</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">098</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">D58</span>
+                 </td>
+                 <td class="wh-140 border-td-before">
+                   <span class="font-blue">FRANCISQUAIS<br>Benoit</span>
+                 </td>
+              </tr>
+            </table>
+         </td>
+         <td>
+           <div class="border-line">
+           <span class="font-dark-blue text-centering">
+            08:17 - 14:00<br>
+            dans 97 min
+          </span><br>
+        </div>
+         </td>
+       </tr>
+
+       <tr class="border-tr" rowspan="6">
+         <td>
+           <div class="border-line">
+           <span class="ratio-box">
+            <input id="radio-12" name="radio-group1" type="radio">
+            <label for="radio-12"></label>
+           </span>
+         </div>
+         </td>
+         <td>
+            <input id="checkbox-81" name="checkbox-1" type="checkbox">
+            <label for="checkbox-81"></label>
+         </td>
+         <td>
+           <span class="font-green">PHILIPPOTI Jean Marcs</span>
+         </td>
+         <td>
+           <span class="font-dark-blue">2C</span>
+         </td>
+         <td>
+           <span class="font-blue">014</span><br>
+           <span class="font-dark-blue">07 67 95 37 52</span>
+         </td>
+         <td>
+           <span class="font-green">12 : 45</span>
+         </td>
+         <td class="no-space-td vh">
+           <table class="table-stretch vh">
+            <tr class="no-space bg-white">
+              <td class="vh" colspan="10">
+                <div class="separator-line line-super-light line-grey"><span class="font-grey">Tache(s) realisee(s): <strong class="font-black">2</strong></span></div>
+              </td>
+             </tr>
+              <tr class="bg-white">
+                <td class="wh-100 fixing-space">
+                   <p class="rotate-text bg-blue font-white">EN COURS</p>
+                   <span class="font-grey">
+                    <strong class="font-red">IZ301</strong><br>
+                    2D
+                   </span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">A80</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">C78</span>
+                 </td>
+                 <td class="wh-90 text-center no-space">
+                   <span class="border-yellow jalon">FINI</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-blue">12 : 30</span>
+                 </td>
+                 <td class="wh-90 fixing-space"> 
+                   <strong class="font-green">EF340</strong><br>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">37H</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">F68</span>
+                 </td>
+                 <td class="wh-140">
+                   <span class="font-blue">BIR<br>Francis</span>
+                 </td>
+              </tr>
+            </table>
+         </td>
+         <td>
+           <div class="border-line">
+           <span class="font-dark-blue text-centering">
+            08:17 - 14:00<br>
+            dans 97 min
+          </span><br>
+        </div>
+         </td>
+       </tr>
+
+        <tr class="border-tr border-solid border-white even">
+         <td>
+           <div class="border-line">
+           <span class="ratio-box">
+            <input id="radio-13" name="radio-group1" type="radio">
+            <label for="radio-13"></label>
+           </span>
+         </div>
+         </td>
+         <td>
+            <input id="checkbox-91" name="checkbox-1" type="checkbox">
+            <label for="checkbox-91"></label>
+         </td>
+         <td>
+           <span class="font-red">ANDREANI Izia</span>
+         </td>
+         <td>
+           <span class="font-dark-blue">2A</span>
+         </td>
+         <td>
+           <span class="font-blue">098</span><br>
+           <span class="font-dark-blue">07 55 88 92 13</span>
+         </td>
+         <td>
+           <span class="font-green">12 : 45</span>
+         </td>
+         <td class="no-space-td vh">
+           <table class="table-stretch separator-table vh">
+              <tr>
+                <td class="wh-100 fixing-space border-td-after">
+                   <strong class="font-red">GR944</strong><br>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">F23</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">C85</span>
+                 </td>
+                 <td class="wh-90 text-center no-space">
+                   <span class="border-green jalon">END</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-blue">12 : 45</span>
+                 </td>
+                 <td class="wh-90 fixing-space"> 
+                   <strong class="font-green">JF243</strong><br>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">07U</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">G67</span>
+                 </td>
+                 <td class="wh-140 border-td-before">
+                   <span class="font-blue">MANGEOTTE<br>Emanuelle</span>
+                 </td>
+              </tr>
+            </table>
+         </td>
+         <td>
+          <div class="border-line">
+           <span class="font-dark-blue text-centering">
+            08:17 - 14:00<br>
+            dans 97 min
+          </span><br>
+        </div>
+         </td>
+       </tr> 
+      </tbody>
+    </table>
+    </div>
+  </section><!--affectation-home-->
+   <div class="valid-block font-white bg-light-blue">
+      <a href="#" id="popup-hide" class="font-white bg-dark-blue">VALIDER</a>
+    </div>
   </div>
 </div>

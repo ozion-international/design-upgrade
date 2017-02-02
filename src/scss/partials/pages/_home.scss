@@ -1,6 +1,10 @@
 body{
 	background-color:#f1f3f4;
 	padding-bottom:10px;
+
+	&.popover-open {
+		overflow: hidden;
+	}
 }
 
 .no-border {
@@ -33,7 +37,8 @@ body{
 	margin-left:-10px;
 }
 
-.popup{
+.popup-icon{
+	padding-top:10px;
 	&:hover .popover {
 		-webkit-animation: move-up .3s linear 1;
 		transition: all 0.2s ease-in-out;
@@ -60,8 +65,7 @@ body{
 	left: calc(50% - 94px);
 	box-shadow: 1px 1px 17px 0px rgba(172, 176, 178, 0.75);
   	transition: all 0.2s ease-in-out;
-	display: none;
-	
+  	display: none;
 	
 	&:before{
 		border-top: 7px solid rgba(255,255,255,1);
@@ -73,6 +77,16 @@ body{
         left: 50%;
         margin-left: -7px;
         position: absolute;
+	}
+
+	&:after{
+		content:'';
+		position: absolute;
+		width: 40px;
+    	height: 17px;
+    	background-color: transparent;
+    	bottom: -22px;
+    	right: 75px;
 	}
 
 	h4{
@@ -139,37 +153,62 @@ body{
 
 	.btn{
 		&.search{
-			padding: 3px 8px 5px 0px;
+			padding: 3px 8px 5px 8px;
 			cursor: pointer;
 		}
+	}
+
+	.refresh-svg{
+		vertical-align:top;
+	}
+
+	.search-svg{
+		fill:$white;
 	}
 }
 
 .select-block{
 	display: inline-block;
 	vertical-align: middle;
+	position:relative;
 
 	.custome-select{
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		appearance: none;
-		border: none;
-		border-radius: 0;
-		outline: none;
-		letter-spacing: 1px;
-		width: 160px;
-		font-size: 14px;
-		padding: 5px 7px 2px 8px;
-		box-shadow: 1px 1px 17px 0px rgba(172, 176, 178, 0.75);
-		background: $white url('../img/arrow-down.png') 92% 50% no-repeat;
+		display: inline-block;
+		position:relative;
 		margin-right: 36px;
-
-		&.strong{
-			font-weight: 700;
+		width: 160px;
+		background: $white;
+			select {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			border: none;
+			border-radius: 0;
+			outline: none;
+			letter-spacing: 1px;
+			width: 160px;
+			font-size: 14px;
+			padding: 5px 7px 2px 8px;
+			box-shadow: 1px 1px 17px 0px rgba(172, 176, 178, 0.75);
+			background-color: transparent;
+			cursor: pointer;
+			position:relative;
+			z-index:2;
+		
+			&.strong{
+				font-weight: 700;
+			}
 		}
-
+		.arrow-normal {
+			position: absolute;
+    		top: calc(50% - 10px);
+    		right: calc(100% - 153px);
+    		z-index:1;
+		}
 	}
+
 }
+
 .jalon {
 	border-width: 2px;
 	border-style: solid;
@@ -185,6 +224,10 @@ body{
 }
 .no-space-td {
 	padding:0;
+}
+
+.edit-stats{
+	display: block;
 }
 
 .vh {
@@ -204,18 +247,43 @@ body{
 	}
 
 
-/*affectation*/
-
+/*affectation*/	
 .popup{
 	background:rgba(0,0,0,0.5);
-	position:absolute;
+	position:fixed;
 	left:0;
 	right:0;
-	bottom:0;
 	top:0;
+	bottom:0px;
 	padding:20px;
-	&-container{
-		background:$white;
+	width:auto;
+	height: 100vh;
+	z-index:3;
+	display: none;
+
+	&-container {
+		overflow: auto;
+		height:95vh;
+	}
+
+	&.show{
+		display: block;
+	}
+
+}
+
+.valid-block {
+	text-align: center;
+	display:block;
+	padding: 15px 0;
+	letter-spacing:1px;
+
+	a {
+		padding: 7px 57px 5px 55px;
+		display:inline-block;
+		font-size: 15px;
+		font-weight: 400;
+		text-decoration: none;
 	}
 }
 
@@ -225,9 +293,12 @@ body{
 	padding-left: 31px;
 	padding-right: 31px;
 
-
 	.table-wrapp {
 		margin-bottom: 24px;
+	}
+
+	.table-responsive{
+		margin-bottom: 30px;
 	}
 }
 
@@ -237,6 +308,7 @@ body{
 	margin-left:8px;
 	margin-right: 8px;
 	padding: 24px 13px;
+	margin-bottom: 33px;
 
 	.color-block {
 		padding: 1.5px 27px;
@@ -250,15 +322,57 @@ body{
 
 
 
+@media screen and (max-width:1424px){
+	section {
+		overflow-x: auto;
+	}
+}
+
+@media screen and (max-width:1310px){
+
+	.personal-info {
+		margin-right:0px;
+
+		.refresh {
+			margin-right:0px;
+		}
+	}
+	.select-block {
+		float:right;
+
+		&:after{
+			content: '';
+			display: block;
+			clear: both;
+		}
+		.custome-select {
+			margin-right: 7px;
+			width: 150px;
+
+			select{
+				width: 150px;
+			}
+
+			.arrow-normal {
+				svg{
+					margin-right:15px;
+				}
+			}
+		}
+
+	} 
+}
 
 
+@media screen and (max-width:1260px){
+	
+}
 
-
-
-
-
-
-
+@media screen and (max-width:1040px){
+section{
+		max-width: 100%;
+	}
+}
 
 
 

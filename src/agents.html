@@ -1,38 +1,51 @@
 @@include('templates/head.html',{"title": "Index"})
 <body>
-
-	@@include('templates/header-agents.html')
-	
+@@include('templates/header-agents.html')	
   <section>
 	  <div class="info-container">
 	    <form class="personal-info">
-	      <button class="refresh font-white">
+	      <button class="refresh bg-grey font-white">
 	        REFRESH
-	        <img src="img/refresh.png" alt="refresh">
+	       <svg class="fill-white refresh-svg" width="13" height="13"><use xlink:href='/img/img.svg#refresh'></svg>
 	      </button>
 	      <input type="text" placeholder="Nom">
 	      <input type="text" placeholder="Prénom">
 	      <button class="btn search bg-dark-blue" type="submit">
-	      <img width="13px" src="/img/search-white.svg" alt="">
+	      <svg class="fill-white search-svg" width="13" height="13"><use xlink:href='/img/img.svg#search'></svg>
 	  </button>
 	    </form>
-	    <div class="select-block">
-	      <select class="custome-select">
-	          <option>TRI MISSION</option>
-	          <option>TRI MISSION 2</option>
-	          <option>TRI MISSION 3</option>
-	        </select>
-	         <select class="custome-select">
-	          <option>FILTRE AGENT</option>
-	          <option>FILTRE AGENT 2</option>
-	          <option>FILTRE AGENT 3</option>
-	        </select>
+	     <div class="select-block">
+	        <div class="custome-select">
+	          <select>
+	            <option>TRI MISSION</option>
+	            <option>TRI MISSION 2</option>
+	            <option>TRI MISSION 3</option>
+	          </select>
+	           <span class="arrow-normal">
+	             <svg class="fill-black" width="14" height="14"><use xlink:href='/img/img.svg#arrow-bottom-fill'></svg>
+	           </span>
+	        </div>
+	        <div class="custome-select">
+	           <select class="custome-select">
+	            <option>FILTRE AGENT</option>
+	            <option>FILTRE AGENT 2</option>
+	            <option>FILTRE AGENT 3</option>
+	        	</select>
+	         	<span class="arrow-normal">
+	            	 <svg class="fill-black" width="14" height="14"><use xlink:href='/img/img.svg#arrow-bottom-fill'></svg>
+	           </span>
+	        </div>
+	       <div class="custome-select">
 	         <select class="custome-select strong">
-	          <option>ZONE</option>
-	          <option>ZONE 2</option>
-	          <option>ZONE 3</option>
+	            <option>ZONE</option>
+	            <option>ZONE 2</option>
+	            <option>ZONE 3</option>
 	        </select>
-	    </div>
+	         <span class="arrow-normal">
+	             <svg class="fill-black" width="14" height="14"><use xlink:href='/img/img.svg#arrow-bottom-fill-strong'></svg>
+	           </span>
+	       </div>
+      	</div>
 	  </div>
 
 	  <div class="table-responsive">
@@ -70,8 +83,8 @@
 	       <td>
 	         <div class="border-line ratio-box">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-1" name="radio-group1" type="radio">
+	          <label for="radio-1"></label>
 	         </span>
 	       </div>
 	       </td>
@@ -95,7 +108,7 @@
 	       <td class="no-space-td wh">
 	         <table class="table-stretch separator-table vh">
 	            <tr>
-	              <td class="wh-100 fixing-space">
+	              <td class="wh-100 fixing-space border-td-after">
 	                 <strong class="font-red">OS411</strong><br>
 	                 <span class="font-grey">2E</span>
 	               </td>
@@ -119,7 +132,7 @@
 	               <td class="wh-40 text-center no-space">
 	                 <span class="font-grey">A40</span>
 	               </td>
-	               <td class="wh-140">
+	               <td class="wh-140 border-td-before">
 	                 <span class="font-blue">VALBRUGUEU<br>Vladimir</span>
 	               </td>
 	            </tr>
@@ -139,14 +152,14 @@
 	       <td>
 	         <div class="border-line">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-2" name="radio-group1" type="radio">
+	          <label for="radio-2"></label>
 	         </span>
 	       </div>
 	       </td>
 	       <td>
-	          <input id="checkbox-1" name="checkbox-1" type="checkbox">
-	          <label for="checkbox-1"></label>
+	          <input id="checkbox-2" name="checkbox-1" type="checkbox">
+	          <label for="checkbox-2"></label>
 	       </td>
 	       <td>
 	         <span class="font-red">YACOUBHI Saharan</span>
@@ -163,7 +176,7 @@
 	       </td>
 	       <td class="no-space-td vh">
 	        <table class="table-stretch-container border-light-grey vh">
-	          <tr class="border border-light-grey">
+	          <tr class="border border-light-grey border-tr-bottom">
 	            <td class="wh-100 fixing-space">
 	             <strong class="font-red">AF385</strong><br>
 	             <span class="font-grey">2A</span>
@@ -192,7 +205,7 @@
 	               <span class="font-blue">SMIRNOV Alex</span>
 	             </td>
 	          </tr>
-	          <tr class="border border-light-grey">
+	          <tr class="border border-light-grey border-tr-bottom">
 	            <td class="wh-100 fixing-space">
 	             <strong class="font-red">AF385</strong><br>
 	             <span class="font-grey">2A</span>
@@ -223,7 +236,7 @@
 	               <span class="font-blue">SMIRNOV Alex</span>
 	             </td>
 	          </tr>
-	          <tr class="border border-light-grey">
+	          <tr class="border border-light-grey border-tr-bottom">
 	            <td class="wh-100 fixing-space">
 	             </td>
 	             <td class="wh-60 text-center no-space">
@@ -296,14 +309,14 @@
 	       <td>
 	         <div class="border-line">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-3" name="radio-group1" type="radio">
+	          <label for="radio-3"></label>
 	         </span>
 	       </div>
 	       </td>
 	       <td>
-	          <input id="checkbox-1" name="checkbox-1" type="checkbox">
-	          <label for="checkbox-1"></label>
+	          <input id="checkbox-3" name="checkbox-1" type="checkbox">
+	          <label for="checkbox-3"></label>
 	       </td>
 	       <td>
 	         <span class="font-green">BENJERT Icham</span>
@@ -327,7 +340,7 @@
 	           </tr>
 	            <tr class="bg-white">
 	              <td class="wh-100 fixing-space">
-	                 <p class="rotate-text bg-blue font-white">Vertical</p>
+	                 <p class="rotate-text bg-blue font-white">EN COURS</p>
 	                 <span class="font-grey">
 	                  <strong class="font-red">GB132</strong><br>
 	                  2D
@@ -374,14 +387,14 @@
 	       <td>
 	         <div class="border-line">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-4" name="radio-group1" type="radio">
+	          <label for="radio-4"></label>
 	         </span>
 	       </div>
 	       </td>
 	       <td>
-	            <input id="checkbox-1" name="checkbox-1" type="checkbox">
-	            <label for="checkbox-1"></label>
+	            <input id="checkbox-4" name="checkbox-1" type="checkbox">
+	            <label for="checkbox-4"></label>
 	       </td>
 	       <td>
 	         <span class="font-red">ADREANI Izia</span>
@@ -445,14 +458,14 @@
 	       <td>
 	         <div class="border-line">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-5" name="radio-group1" type="radio">
+	          <label for="radio-5"></label>
 	         </span>
 	       </div>
 	       </td>
 	       <td>
-	          <input id="checkbox-1" name="checkbox-1" type="checkbox">
-	          <label for="checkbox-1"></label>
+	          <input id="checkbox-5" name="checkbox-1" type="checkbox">
+	          <label for="checkbox-5"></label>
 	       </td>
 	       <td>
 	         <span class="font-green">PHILIPPOTI Jean Marc</span>
@@ -476,7 +489,7 @@
 	           </tr>
 	            <tr class="bg-white">
 	              <td class="wh-100 fixing-space">
-	                 <p class="rotate-text bg-blue font-white">Vertical</p>
+	                 <p class="rotate-text bg-blue font-white">EN COURS</p>
 	                 <span class="font-grey">
 	                  <strong class="font-red">IZ301</strong><br>
 	                  2D
@@ -523,14 +536,14 @@
 	       <td>
 	         <div class="border-line">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-6" name="radio-group1" type="radio">
+	          <label for="radio-6"></label>
 	         </span>
 	       </div>
 	       </td>
 	       <td>
-	          <input id="checkbox-1" name="checkbox-1" type="checkbox">
-	          <label for="checkbox-1"></label>
+	          <input id="checkbox-6" name="checkbox-1" type="checkbox">
+	          <label for="checkbox-6"></label>
 	       </td>
 	       <td>
 	         <span class="font-green">TOUBISSRHA Virginie</span>
@@ -547,14 +560,14 @@
 	       </td>
 	       <td class="no-space-td vh">
 	         <table class="table-stretch vh">
-	          <tr class="no-space bg-light-grey">
+	          <tr class="no-space bg-whyte">
 	            <td class="vh" colspan="10">
 	              <div class="separator-line line-super-light line-grey"><span class="font-grey">Tache(s) realisee(s): <strong class="font-black">1</strong></span></div>
 	            </td>
 	           </tr>
 	            <tr>
 	              <td class="wh-100 fixing-space">
-	                 <p class="rotate-text bg-blue font-white">Vertical</p>
+	                 <p class="rotate-text bg-blue font-white">EN COURS</p>
 	                 <span class="font-grey">
 	                  <strong class="font-red">TY210</strong><br>
 	                  2D
@@ -601,14 +614,14 @@
 	       <td>
 	         <div class="border-line">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-7" name="radio-group1" type="radio">
+	          <label for="radio-7"></label>
 	         </span>
 	       </div>
 	       </td>
 	       <td>
-	            <input id="checkbox-1" name="checkbox-1" type="checkbox">
-	            <label for="checkbox-1"></label>
+	            <input id="checkbox-7" name="checkbox-1" type="checkbox">
+	            <label for="checkbox-7"></label>
 	       </td>
 	       <td>
 	         <span class="font-red">BREGUIER Yves</span>
@@ -626,7 +639,7 @@
 	       <td class="no-space-td vh">
 	         <table class="table-stretch separator-table vh">
 	            <tr>
-	              <td class="wh-100 fixing-space">
+	              <td class="wh-100 fixing-space border-td-after">
 	                 <strong class="font-red">JIY123</strong><br>
 	                 <span class="font-grey">1F</span>
 	               </td>
@@ -652,7 +665,7 @@
 	               <td class="wh-40 text-center no-space">
 	                 <span class="font-grey">D58</span>
 	               </td>
-	               <td class="wh-140">
+	               <td class="wh-140 border-td-before">
 	                 <span class="font-blue">FRANCISQUAIS<br>Benoit</span>
 	               </td>
 	            </tr>
@@ -672,14 +685,14 @@
 	       <td>
 	         <div class="border-line">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-8" name="radio-group1" type="radio">
+	          <label for="radio-8"></label>
 	         </span>
 	       </div>
 	       </td>
 	       <td>
-	          <input id="checkbox-1" name="checkbox-1" type="checkbox">
-	          <label for="checkbox-1"></label>
+	          <input id="checkbox-8" name="checkbox-1" type="checkbox">
+	          <label for="checkbox-8"></label>
 	       </td>
 	       <td>
 	         <span class="font-green">PHILIPPOTI Jean Marcs</span>
@@ -696,14 +709,14 @@
 	       </td>
 	       <td class="no-space-td vh">
 	         <table class="table-stretch vh">
-	          <tr class="no-space bg-light-grey">
+	          <tr class="no-space bg-white">
 	            <td class="vh" colspan="10">
 	              <div class="separator-line line-super-light line-grey"><span class="font-grey">Tache(s) realisee(s): <strong class="font-black">2</strong></span></div>
 	            </td>
 	           </tr>
 	            <tr class="bg-white">
 	              <td class="wh-100 fixing-space">
-	                 <p class="rotate-text bg-blue font-white">Vertical</p>
+	                 <p class="rotate-text bg-blue font-white">EN COURS</p>
 	                 <span class="font-grey">
 	                  <strong class="font-red">IZ301</strong><br>
 	                  2D
@@ -750,14 +763,14 @@
 	       <td>
 	         <div class="border-line">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-9" name="radio-group1" type="radio">
+	          <label for="radio-9"></label>
 	         </span>
 	       </div>
 	       </td>
 	       <td>
-	          <input id="checkbox-1" name="checkbox-1" type="checkbox">
-	          <label for="checkbox-1"></label>
+	          <input id="checkbox-9" name="checkbox-1" type="checkbox">
+	          <label for="checkbox-9"></label>
 	       </td>
 	       <td>
 	         <span class="font-green">CARLOTTI Jean</span>
@@ -781,7 +794,7 @@
 	           </tr>
 	            <tr class="bg-white">
 	              <td class="wh-100 fixing-space">
-	                 <p class="rotate-text bg-blue font-white">Vertical</p>
+	                 <p class="rotate-text bg-blue font-white">EN COURS</p>
 	                 <span class="font-grey">
 	                  <strong class="font-red">IZ301</strong><br>
 	                  2D
@@ -828,14 +841,14 @@
 	       <td>
 	         <div class="border-line">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-10" name="radio-group1" type="radio">
+	          <label for="radio-10"></label>
 	         </span>
 	       </div>
 	       </td>
 	       <td>
-	          <input id="checkbox-1" name="checkbox-1" type="checkbox">
-	          <label for="checkbox-1"></label>
+	          <input id="checkbox-10" name="checkbox-1" type="checkbox">
+	          <label for="checkbox-10"></label>
 	       </td>
 	       <td>
 	         <span class="font-green">HAURION Edouard</span>
@@ -859,7 +872,7 @@
 	           </tr>
 	            <tr class="bg-white">
 	              <td class="wh-100 fixing-space">
-	                 <p class="rotate-text bg-blue font-white">Vertical</p>
+	                 <p class="rotate-text bg-blue font-white">EN COURS</p>
 	                 <span class="font-grey">
 	                  <strong class="font-red">TY210</strong><br>
 	                  2D
@@ -906,14 +919,14 @@
 	       <td>
 	         <div class="border-line">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-11" name="radio-group1" type="radio">
+	          <label for="radio-11"></label>
 	         </span>
 	       </div>
 	       </td>
 	       <td>
-	            <input id="checkbox-1" name="checkbox-1" type="checkbox">
-	            <label for="checkbox-1"></label>
+	            <input id="checkbox-11" name="checkbox-1" type="checkbox">
+	            <label for="checkbox-11"></label>
 	       </td>
 	       <td>
 	         <span class="font-red">MARTIN Vladimir</span>
@@ -931,7 +944,7 @@
 	       <td class="no-space-td vh">
 	         <table class="table-stretch separator-table vh">
 	            <tr>
-	              <td class="wh-100 fixing-space">
+	              <td class="wh-100 fixing-space border-td-after">
 	                 <strong class="font-red">JIY123</strong><br>
 	                 <span class="font-grey">1F</span>
 	               </td>
@@ -957,7 +970,7 @@
 	               <td class="wh-40 text-center no-space">
 	                 <span class="font-grey">D58</span>
 	               </td>
-	               <td class="wh-140">
+	               <td class="wh-140 border-td-before">
 	                 <span class="font-blue">FRANCISQUAIS<br>Benoit</span>
 	               </td>
 	            </tr>
@@ -977,14 +990,14 @@
 	       <td>
 	         <div class="border-line">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-12" name="radio-group1" type="radio">
+	          <label for="radio-12"></label>
 	         </span>
 	       </div>
 	       </td>
 	       <td>
-	          <input id="checkbox-1" name="checkbox-1" type="checkbox">
-	          <label for="checkbox-1"></label>
+	          <input id="checkbox-12" name="checkbox-1" type="checkbox">
+	          <label for="checkbox-12"></label>
 	       </td>
 	       <td>
 	         <span class="font-green">ALBERT Alban</span>
@@ -1008,7 +1021,7 @@
 	           </tr>
 	            <tr class="bg-white">
 	              <td class="wh-100 fixing-space">
-	                 <p class="rotate-text bg-blue font-white">Vertical</p>
+	                 <p class="rotate-text bg-blue font-white">EN COURS</p>
 	                 <span class="font-grey">
 	                  <strong class="font-red">IZ301</strong><br>
 	                  2D
@@ -1055,14 +1068,14 @@
 	       <td>
 	         <div class="border-line">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-13" name="radio-group1" type="radio">
+	          <label for="radio-13"></label>
 	         </span>
 	       </div>
 	       </td>
 	       <td>
-	          <input id="checkbox-1" name="checkbox-1" type="checkbox">
-	          <label for="checkbox-1"></label>
+	          <input id="checkbox-13" name="checkbox-1" type="checkbox">
+	          <label for="checkbox-13"></label>
 	       </td>
 	       <td>
 	         <span class="font-red">FIGUIER Maurice</span>
@@ -1080,7 +1093,7 @@
 	       <td class="no-space-td vh">
 	         <table class="table-stretch separator-table vh">
 	            <tr>
-	              <td class="wh-100 fixing-space">
+	              <td class="wh-100 fixing-space border-td-after">
 	                 <strong class="font-red">GR944</strong><br>
 	               </td>
 	               <td class="wh-60 text-center no-space">
@@ -1104,7 +1117,7 @@
 	               <td class="wh-40 text-center no-space">
 	                 <span class="font-grey">G67</span>
 	               </td>
-	               <td class="wh-140">
+	               <td class="wh-140 border-td-before">
 	                 <span class="font-blue">MANGEOTTE<br>Emanuelle</span>
 	               </td>
 	            </tr>
@@ -1119,8 +1132,6 @@
 	      </div>
 	       </td>
 	     </tr> 
-
-
 	    </tbody>
 	  </table>
 	    </div>

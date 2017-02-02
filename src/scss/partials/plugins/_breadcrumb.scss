@@ -1,4 +1,4 @@
-/* Breadcrumb */
+ /* Breadcrumb */
 
 .breadcrumb{
   list-style:none;
@@ -12,11 +12,12 @@
     margin-right:14px;
     vertical-align: top;
   }
+  .arrow {
+    vertical-align: middle;
+  }
   li{
     display:inline-block;
-    background:transparent url('/img/right-arrow.svg') 100% 50% / 12px no-repeat;
-    margin-right: 7px;
-    padding-right: 28px;
+    padding-right: 16px;
 
     &:last-child{
       padding-right:0;
