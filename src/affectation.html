@@ -1,12 +1,3300 @@
-@@include('templates/head.html',{"title": "Index"})
-<body>
-  @@include('templates/header.html')
-  @@include('templates/home.html')
-  @@include('templates/footer.html')
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>Ozion - Index</title>
+	<!-- <link rel="icon" type="image/png" href="img/favicon.png"> -->
+	<link rel="stylesheet" href="css/app.min.css">
+	</head>
 
-  @@include('templates/affectation-popup.html')
+<body>
+  <header>
+  <div class="top-head">
+  <div class="left-group">
+    <a class="logo" href="#">
+      <img src="/img/ozion.png" alt="">
+      <span>PHMR MANAGER</span>
+    </a>
+    <div class="search-field">
+      <input type="text" name="" id="">
+      <button type="submit"><svg class="fill-grey" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#search"></use></svg></button>
+    </div>
+  </div><!-- .left-group -->
+  <div class="time">
+   <strong>TIME</strong>
+    <span>20</span> : <span>37</span> : <span>12</span>
+  </div><!-- .time -->
+
+  <div class="right-group">
+  <div class="slider-container">
+    <div class="prevSlider" onclick="jsTopSlider(1);">
+      <svg class="fill-grey" width="11" height="11"><use xlink:href='/img/img.svg#arrow-left-fill'></svg>
+    </div>
+    <div class="nextSlider" onclick="jsTopSlider(2);">
+      <svg class="fill-grey" width="11" height="11"><use xlink:href='/img/img.svg#arrow-right-fill'></svg>
+    </div>
+    <input type="hidden" id="curentslider" value="1">
+    <div class="sliderStat">
+       <ul>
+          <li id="box1" class="boxslider">
+          <a id="slide" class="status-link border-green" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              <sup>214</sup>
+            </a>
+        </li>
+        <li id="box2" class="boxslider">
+          <a id="slide" class="status-link border-blue" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              <sup>27</sup>
+            </a>
+        </li>
+        <li id="box3" class="boxslider">
+          <a id="slide" class="status-link border-red" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              <sup>11</sup>
+            </a>
+        </li>
+        <li id="box4" class="boxslider no-active">
+           <a id="slide" class="status-link border-green" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              <sup>214</sup>
+            </a>
+        </li>
+        <li id="box5" class="boxslider no-active">
+           <a id="slide" class="status-link border-green" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              <sup>214</sup>
+            </a>
+        </li>
+        <li id="box6" class="boxslider no-active">
+           <a id="slide" class="status-link border-blue" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              <sup>27</sup>
+            </a>
+        </li>
+       </ul>
+    </div>
+  </div><!--.slide-container-->
+
+    <div class="info-bl">
+      <a class="link-with-sup" href="#">
+        <svg class="fill-red" width="27" height="27"><use xlink:href='/img/img.svg#bell'></svg>
+        <sup>324</sup>
+      </a>
+    </div>
+    <div class="info-bl">
+      <a class="link-with-sup" href="#">
+        <svg class="fill-blue" width="27" height="27"><use xlink:href='/img/img.svg#clock'></svg>
+        <sup><span class="font-blue">1</span>/<span class="font-blue">9</span></sup>
+      </a>
+    </div>
+      
+    <nav class="logged-nav">
+      <a href="#">
+        <svg class="fill-black" width="28" height="28"><use xlink:href='/img/img.svg#home'></svg>
+      </a>
+      <a href="#">
+        <svg class="fill-black" width="28" height="28"><use xlink:href='/img/img.svg#profile'></svg>
+      </a>
+      <a href="#">
+        <svg class="fill-black" width="28" height="28"><use xlink:href='/img/img.svg#dashboard'></svg>
+      </a>
+    </nav><!-- .logged-nav -->  
+  </div><!-- .right-group -->
+</div><!-- .top-head -->
+  <nav class="top-nav">
+  <a href="#">
+    <svg class="fill-white" width="25" height="36"><use xlink:href='/img/img.svg#wheelchair'></svg>
+    PHMR
+  </a>
+  <a href="#">
+    <svg class="fill-white" width="40" height="36"><use xlink:href='/img/img.svg#attention'></svg>
+    INCIDENTS
+  </a>
+  <a href="#">
+    <svg class="fill-white" width="47" height="36"><use xlink:href='/img/img.svg#hands-care'></svg>
+    PRETS
+  </a>
+  <a href="#">
+    <svg class="fill-white" width="28" height="36"><use xlink:href='/img/img.svg#flag'></svg>
+    FIL D'ACTUALITE
+  </a>
+  <a href="#">
+    <svg class="fill-white" width="35" height="36"><use xlink:href='/img/img.svg#clock'></svg>
+    SERVICE
+  </a>
+  <a href="#">
+    <svg class="fill-white" width="29" height="36"><use xlink:href='/img/img.svg#list'></svg>
+    DOCUMENTS
+  </a>
+  <a href="#">
+    <svg class="fill-white" width="31" height="36"><use xlink:href='/img/img.svg#contacts'></svg>
+    ANNUAIRE
+  </a>
+  <a href="#">
+     <svg class="fill-white" width="40" height="36"><use xlink:href='/img/img.svg#book'></svg>
+    CONSIGNES
+  </a>
+</nav>
+  <div class="top-filter">
+    <div class="left-info-bl">
+      <ul class="breadcrumb">
+        <li>
+          <svg class="fill-blue" width="15" height="21"><use xlink:href='/img/img.svg#wheelchair'></svg>
+          <a href="">PHMR</a>
+
+        </li>
+        <li>
+          <svg class="fill-grey arrow" width="12" height="12"><use xlink:href='/img/img.svg#arrow-right-fill'></svg>
+          <span>MISSIONS</span>
+        </li>
+      </ul>
+      
+      <a class="round-link-icon" href="#">
+        <svg class="fill-blue" width="25" height="25"><use xlink:href='/img/img.svg#add'></svg>
+      </a>
+      <a class="round-link-icon" href="#">
+        <svg class="fill-blue" width="25" height="25"><use xlink:href='/img/img.svg#protect-user'></svg>
+      </a>
+      <a class="round-link-icon" href="#">
+        <svg class="fill-blue" width="25" height="25"><use xlink:href='/img/img.svg#goforward'></svg>
+      </a>
+
+    </div>
+
+    <div class="select-filter-group">
+      <div class="group-filter group-filter-left">
+      <div class="select-custom">
+        <select>
+          <option>OUVRIR LES FILTRES</option>
+          <option>TRI PAR TACHE 2</option>
+          <option>TRI PAR TACHE 3</option>
+        </select>
+        <span class="arrow-normal">
+           <svg class="fill-grey" width="14" height="14"><use xlink:href='/img/img.svg#arrow-bottom-fill'></svg>
+        </span>
+      </div>
+      <ul class="filter-selected">
+          <li class="bg-white font-dark-blue" href="#">
+              <svg width="9px" height="9px" viewBox="0 0 9 9">
+                  <g stroke-width="1" fill-rule="evenodd">
+                      <g id="remove-ico" stroke-width="0.8">
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                      </g>
+                  </g>
+              </svg>
+              <span class="font-grey">Or.Date</span> 21.11.16
+          </li>
+          <li class="bg-white font-dark-blue" href="#">
+              <svg width="9px" height="9px" viewBox="0 0 9 9">
+                  <g stroke-width="1" fill-rule="evenodd">
+                      <g id="remove-ico" stroke-width="0.8">
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                      </g>
+                  </g>
+              </svg>
+              <span>Exp.Date</span> 23.11.16      
+          </li>
+          <li class="bg-white font-dark-blue" href="#">
+            <svg width="9px" height="9px" viewBox="0 0 9 9">
+                  <g stroke-width="1" fill-rule="evenodd">
+                      <g id="remove-ico" stroke-width="0.8">
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                      </g>
+                  </g>
+              </svg>
+              Boing 747
+          </li>
+          <li class="bg-white font-dark-blue" href="#">
+            <svg width="9px" height="9px" viewBox="0 0 9 9">
+                  <g stroke-width="1" fill-rule="evenodd">
+                      <g id="remove-ico" stroke-width="0.8">
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                      </g>
+                  </g>
+              </svg>
+              HONG KONG
+          </li>
+          <li class="bg-white font-dark-blue" href="#">
+            <svg width="9px" height="9px" viewBox="0 0 9 9">
+                  <g stroke-width="1" fill-rule="evenodd">
+                      <g id="remove-ico" stroke-width="0.8">
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                      </g>
+                  </g>
+              </svg>
+              Air France
+          </li>
+          <li class="bg-white  font-dark-blue" href="#">
+            <svg width="9px" height="9px" viewBox="0 0 9 9">
+                  <g stroke-width="1" fill-rule="evenodd">
+                      <g id="remove-ico" stroke-width="0.8">
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                      </g>
+                  </g>
+              </svg>
+              <span>Agent</span> MAURICE VALLOIS   
+          </li>
+          <li class="bg-white  font-dark-blue" href="#">
+            <svg width="9px" height="9px" viewBox="0 0 9 9">
+                  <g stroke-width="1" fill-rule="evenodd">
+                      <g id="remove-ico" stroke-width="0.8">
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                      </g>
+                  </g>
+              </svg>
+              <span>Agent</span> MAURICE VALLOIS   
+          </li>
+          <li class="bg-white  font-dark-blue" href="#">
+            <svg width="9px" height="9px" viewBox="0 0 9 9">
+                  <g stroke-width="1" fill-rule="evenodd">
+                      <g id="remove-ico" stroke-width="0.8">
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                      </g>
+                  </g>
+              </svg>
+              <span>Agent</span> MAURICE VALLOIS   
+          </li>
+          <li class="bg-white  font-dark-blue" href="#">
+            <svg width="9px" height="9px" viewBox="0 0 9 9">
+                  <g stroke-width="1" fill-rule="evenodd">
+                      <g id="remove-ico" stroke-width="0.8">
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                      </g>
+                  </g>
+              </svg>
+              <span>Agent</span> MAURICE VALLOIS   
+          </li>
+      </ul>
+      </div>
+      <!-- <div class="clearfix"></div> -->
+      <div class="group-filter">
+       <div class="select-custom">
+        <select>
+          <option>TRI PAR TACHE</option>
+          <option>TRI PAR TACHE 2</option>
+          <option>TRI PAR TACHE 3</option>
+        </select>
+          <span class="arrow-normal">
+           <svg class="fill-grey" width="14" height="14"><use xlink:href='/img/img.svg#arrow-bottom-fill'></svg>
+        </span>
+      </div>
+      <ul class="filter-selected">
+          <li class="bg-blue" href="#">
+              <svg width="9px" height="9px" viewBox="0 0 9 9">
+                  <g stroke-width="1" fill-rule="evenodd">
+                      <g id="remove-ico" stroke-width="0.8">
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                      </g>
+                  </g>
+              </svg>
+              Agent
+          </li>
+          <li class="bg-blue" href="#">
+              <svg width="9px" height="9px" viewBox="0 0 9 9">
+                  <g stroke-width="1" fill-rule="evenodd">
+                      <g id="remove-ico" stroke-width="0.8">
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                      </g>
+                  </g>
+              </svg>
+              Shuttle
+          </li>
+          <li class="bg-blue" href="#">
+            <svg width="9px" height="9px" viewBox="0 0 9 9">
+                  <g stroke-width="1" fill-rule="evenodd">
+                      <g id="remove-ico" stroke-width="0.8">
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                      </g>
+                  </g>
+              </svg>
+              Schelduled
+          </li>
+      </ul>
+      </div>
+    </div>
+  </div><!-- .top-filter -->
+  <nav class="light-nav">
+  <a class="active" href="#">Arrives</a>
+  <a href="#">Piste</a>
+  <a href="#">Mise en salle</a>
+  <a href="#">Departs</a>
+  <a href="#">Synthese</a>
+  <a href="#">Recherche</a>
+  <a href="#">TOUT</a>
+  <a class="font-dark-blue" href="#">In Progress</a>
+  <a class="font-dark-blue" href="#">No Show</a>
+  <a class="font-dark-blue" href="#">Late</a>
+  <a class="font-dark-blue" href="#">Suspendu</a>
+</nav>
+</header>
+
+  <section>
+  <div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>VOIR</th>
+        <th>DÉLAIS<br>TACHE</th>
+        <th>HT</th>
+        <th>SENS</th>
+        <th>ÉTAT</th>
+        <th>INFOS VOL</th>
+        <th>TERM/ PRG</th>
+        <th>PHMR</th>
+        <th>SMI</th>
+        <th>AGENT(S)</th>
+        <th>JALONS</th>
+        <th>CORRESPONDANCE</th>
+        <th>OBS</th>
+        <th>ACTION</th>
+        <th>AG</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-tr">
+      	<td>
+          <div class="border-line">
+            <svg class="fill-blue" width="22" height="22"><use xlink:href='/img/img.svg#eye'></svg>
+          </div>
+        </td>
+      	<td>
+    
+            <span class="font-dark-blue">- 87min</span>
+
+        </td>
+      	<td>
+          
+            <span class="font-dark-blue">09:50</span>
+    
+        </td>
+      	<td>
+          
+            <strong class="font-dark-blue">T</strong>
+       
+        </td>
+      	<td>
+      		 <a class="status-link border-green" href="#">
+             <svg class="fill-black" width="37" height="25"><use xlink:href='/img/img.svg#passenger'></svg>
+            </a>
+      		  <a class="status-link border-green" href="#">
+              <svg class="fill-black" width="37" height="25"><use xlink:href='/img/img.svg#passenger-pause'></svg>
+            </a>
+      		  <a class="status-link border-green" href="#">
+              <svg class="fill-black" width="37" height="37"><use xlink:href='/img/img.svg#passenger-big-cancel'></svg>
+            </a>
+      	</td>
+      	<td>
+            <svg class="fill-red exclamation-sign" width="4" height="14"><use xlink:href='/img/img.svg#exclamation-sign-nobgc'></svg>
+            <table class="info-flight">
+              <tr>
+                <td>
+                  <strong>
+                    <span class="font-red">AF7648</span>
+                    <span class="ico font-red">
+                      <svg class="fill-red" width="6" height="8"><use xlink:href='/img/img.svg#arrow-left'></svg>
+                    </span>
+                  </strong> <br> 
+                  <small class="font-grey">07 06 2016<br>Initialisation</small>
+                </td>
+                <td class="text-center">
+                  <strong><span class="font-dark-blue">(LYS)</span></strong><br>
+                  <small class="font-grey"><span class="font-blue">12:15</span></small>
+                </td>
+              </tr>
+            </table>
+      	</td>
+      	<td>
+          <div>
+      		  <span class="font-dark-blue">2F/ <strong>380</strong></span> <br>
+            <span class="font-grey">S7ADB/332</span>
+          </div>
+      	</td>
+      	<td>
+               <svg class="fill-red exclamation-sign" width="4" height="14"><use xlink:href='/img/img.svg#exclamation-sign-nobgc'></svg>
+      		  <small>
+              <strong class="font-red">
+               WCHR
+              </strong> 
+              <span class="ico"><svg class="fill-grey" width="9" height="12"><use xlink:href='/img/img.svg#chair'></svg></span>
+              <span class="font-grey">18E</span><br>
+            </small>
+
+            <strong class="font-green">DUPUIS Jean Bernard</strong><br>
+            <small><strong>RV</strong> 07 06 2016 12:15<br>
+			       <strong>LIEU</strong> T2C ZONE 11<br>
+			       <strong class="font-red">Restaurant King</strong>
+          </small>
+      	</td>
+      	<td>
+   		    <strong class="font-dark-blue">
+           <span class="ico">
+            <svg class="fill-green" width="14" height="14"><use xlink:href='/img/img.svg#exclamation-poin'></svg>
+           </span>
+            PSM 
+
+            <br>+48h
+          </strong>
+      	</td>
+      	<td>
+        </td>
+      	<td>
+          <span class="font-dark-blue">INITA</span>
+        </td>
+      	<td>
+          <table class="info-flight">
+            <tr>
+              <td>
+                <strong>
+                  <span class="font-dark-blue">AF7648</span>
+                  <span class="ico font-red">
+                    <svg class="fill-green" width="6" height="8"><use xlink:href='/img/img.svg#arrow-right'></svg>
+                  </span>
+                </strong> <br> 
+                <small class="font-grey">07 06 2016<br>2E/F15/532</small>
+              </td>
+              <td class="text-center">
+                <strong><span class="font-dark-blue">(LYS)</span></strong><br>
+                <small class="font-grey"><span class="font-blue">12:15</span></small>
+              </td>
+            </tr>
+          </table>
+		    </td>
+      	<td>
+          <a href="#" class="edit-stats">
+            <svg class="fill-black" width="19" height="20"><use xlink:href='/img/img.svg#check'></svg>
+          </a>
+        </td>
+      	<td>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xlink:href='/img/img.svg#support-medical'></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xlink:href='/img/img.svg#support-delete'></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xlink:href='/img/img.svg#support-all-time'></svg>
+          </a><br>
+           <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xlink:href='/img/img.svg#support-lock'></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xlink:href='/img/img.svg#support-flight'></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xlink:href='/img/img.svg#support-mail'></svg>
+          </a>
+        </td>
+      	<td>
+          <div class="border-line">
+            <input id="checkbox-1" name="checkbox-1" type="checkbox">
+            <label for="checkbox-1"></label>
+          </div>
+        </td>
+      </tr>
+
+      <tr class="border-tr border-white border-solid even">
+        <td>
+          <div class="border-line">
+            <img src="img/view.png" alt="" width="21">
+          </div>
+        </td>
+        <td>
+          <span class="font-dark-blue">- 87min</span>
+        </td>
+        <td>
+          <span class="font-dark-blue">09:50</span>
+        </td>
+        <td>
+          <strong class="font-dark-blue">A</strong>
+        </td>
+        <td>
+          <a class="status-link border-blue" href="#">
+            <svg class="fill-black" width="37" height="25"><use xlink:href='/img/img.svg#passenger'></svg>
+          </a>
+         
+          <a class="status-link border-red" href="#">
+            <svg class="fill-black" width="37" height="25"><use xlink:href='/img/img.svg#passenger'></svg>
+          </a>
+          <a class="status-link border-red" href="#">
+            <svg class="fill-black" width="37" height="25"><use xlink:href='/img/img.svg#passenger'></svg>
+          </a>
+           <a class="status-link border-red" href="#">
+            <svg class="fill-black" width="37" height="25"><use xlink:href='/img/img.svg#helping-wheelchair'></svg>
+          </a>
+        </td>
+        <td>
+          <table class="info-flight">
+            <tr>
+              <td>
+                <strong>
+                  <span class="font-red">AF7648</span>
+                  <span class="ico font-red">
+                    <svg class="fill-red" width="6" height="8"><use xlink:href='/img/img.svg#arrow-left'></svg>
+                  </span>
+                </strong> <br> 
+                <small class="font-grey">07 06 2016<br>Initialisation</small>
+              </td>
+              <td class="text-center">
+                <strong><span class="font-dark-blue">(LYS)</span></strong><br>
+                <small class="font-grey"><span class="font-blue">12:15</span></small>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <div>
+            <span class="font-dark-blue">2A/<strong>A08</strong></span> <br>
+            <span class="font-grey">N385AM/76W</span>
+          </div>
+        </td>
+        <td>
+          <small><strong class="font-dark-blue">WCHR / WCMP</strong> 
+             <span class="ico ">
+                <svg class="fill-grey" width="9" height="12"><use xlink:href='/img/img.svg#chair'></svg>
+             </span> 
+             <span class="font-grey">11A</span><br></small>
+          <small class="font-dark-blue">PAX BLDR assis milieu sans FRT<br></small>
+          <strong>ANDREW Stephanie</strong><br>
+          <small><strong>RV</strong> 07 06 2016 12:15<br>
+          <strong>LIEU</strong> T2C ZONE 11<br>
+          <strong class="font-red">Module K</strong></small>
+        </td>
+        <td>
+          <strong class="font-dark-blue">
+           <span class="ico">
+            <svg class="fill-green" width="14" height="14"><use xlink:href='/img/img.svg#exclamation-poin'></svg>
+           </span>
+            PSM 
+
+            <br>+48h
+          </strong>
+        </td>
+        <td>
+          <span class="font-dark-blue">HUGUES</span> <br>
+          <span class="font-dark-blue">Jean-Pierre</span>
+          <span class="ico ">
+            <svg class="fill-blue" width="14" height="9"><use xlink:href='/img/img.svg#message'></svg>
+          </span><br>
+          <small class="font-blue">+ Renfort</small><br>
+          <span class="font-green">MARIE David</span>
+          <span class="ico ">
+            <svg class="fill-green" width="14" height="9"><use xlink:href='/img/img.svg#message'></svg>
+          </span><br>
+          <small class="font-blue">(fin)</small>
+        </td>
+        <td>
+          <span class="font-dark-blue">INITA</span>
+        </td>
+        <td>
+           <table class="info-flight">
+              <tr>
+                <td>
+                  <strong>
+                    <span class="font-dark-blue">AF7648</span>
+                    <span class="ico font-red">
+                      <svg class="fill-green" width="6" height="8"><use xlink:href='/img/img.svg#arrow-right'></svg>
+                    </span>
+                  </strong> <br> 
+                  <small class="font-grey">07 06 2016<br>2E/F15/532</small>
+                </td>
+                <td class="text-center">
+                  <strong><span class="font-dark-blue">(LYS)</span></strong><br>
+                  <small class="font-grey"><span class="font-blue">12:15</span></small>
+                </td>
+              </tr>
+            </table>
+        </td>
+        <td><a href="#" class="edit-stats">
+            <svg class="fill-black" width="19" height="20"><use xlink:href='/img/img.svg#un-check'></svg>
+          </a></td>
+        <td>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-medical"></use></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-delete"></use></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-all-time"></use></svg>
+          </a><br>
+           <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xlink:href='/img/img.svg#support-lock'></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-flight"></use></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-mail"></use></svg>
+          </a>
+        </td>
+        <td>
+          <div class="border-line">
+            <input id="checkbox-2" name="checkbox-2" type="checkbox">
+            <label for="checkbox-2"></label>
+          </div>
+        </td>
+      </tr>
+
+      <tr class="border-tr">
+        <td>
+          <div class="border-line">
+            <img src="img/view.png" alt="" width="21">
+          </div>
+        </td>
+        <td>
+    
+            <span class="font-dark-blue">- 65min</span>
+
+        </td>
+        <td>
+          
+            <span class="font-dark-blue">11:05</span>
+    
+        </td>
+        <td>
+          
+            <strong class="font-dark-blue">A</strong>
+       
+        </td>
+        <td>
+            <a class="status-link border-green" href="#">
+             <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+            </a>
+            <a class="status-link" href="#">
+              <svg class="fill-black" width="37" height="37"><use xlink:href='/img/img.svg#passenger-big'></svg>
+            </a>
+             <a class="status-link" href="#">
+              <svg class="fill-black" width="37" height="25"><use xlink:href='/img/img.svg#helping-wheelchair'></svg>
+            </a>
+ 
+        </td>
+        <td>
+          <table class="info-flight">
+              <tr>
+                <td>
+                  <strong>
+                    <span class="font-blue">AF7648</span>
+                    <span class="ico font-red">
+                      <svg class="fill-red" width="6" height="8"><use xlink:href='/img/img.svg#arrow-left'></svg>
+                    </span>
+                  </strong> <br> 
+                  <small class="font-grey">07 06 2016<br>Initialisation</small><br>
+                   <svg class="fill-grey" width="19" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#bus"></use></svg>
+                </td>
+                <td class="text-center">
+                  <strong><span class="font-dark-blue">(LYS)</span></strong><br>
+                  <small class="font-grey"><span class="font-blue">12:15</span></small>
+                </td>
+              </tr>
+            </table>
+        </td>
+        <td>
+          <div>
+            <span class="font-dark-blue">2A// <strong>A34</strong></span> <br>
+            <span class="font-grey">S7ADB/332</span>
+          </div>
+        </td>
+        <td>
+            <small><strong class="font-dark-blue">WCHR / WCMP</strong>
+            <span class="ico ">
+                  <svg class="fill-grey" width="9" height="12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#chair"></use></svg>
+               </span>
+                <span class="font-grey">3D</span><br></small>
+            <strong class="font-green">DUPUIS Jean Bernard</strong><br>
+            <small><strong>RV</strong> 07 06 2016 12:15<br>
+            <strong>LIEU</strong> T2C ZONE 11<br>
+            <strong class="font-red">Restaurant King</strong></small>
+        </td>
+        <td>
+          <strong class="font-dark-blue">
+           <span class="ico">
+            <svg class="fill-green" width="14" height="14"><use xlink:href='/img/img.svg#exclamation-poin'></svg>
+           </span>
+            PSM 
+
+            <br>+48h
+          </strong>
+        </td>
+        <td>
+        </td>
+        <td>
+          <span class="font-dark-blue">INITA</span>
+        </td>
+        <td>
+          <table class="info-flight">
+              <tr>
+                <td>
+                  <strong>
+                    <span class="font-dark-blue">AF7648</span>
+                    <span class="ico font-red">
+                      <svg class="fill-green" width="6" height="8"><use xlink:href='/img/img.svg#arrow-right'></svg>
+                    </span>
+                  </strong> <br> 
+                  <small class="font-grey">07 06 2016<br>2E/F15/532</small>
+                </td>
+                <td class="text-center">
+                  <strong><span class="font-dark-blue">(LYS)</span></strong><br>
+                  <small class="font-grey"><span class="font-blue">12:15</span></small>
+                </td>
+              </tr>
+            </table>
+        </td>
+        <td><a href="#" class="edit-stats">
+            <svg class="fill-black" width="19" height="20"><use xlink:href='/img/img.svg#check'></svg>
+          </a></td>
+        <td>
+           <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-medical"></use></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-delete"></use></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-all-time"></use></svg>
+          </a><br>
+           <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xlink:href='/img/img.svg#support-lock'></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-flight"></use></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-mail"></use></svg>
+          </a>
+        </td>
+        <td>
+          <div class="border-line">
+            <input id="checkbox-3" name="checkbox-3" type="checkbox">
+            <label for="checkbox-3"></label>
+          </div>
+        </td>
+      </tr>
+
+      <tr class="border-tr bg-light-blue">
+        <td>
+          <div class="border-line">
+            <img src="img/view.png" alt="" width="21">
+          </div>
+        </td>
+        <td>
+    
+            <span class="font-dark-blue">- 65min</span>
+
+        </td>
+        <td>
+          
+            <span class="font-dark-blue">11:15</span>
+    
+        </td>
+        <td>
+          
+            <strong class="font-dark-blue">T</strong>
+       
+        </td>
+        <td>
+            <a class="status-link border-blue" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+            </a>
+            <a class="status-link border-red" href="#">
+            <svg class="fill-black" width="37" height="25"><use xlink:href='/img/img.svg#bus'></svg>
+            </a>
+
+            <a class="status-link border-red" href="#">
+             <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+         </a>
+         <a class="status-link border-red popup-icon" href="#">
+             <svg class="fill-black" width="37" height="37"><use xlink:href='/img/img.svg#passenger-big'></svg>
+              <div class="popover bg-white">
+                <h4 class="font-red bg-light-grey">ARRIVEE</h4>
+                <span class="font-grey">Jalons :<small class="font-dark-blue">INITA</small></span>
+                <span class="font-grey">Début :<small class="font-dark-blue">07 06 2016</small></span>
+              </div>
+         </a>
+          <a class="status-link border-red" href="#">
+             <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#helping-wheelchair"></use></svg>
+         </a>
+        </td>
+        <td>
+          <table class="info-flight">
+              <tr>
+                <td>
+                  <strong>
+                    <span class="font-black">AF7648</span>
+                    <span class="ico font-red">
+                      <svg class="fill-red" width="6" height="8"><use xlink:href='/img/img.svg#arrow-left'></svg>
+                    </span>
+                  </strong> <br> 
+                  <small class="font-grey">07 06 2016<br>Initialisation</small>
+                </td>
+                <td class="text-center">
+                  <strong><span class="font-dark-blue">(LYS)</span></strong><br>
+                  <small class="font-grey"><span class="font-red">12:15</span></small>
+                </td>
+              </tr>
+            </table>
+        </td>
+        <td>
+          <div>
+            <span class="font-dark-blue">2F/ <strong>380</strong></span> <br>
+            <span class="font-grey">S7ADB/332</span>
+          </div>
+        </td>
+        <td>
+            <small><strong class="font-dark-blue">WCHR</strong>
+               <span class="ico ">
+                  <svg class="fill-grey" width="9" height="12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#chair"></use></svg>
+               </span>
+             <span class="font-grey">25B</span><br></small>
+            <strong class="font-black">DUPUIS Jean Bernard</strong><br>
+            <small><strong>RV</strong> 07 06 2016 12:15<br>
+            <strong>LIEU</strong> T2C ZONE 16<br>
+            <strong class="font-red">Porte A12</strong></small>
+            <svg class="fill-red" width="17" height="9"><use xlink:href='/img/img.svg#sofa'></svg>
+        </td>
+        <td>
+         <strong class="font-dark-blue">
+           <span class="ico">
+            <svg class="fill-green" width="14" height="14"><use xlink:href='/img/img.svg#exclamation-poin'></svg>
+           </span>
+            PSM 
+
+            <br>+48h
+          </strong>
+        </td>
+       <td>
+          <span class="font-dark-blue">FERNANDEZ</span> <br>
+          <span class="font-dark-blue">Thomas</span>
+          <span class="ico ">
+            <svg class="fill-blue" width="14" height="9"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#message"></use></svg>
+          </span><br>
+          <small class="font-white">+ Renfort</small><br>
+          <span class="font-red">MARIE David</span>
+          <span class="ico ">
+          </span><br>
+          <small class="font-white">(fin)</small>
+          <svg class="fill-red" width="14" height="9"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#message"></use></svg>
+        </td>
+        <td>
+          <span class="font-dark-blue">INITA</span>
+        </td>
+        <td>
+           <table class="info-flight">
+              <tr>
+                <td>
+                  <strong>
+                    <span class="font-black">AF7648</span>
+                    <span class="ico font-red">
+                      <svg class="fill-green" width="6" height="8"><use xlink:href='/img/img.svg#arrow-right'></svg>
+                    </span>
+                  </strong> <br> 
+                  <small class="font-grey">07 06 2016<br>2E/F15/532</small>
+                </td>
+                <td class="text-center">
+                  <strong><span class="font-dark-blue">(LYS)</span></strong><br>
+                  <small class="font-grey"><span class="font-blue">12:15</span></small>
+                </td>
+              </tr>
+            </table>
+        </td>
+        <td><a href="#" class="edit-stats">
+            <svg class="fill-black" width="19" height="20"><use xlink:href='/img/img.svg#check'></svg>
+          </a></td>
+        <td>
+           <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-medical"></use></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-delete"></use></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-all-time"></use></svg>
+          </a><br>
+           <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xlink:href='/img/img.svg#support-lock'></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-flight"></use></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-mail"></use></svg>
+          </a>
+        </td>
+        <td>
+          <div class="border-line">
+            <input id="checkbox-4" name="checkbox-4" type="checkbox">
+            <label for="checkbox-4"></label>
+          </div>
+        </td>
+      </tr>
+
+      <tr class="border-tr border-red border-dotted">
+        <td>
+          <div class="border-line">
+            <svg class="fill-blue" width="22" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#eye"></use></svg>
+          </div>
+        </td>
+        <td>
+    
+            <span class="font-dark-blue">- 58min</span>
+
+        </td>
+        <td>
+          
+            <span class="font-dark-blue">11:30</span>
+    
+        </td>
+        <td>
+          
+            <strong class="font-dark-blue">T</strong>
+       
+        </td>
+        <td>
+            <a class="status-link border-blue" href="#">
+               <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+            </a>
+            <a class="status-link border-blue" href="#">
+               <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#bus"></use></svg>
+            </a>
+            <a class="status-link border-blue" href="#">
+             <svg class="fill-black" width="37" height="37"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger-big"></use></svg>
+            </a>
+            <a class="status-link border-green" href="#">
+               <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+            </a>
+ 
+        </td>
+        <td>
+           <table class="info-flight">
+              <tr>
+                <td>
+                  <strong>
+                    <span class="font-dark-blue">AF7648</span>
+                    <span class="ico font-red">
+                      <svg class="fill-red" width="6" height="8"><use xlink:href='/img/img.svg#arrow-left'></svg>
+                    </span>
+                  </strong> <br> 
+                  <small class="font-grey">07 06 2016<br>Initialisation</small>
+                </td>
+                <td class="text-center">
+                  <strong><span class="font-dark-blue">(LYS)</span></strong><br>
+                  <small class="font-grey"><span class="font-red">12:15</span></small>
+                </td>
+              </tr>
+            </table>
+        </td>
+        <td>
+          <div>
+            <span class="font-dark-blue">2A/ <strong>B20B10</strong></span> <br>
+            <span class="font-grey">S7ADB/332</span>
+          </div>
+        </td>
+        <td>
+            <small>
+               <strong class="font-dark-blue">
+                  WCHR
+               </strong> 
+               <span class="ico ">
+                  <svg class="fill-grey" width="9" height="12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#chair"></use></svg>
+               </span>
+               <span class="font-grey">03A</span><br>
+            </small>
+            <strong class="font-yellow">Fexeider Martine</strong><br>
+        </td>
+        <td>
+         <strong class="font-dark-blue">
+           <span class="ico">
+            <svg class="fill-green" width="14" height="14"><use xlink:href='/img/img.svg#exclamation-poin'></svg>
+           </span>
+            PSM 
+
+            <br>+48h
+          </strong>
+        </td>
+        <td>
+          <span class="font-dark-blue">FERNANDEZ</span> <br>
+          <span class="font-dark-blue">Thomas</span>
+          <span class="ico ">
+            <svg class="fill-blue" width="14" height="9"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#message"></use></svg>
+          </span><br>
+          <small class="font-blue">+ Renfort</small><br>
+          <span class="font-red">MARIE David</span>
+          <span class="ico">
+             <svg class="fill-red" width="14" height="9"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#message"></use></svg>
+          </span><br>
+          <small class="font-blue">(fin)</small>
+         
+        </td>
+        <td>
+         <span class="font-dark-blue">INITA</span>
+        </td>
+        <td>
+          <table class="info-flight">
+              <tr>
+                <td>
+                  <strong>
+                    <span class="font-dark-blue">AF7648</span>
+                    <span class="ico font-red">
+                      <svg class="fill-green" width="6" height="8"><use xlink:href='/img/img.svg#arrow-right'></svg>
+                    </span>
+                  </strong> <br> 
+                  <small class="font-grey">07 06 2016<br>2E/F15/532</small>
+                </td>
+                <td class="text-center">
+                  <strong><span class="font-dark-blue">(LYS)</span></strong><br>
+                  <small class="font-grey"><span class="font-blue">12:15</span></small>
+                </td>
+              </tr>
+            </table>
+        </td>
+        <td><a href="#" class="edit-stats">
+            <svg class="fill-black" width="19" height="20"><use xlink:href='/img/img.svg#un-check'></svg>
+          </a></td>
+        <td>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-medical"></use></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-delete"></use></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-all-time"></use></svg>
+          </a><br>
+           <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xlink:href='/img/img.svg#support-lock'></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-flight"></use></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-mail"></use></svg>
+          </a>
+        </td>
+        <td>
+          <div class="border-line">
+            <input id="checkbox-5" name="checkbox-5" type="checkbox">
+            <label for="checkbox-5"></label>
+          </div>
+        </td>
+      </tr>
+
+      <tr class="even border-tr border-red border-dotted">
+        <td>
+          <div class="border-line">
+            <svg class="fill-blue" width="22" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#eye"></use></svg>
+          </div>
+        </td>
+        <td>
+    
+            <span class="font-dark-blue">- 58min</span>
+
+        </td>
+        <td>
+          
+            <span class="font-dark-blue">12:25</span>
+    
+        </td>
+        <td>
+          
+            <strong class="font-dark-blue">A</strong>
+       
+        </td>
+        <td>
+            <a class="status-link border-green disable" href="#">
+               <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+            </a>
+            <a class="status-link disable" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#bus"></use></svg>
+            </a>
+            <a class="status-link" href="#">
+             <svg class="fill-black" width="37" height="37"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger-big"></use></svg>
+            </a>
+            <a class="status-link" href="#">
+               <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+            </a>
+ 
+        </td>
+        <td>
+           <table class="info-flight">
+            <tr>
+              <td>
+                <strong>
+                  <span class="font-dark-blue">AF7648</span>
+                  <span class="ico font-red">
+                    <svg class="fill-red" width="6" height="8"><use xlink:href='/img/img.svg#arrow-left'></svg>
+                  </span>
+                </strong> <br> 
+                <small class="font-grey">07 06 2016<br>Initialisation</small><br>
+                <svg class="fill-grey" width="19" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#bus"></use></svg>
+              </td>
+              <td class="text-center">
+                <strong><span class="font-dark-blue">(LYS)</span></strong><br>
+                <small class="font-grey"><span class="font-blue">12:15</span></small>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <div>
+            <span class="font-dark-blue">2A/ <strong>A97</strong></span> <br>
+            <span class="font-grey">A6EDU/388</span>
+          </div>
+        </td>
+        <td>
+            <small><strong class="font-dark-blue">WCHR</strong>
+               <span class="ico ">
+                  <svg class="fill-grey" width="9" height="12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#chair"></use></svg>
+               </span>
+            <span class="font-grey">35C</span><br></small>
+            <strong class="font-black">PHILIPPE Julien</strong><br>
+            <small><strong>RV</strong> 07 06 2016 12:15<br>
+            <strong>LIEU</strong> T2C ZONE 11<br>
+            <strong class="font-red">Cafeteria Bliss</strong></small>
+        </td>
+        <td>
+         <strong class="font-dark-blue">
+          <span class="ico">
+            <svg class="fill-green" width="14" height="14"><use xlink:href='/img/img.svg#exclamation-poin'></svg>
+             PSM 
+          </span>
+          <br>+48h
+        </strong>
+        </td>
+        <td>
+          <span class="font-dark-blue">ALBERTINI</span> <br>
+          <span class="font-dark-blue">Francois</span>
+          <span class="ico ">
+            <svg class="fill-blue" width="14" height="9"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#message"></use></svg>
+          </span><br>
+        </td>
+        <td>
+          <span class="font-dark-blue">INITA</span>
+        </td>
+        <td>
+           <table class="info-flight">
+            <tr>
+              <td>
+                <strong>
+                  <span class="font-dark-blue">AF7648</span>
+                  <span class="ico font-red">
+                    <svg class="fill-green" width="6" height="8"><use xlink:href='/img/img.svg#arrow-right'></svg>
+                  </span>
+                </strong> <br> 
+                <small class="font-grey">07 06 2016<br>2E/F15/532</small>
+              </td>
+              <td class="text-center">
+                <strong><span class="font-dark-blue">(LYS)</span></strong><br>
+                <small class="font-grey"><span class="font-blue">12:15</span></small>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td><a href="#" class="edit-stats">
+            <svg class="fill-black" width="19" height="20"><use xlink:href='/img/img.svg#check'></svg>
+          </a></td>
+        <td>
+           <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-medical"></use></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-delete"></use></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-all-time"></use></svg>
+          </a><br>
+           <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xlink:href='/img/img.svg#support-lock'></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-flight"></use></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-mail"></use></svg>
+          </a>
+        </td>
+        <td>
+          <div class="border-line">
+            <input id="checkbox-6" name="checkbox-6" type="checkbox">
+            <label for="checkbox-6"></label>
+          </div>
+        </td>
+      </tr>
+
+       <tr class="border-tr">
+        <td>
+          <div class="border-line">
+            <svg class="fill-blue" width="22" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#eye"></use></svg>
+          </div>
+        </td>
+        <td>
+    
+            <span class="font-dark-blue">- 50min</span>
+
+        </td>
+        <td>
+          
+            <span class="font-dark-blue">12:55</span>
+    
+        </td>
+        <td>
+          
+            <strong class="font-dark-blue">T</strong>
+       
+        </td>
+        <td>
+            <a class="status-link border-red disable" href="#">
+             <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#helping-wheelchair"></use></svg>
+            </a>
+             <a class="status-link disable" href="#">
+             <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+            </a>
+            <a class="status-link" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#bus"></use></svg>
+            </a>
+             <a class="status-link" href="#">
+             <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+            </a>
+            <a class="status-link" href="#">
+               <svg class="fill-black" width="37" height="37"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger-big"></use></svg>
+            </a>
+             <a class="status-link border-red" href="#">
+             <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#helping-wheelchair"></use></svg>
+            </a>
+ 
+        </td>
+        <td>
+           <table class="info-flight">
+              <tr>
+                <td>
+                  <strong>
+                    <span class="font-dark-blue">AF7648</span>
+                    <span class="ico font-red">
+                      <svg class="fill-red" width="6" height="8"><use xlink:href='/img/img.svg#arrow-left'></svg>
+                    </span>
+                  </strong> <br> 
+                  <small class="font-grey">07 06 2016<br>Initialisation</small><br>
+                  <svg class="fill-grey" width="19" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#bus"></use></svg>
+                </td>
+                <td class="text-center">
+                  <strong><span class="font-dark-blue">(ORG)</span></strong><br>
+                  <small class="font-grey"><span class="font-blue">12:15</span></small>
+                </td>
+              </tr>
+            </table>
+        </td>
+        <td>
+          <div>
+            <span class="font-dark-blue">2E/ <strong>324</strong></span> <br>
+            <span class="font-grey">S7ADB/332</span>
+          </div>
+        </td>
+        <td>
+            <small><strong class="font-dark-blue">WCHR</strong>
+               <span class="ico ">
+                  <svg class="fill-grey" width="9" height="12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#chair"></use></svg>
+               </span>
+            <span class="font-grey">21F</span><br></small>
+            <strong class="font-yellow">MIMONI Laurent</strong><br>
+            <small><strong>RV</strong> 07 06 2016 12:15<br>
+            <strong>LIEU</strong> T2C ZONE 16<br>
+            <strong class="font-red">Porte C18</strong></small>
+            <svg class="fill-red" width="17" height="9"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#sofa"></use></svg>
+        </td>
+        <td>
+         <strong class="font-dark-blue">
+           <span class="ico">
+            <svg class="fill-green" width="14" height="14"><use xlink:href='/img/img.svg#exclamation-poin'></svg>
+           </span>
+            PSM 
+
+            <br>+48h
+          </strong>
+        </td>
+        <td>
+          <span class="font-dark-blue">MAUPAS</span> <br>
+          <span class="font-dark-blue">Maxime</span>
+          <span class="ico ">
+            <svg class="fill-blue" width="14" height="9"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#message"></use></svg>
+          </span><br>
+        </td>
+        <td>
+          <span class="font-dark-blue">INITA</span>
+        </td>
+        <td>
+          <table class="info-flight">
+              <tr>
+                <td>
+                  <strong>
+                    <span class="font-dark-blue">AF7648</span>
+                    <span class="ico font-red">
+                      <svg class="fill-green" width="6" height="8"><use xlink:href='/img/img.svg#arrow-right'></svg>
+                    </span>
+                  </strong> <br> 
+                  <small class="font-grey">07 06 2016<br>2E/F15/532</small>
+                </td>
+                <td class="text-center">
+                  <strong><span class="font-dark-blue">(LYS)</span></strong><br>
+                  <small class="font-grey"><span class="font-blue">12:15</span></small>
+                </td>
+              </tr>
+            </table>
+        </td>
+        <td><a href="#" class="edit-stats">
+            <svg class="fill-black" width="19" height="20"><use xlink:href='/img/img.svg#check'></svg>
+          </a></td>
+        <td>
+           <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-medical"></use></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-delete"></use></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-all-time"></use></svg>
+          </a><br>
+           <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xlink:href='/img/img.svg#support-lock'></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-flight"></use></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-mail"></use></svg>
+          </a>
+        </td>
+        <td>
+          <div class="border-line">
+            <input id="checkbox-6" name="checkbox-6" type="checkbox">
+            <label for="checkbox-6"></label>
+          </div>
+        </td>
+      </tr>
+
+      <tr class="even border-tr border-white border-solid">
+        <td>
+          <div class="border-line">
+            <svg class="fill-blue" width="22" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#eye"></use></svg>
+          </div>
+        </td>
+        <td>
+    
+            <span class="font-dark-blue">- 43min</span>
+
+        </td>
+        <td>
+          
+            <span class="font-dark-blue">13:25</span>
+    
+        </td>
+        <td>
+          
+            <strong class="font-dark-blue">A</strong>
+       
+        </td>
+        <td>
+            <a class="status-link border-blue" href="#">
+               <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+            </a>
+            <a class="status-link border-blue" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#bus"></use></svg>
+            </a>
+            <a class="status-link border-green" href="#">
+             <svg class="fill-black" width="37" height="37"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger-big"></use></svg>
+            </a>
+            <a class="status-link border-green" href="#">
+               <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+            </a>
+ 
+        </td>
+        <td>
+          <table class="info-flight">
+              <tr>
+                <td>
+                  <strong>
+                    <span class="font-dark-blue">AF7648</span>
+                    <span class="ico font-red">
+                      <svg class="fill-red" width="6" height="8"><use xlink:href='/img/img.svg#arrow-left'></svg>
+                    </span>
+                  </strong> <br> 
+                  <small class="font-grey">07 06 2016<br>Initialisation</small>
+                </td>
+                <td class="text-center">
+                  <strong><span class="font-dark-blue">(DEL)</span></strong><br>
+                  <small class="font-grey"><span class="font-red">12:15</span></small>
+                </td>
+              </tr>
+            </table>
+        </td>
+        <td>
+          <div>
+            <span class="font-dark-blue">2E/ <strong>567</strong></span> <br>
+            <span class="font-grey">A6EDU/388</span>
+          </div>
+        </td>
+        <td>
+            <small><strong class="font-dark-blue">WCHR</strong>
+               <span class="ico ">
+                  <svg class="fill-grey" width="9" height="12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#chair"></use></svg>
+               </span>
+            <span class="font-grey">13E</span><br></small>
+            <strong class="font-black">AURELIEN Francois</strong><br>
+            <small><strong>RV</strong> 07 06 2016 12:15<br>
+            <strong>LIEU</strong> T2C ZONE 11<br>
+            <strong class="font-black">Module K</strong></small>
+        </td>
+        <td>
+         <strong class="font-dark-blue">
+           <span class="ico">
+            <svg class="fill-green" width="14" height="14"><use xlink:href='/img/img.svg#exclamation-poin'></svg>
+           </span>
+            PSM 
+
+            <br>+48h
+          </strong>
+        </td>
+        <td>
+        </td>
+        <td>
+          <span class="font-dark-blue">INITA</span>
+        </td>
+        <td>
+           <table class="info-flight">
+              <tr>
+                <td>
+                  <strong>
+                    <span class="font-dark-blue">AF7648</span>
+                    <span class="ico font-red">
+                      <svg class="fill-green" width="6" height="8"><use xlink:href='/img/img.svg#arrow-right'></svg>
+                    </span>
+                  </strong> <br> 
+                  <small class="font-grey">07 06 2016<br>2E/F15/532</small>
+                </td>
+                <td class="text-center">
+                  <strong><span class="font-dark-blue">(LYS)</span></strong><br>
+                  <small class="font-grey"><span class="font-blue">12:15</span></small>
+                </td>
+              </tr>
+            </table>
+        </td>
+        <td><a href="#" class="edit-stats">
+            <svg class="fill-black" width="19" height="20"><use xlink:href='/img/img.svg#check'></svg>
+          </a></td>
+        <td>
+           <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-medical"></use></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-delete"></use></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-all-time"></use></svg>
+          </a><br>
+           <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xlink:href='/img/img.svg#support-lock'></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-flight"></use></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-mail"></use></svg>
+          </a>
+        </td>
+        <td>
+          <div class="border-line">
+            <input id="checkbox-6" name="checkbox-6" type="checkbox">
+            <label for="checkbox-6"></label>
+          </div>
+        </td>
+      </tr>
+
+        <tr class="no-space bg-light-grey">
+        <td colspan="15">
+          <div class="separator-line line-light line-red"><span class="font-red">Tache(s) realisee(s): <strong class="font-black">4</strong></span></div>
+        </td>
+      </tr>
+
+         <tr class="border-tr">
+        <td>
+          <div class="border-line">
+            <svg class="fill-blue" width="22" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#eye"></use></svg>
+          </div>
+        </td>
+        <td>
+    
+            <span class="font-dark-blue">- 40min</span>
+
+        </td>
+        <td>
+          
+            <span class="font-dark-blue">13:25</span>
+    
+        </td>
+        <td>
+          
+            <strong class="font-dark-blue">T</strong>
+       
+        </td>
+        <td>
+            <a class="status-link border-red" href="#">
+               <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+            </a>
+            <a class="status-link" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#bus"></use></svg>
+            </a>
+            <a class="status-link" href="#">
+             <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+            </a>
+            <a class="status-link border-blue" href="#">
+               <svg class="fill-black" width="37" height="37"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger-big"></use></svg>
+            </a>
+ 
+        </td>
+        <td>
+           <table class="info-flight">
+              <tr>
+                <td>
+                  <strong>
+                    <span class="font-dark-blue">AF7648</span>
+                    <span class="ico font-red">
+                      <svg class="fill-red" width="6" height="8"><use xlink:href='/img/img.svg#arrow-left'></svg>
+                    </span>
+                  </strong> <br> 
+                  <small class="font-grey">07 06 2016<br>Initialisation</small>
+                </td>
+                <td class="text-center">
+                  <strong><span class="font-dark-blue">(JFF)</span></strong><br>
+                  <small class="font-grey"><span class="font-blue">12:15</span></small>
+                </td>
+              </tr>
+            </table>
+        </td>
+        <td>
+          <div>
+            <span class="font-dark-blue">2A/ <strong>B20B10</strong></span> <br>
+            <span class="font-grey">N784AN/77</span>
+          </div>
+        </td>
+        <td>
+            <small><strong class="font-dark-blue">WCHR</strong>
+               <span class="ico ">
+                  <svg class="fill-grey" width="9" height="12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#chair"></use></svg>
+               </span>
+            <span class="font-grey">23A</span><br></small>
+            <strong class="font-black">PETETIN-FAURE Aude</strong><br>
+            <small><strong>RV</strong> 07 06 2016 12:15<br>
+            <strong>LIEU</strong> T3F ZONE 3<br>
+            <strong class="font-red">Embarquement 1</strong></small>
+            <svg class="fill-red" width="17" height="9"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#sofa"></use></svg>
+        </td>
+        <td>
+         <strong class="font-dark-blue">
+           <span class="ico">
+            <svg class="fill-green" width="14" height="14"><use xlink:href='/img/img.svg#exclamation-poin'></svg>
+           </span>
+            PSM 
+
+            <br>+48h
+          </strong>
+        </td>
+        <td>
+          <span class="font-dark-blue">LEMARCHAND</span> <br>
+          <span class="font-dark-blue">PAUL</span>
+          <span class="ico ">
+            <svg class="fill-blue" width="14" height="9"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#message"></use></svg>
+          </span><br>
+        </td>
+        <td>
+          <span class="font-dark-blue">INITA</span>
+        </td>
+        <td>
+          <table class="info-flight">
+              <tr>
+                <td>
+                  <strong>
+                    <span class="font-dark-blue">AF7648</span>
+                    <span class="ico font-red">
+                      <svg class="fill-green" width="6" height="8"><use xlink:href='/img/img.svg#arrow-right'></svg>
+                    </span>
+                  </strong> <br> 
+                  <small class="font-grey">07 06 2016<br>2E/F15/532</small>
+                </td>
+                <td class="text-center">
+                  <strong><span class="font-dark-blue">(LYS)</span></strong><br>
+                  <small class="font-grey"><span class="font-blue">12:15</span></small>
+                </td>
+              </tr>
+            </table>
+        </td>
+        <td><a href="#" class="edit-stats">
+            <svg class="fill-black" width="19" height="20"><use xlink:href='/img/img.svg#un-check'></svg>
+          </a></td>
+        <td>
+           <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-medical"></use></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-delete"></use></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-all-time"></use></svg>
+          </a><br>
+           <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xlink:href='/img/img.svg#support-lock'></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-flight"></use></svg>
+          </a>
+          <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-mail"></use></svg>
+          </a>
+        </td>
+        <td>
+          <div class="border-line">
+            <input id="checkbox-6" name="checkbox-6" type="checkbox">
+            <label for="checkbox-6"></label>
+          </div>
+        </td>
+      </tr>
+
+       <tr class="even border-tr border-white border-solid">
+          <td>
+            <div class="border-line">
+              <svg class="fill-blue" width="22" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#eye"></use></svg>
+            </div>
+          </td>
+          <td>
+      
+              <span class="font-dark-blue">- 34min</span>
+
+          </td>
+          <td>
+            
+              <span class="font-dark-blue">13:40</span>
+      
+          </td>
+          <td>
+            
+              <strong class="font-dark-blue">T</strong>
+         
+          </td>
+          <td>
+              <a class="status-link" href="#">
+                 <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              </a>
+              <a class="status-link" href="#">
+               <svg class="fill-black" width="37" height="37"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger-big"></use></svg>
+              </a>
+          </td>
+          <td>
+              <table class="info-flight">
+              <tr>
+                <td>
+                  <strong>
+                    <span class="font-dark-blue">AF7648</span>
+                    <span class="ico font-red">
+                      <svg class="fill-red" width="6" height="8"><use xlink:href='/img/img.svg#arrow-left'></svg>
+                    </span>
+                  </strong> <br> 
+                  <small class="font-grey">07 06 2016<br>Initialisation</small>
+                </td>
+                <td class="text-center">
+                  <strong><span class="font-dark-blue">(LYS)</span></strong><br>
+                  <small class="font-grey"><span class="font-blue">10:00</span></small>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <div>
+              <span class="font-dark-blue">2A/ <strong>G45</strong></span> <br>
+              <span class="font-grey">S7ADB/332</span>
+            </div>
+          </td>
+          <td>
+              <small><strong class="font-dark-blue">WCHR</strong>
+                 <span class="ico ">
+                    <svg class="fill-grey" width="9" height="12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#chair"></use></svg>
+                 </span>
+              <span class="font-grey">12C</span><br></small>
+              <strong class="font-green">ALLENSSEUR Sybille</strong><br>
+              <small><strong>RV</strong> 07 06 2016 12:15<br>
+              <strong>LIEU</strong> T2C ZONE 16<br>
+              <strong class="font-red">Module J</strong></small>
+          </td>
+          <td>
+           <strong class="font-dark-blue">
+           <span class="ico">
+            <svg class="fill-green" width="14" height="14"><use xlink:href='/img/img.svg#exclamation-poin'></svg>
+           </span>
+            PSM 
+
+            <br>+48h
+          </strong>
+          </td>
+          <td>
+            <span class="font-dark-blue">YANG</span> <br>
+            <span class="font-dark-blue">Emile</span>
+            <span class="ico ">
+              <svg class="fill-blue" width="14" height="9"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#message"></use></svg>
+            </span><br>
+            <span class="font-blue">+ Refort</span><br>
+            <span class="font-yellow">VINCENT Emile</span><br>
+            <span class="font-blue">(fin)</span>
+             <svg class="fill-yellow" width="14" height="9"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#message"></use></svg>
+          </td>
+          <td>
+            <span class="font-dark-blue">INITA</span>
+          </td>
+          <td>
+              <table class="info-flight">
+              <tr>
+                <td>
+                  <strong>
+                    <span class="font-dark-blue">AF7648</span>
+                    <span class="ico font-red">
+                      <svg class="fill-green" width="6" height="8"><use xlink:href='/img/img.svg#arrow-right'></svg>
+                    </span>
+                  </strong> <br> 
+                  <small class="font-grey">07 06 2016<br>2E/F15/532</small>
+                </td>
+                <td class="text-center">
+                  <strong><span class="font-dark-blue">(LYS)</span></strong><br>
+                  <small class="font-grey"><span class="font-blue">12:15</span></small>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td><a href="#" class="edit-stats">
+            <svg class="fill-black" width="19" height="20"><use xlink:href='/img/img.svg#check'></svg>
+          </a></td>
+          <td>
+             <a class="action-link" href="#">
+              <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-medical"></use></svg>
+            </a>
+            <a class="action-link" href="#">
+              <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-delete"></use></svg>
+            </a>
+            <a class="action-link" href="#">
+              <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-all-time"></use></svg>
+            </a><br>
+             <a class="action-link" href="#">
+              <svg class="fill-red" width="19" height="19"><use xlink:href='/img/img.svg#support-lock'></svg>
+            </a>
+            <a class="action-link" href="#">
+              <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-flight"></use></svg>
+            </a>
+            <a class="action-link" href="#">
+              <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-mail"></use></svg>
+            </a>
+          </td>
+          <td>
+            <div class="border-line">
+              <input id="checkbox-6" name="checkbox-6" type="checkbox">
+              <label for="checkbox-6"></label>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="border-tr">
+          <td>
+            <div class="border-line">
+              <svg class="fill-blue" width="22" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#eye"></use></svg>
+            </div>
+          </td>
+          <td>
+      
+              <span class="font-dark-blue">- 32min</span>
+
+          </td>
+          <td>
+            
+              <span class="font-dark-blue">13:45</span>
+      
+          </td>
+          <td>
+            
+              <strong class="font-dark-blue">T</strong>
+         
+          </td>
+          <td>
+              <a class="status-link" href="#">
+                 <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              </a>
+              <a class="status-link" href="#">
+                <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#bus"></use></svg>
+              </a>
+              <a class="status-link border-blue" href="#">
+               <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              </a>
+               <a class="status-link border-blue" href="#">
+               <svg class="fill-black" width="37" height="37"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger-big"></use></svg>
+              </a>
+               <a class="status-link border-blue" href="#">
+               <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              </a>
+          </td>
+          <td>
+              <table class="info-flight">
+              <tr>
+                <td>
+                  <strong>
+                    <span class="font-dark-blue">AF7648</span>
+                    <span class="ico font-red">
+                      <svg class="fill-red" width="6" height="8"><use xlink:href='/img/img.svg#arrow-left'></svg>
+                    </span>
+                  </strong> <br> 
+                  <small class="font-grey">07 06 2016<br>Initialisation</small>
+                </td>
+                <td class="text-center">
+                  <strong><span class="font-dark-blue">(HYU)</span></strong><br>
+                  <small class="font-grey"><span class="font-red">08:24</span></small>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <div>
+              <span class="font-dark-blue">2A/ <strong>56W</strong></span> <br>
+              <span class="font-grey">S7ADB/332</span>
+            </div>
+          </td>
+          <td>
+              <small><strong class="font-dark-blue">WCHR</strong>
+                 <span class="ico ">
+                    <svg class="fill-grey" width="9" height="12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#chair"></use></svg>
+                 </span>
+              <span class="font-grey">45D</span><br></small>
+              <strong class="font-green">KAPIRI Michel</strong><br>
+              <small><strong>RV</strong> 07 06 2016 12:15<br>
+              <strong>LIEU</strong> T2C ZONE 16<br>
+              <strong class="font-red">Porte A</strong></small>
+              <svg class="fill-red" width="17" height="9"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#sofa"></use></svg>
+          </td>
+          <td>
+           <strong class="font-dark-blue">
+           <span class="ico">
+            <svg class="fill-green" width="14" height="14"><use xlink:href='/img/img.svg#exclamation-poin'></svg>
+           </span>
+            PSM 
+
+            <br>+48h
+          </strong>
+          </td>
+          <td>
+          </td>
+          <td>
+            <span class="font-dark-blue">INITA</span>
+          </td>
+          <td>
+              <table class="info-flight">
+              <tr>
+                <td>
+                  <strong>
+                    <span class="font-dark-blue">AF7648</span>
+                    <span class="ico font-red">
+                      <svg class="fill-green" width="6" height="8"><use xlink:href='/img/img.svg#arrow-right'></svg>
+                    </span>
+                  </strong> <br> 
+                  <small class="font-grey">07 06 2016<br>2E/F15/532</small>
+                </td>
+                <td class="text-center">
+                  <strong><span class="font-dark-blue">(LYS)</span></strong><br>
+                  <small class="font-grey"><span class="font-blue">12:15</span></small>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td><a href="#" class="edit-stats">
+            <svg class="fill-black" width="19" height="20"><use xlink:href='/img/img.svg#check'></svg>
+          </a></td>
+          <td>
+             <a class="action-link" href="#">
+              <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-medical"></use></svg>
+            </a>
+            <a class="action-link" href="#">
+              <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-delete"></use></svg>
+            </a>
+            <a class="action-link" href="#">
+              <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-all-time"></use></svg>
+            </a><br>
+             <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xlink:href='/img/img.svg#support-lock'></svg>
+          </a>
+            <a class="action-link" href="#">
+              <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-flight"></use></svg>
+            </a>
+            <a class="action-link" href="#">
+              <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-mail"></use></svg>
+            </a>
+          </td>
+          <td>
+            <div class="border-line">
+              <input id="checkbox-6" name="checkbox-6" type="checkbox">
+              <label for="checkbox-6"></label>
+            </div>
+          </td>
+        </tr>
+         <tr class="no-space bg-light-grey">
+          <td colspan="15">
+            <div class="separator-line line-light line-yellow"><span class="font-yellow">TEMPS + 20min</span></div>
+          </td>
+        </tr>
+
+           <tr class="even border-tr border-white border-solid">
+          <td>
+            <div class="border-line">
+              <svg class="fill-blue" width="22" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#eye"></use></svg>
+            </div>
+          </td>
+          <td>
+      
+              <span class="font-dark-blue">- 56min</span>
+
+          </td>
+          <td>
+            
+              <span class="font-dark-blue">12:50</span>
+      
+          </td>
+          <td>
+            
+              <strong class="font-dark-blue">T</strong>
+         
+          </td>
+          <td>
+              <a class="status-link" href="#">
+                 <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              </a>
+              <a class="status-link" href="#">
+               <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              </a>
+          </td>
+          <td>
+            <table class="info-flight">
+              <tr>
+                <td>
+                  <strong>
+                    <span class="font-dark-blue">AF7648</span>
+                    <span class="ico font-red">
+                      <svg class="fill-red" width="6" height="8"><use xlink:href='/img/img.svg#arrow-left'></svg>
+                    </span>
+                  </strong> <br> 
+                  <small class="font-grey">07 06 2016<br>Initialisation</small>
+                </td>
+                <td class="text-center">
+                  <strong><span class="font-dark-blue">(TLV)</span></strong><br>
+                  <small class="font-grey"><span class="font-blue">08:13</span></small>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <div>
+              <span class="font-dark-blue">2F/ <strong>380</strong></span> <br>
+              <span class="font-grey">N784AN/77</span>
+            </div>
+          </td>
+          <td>
+              <small><strong class="font-dark-blue">WCHR</strong>
+                 <span class="ico ">
+                    <svg class="fill-grey" width="9" height="12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#chair"></use></svg>
+                 </span>
+              <span class="font-grey">35C</span><br></small>
+              <strong class="font-green">FABRESSE Martine</strong><br>
+              <small><strong>RV</strong> 07 06 2016 12:15<br>
+              <strong>LIEU</strong> T2C ZONE 16<br>
+          </td>
+          <td>
+          <strong class="font-dark-blue">
+           <span class="ico">
+            <svg class="fill-green" width="14" height="14"><use xlink:href='/img/img.svg#exclamation-poin'></svg>
+           </span>
+            PSM 
+
+            <br>+48h
+          </strong>
+          </td>
+          <td>
+            <span class="font-dark-blue">ALBERTINI</span> <br>
+            <span class="font-dark-blue">Francois</span>
+            <span class="ico ">
+              <svg class="fill-blue" width="14" height="9"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#message"></use></svg>
+            </span>
+          </td>
+          <td>
+            <span class="font-dark-blue">INITA</span>
+          </td>
+          <td>
+            <table class="info-flight">
+              <tr>
+                <td>
+                  <strong>
+                    <span class="font-dark-blue">AF7648</span>
+                    <span class="ico font-red">
+                      <svg class="fill-green" width="6" height="8"><use xlink:href='/img/img.svg#arrow-right'></svg>
+                    </span>
+                  </strong> <br> 
+                  <small class="font-grey">07 06 2016<br> 2E/F15/532</small>
+                </td>
+                <td class="text-center">
+                  <strong><span class="font-dark-blue">(LYS)</span></strong><br>
+                  <small class="font-grey"><span class="font-blue">12:15</span></small>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td><a href="#" class="edit-stats">
+            <svg class="fill-black" width="19" height="20"><use xlink:href='/img/img.svg#check'></svg>
+          </a></td>
+          <td>
+             <a class="action-link" href="#">
+              <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-medical"></use></svg>
+            </a>
+            <a class="action-link" href="#">
+              <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-delete"></use></svg>
+            </a>
+            <a class="action-link" href="#">
+              <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-all-time"></use></svg>
+            </a><br>
+             <a class="action-link" href="#">
+            <svg class="fill-red" width="19" height="19"><use xlink:href='/img/img.svg#support-lock'></svg>
+          </a>
+            <a class="action-link" href="#">
+              <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-flight"></use></svg>
+            </a>
+            <a class="action-link" href="#">
+              <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-mail"></use></svg>
+            </a>
+          </td>
+          <td>
+            <div class="border-line">
+              <input id="checkbox-6" name="checkbox-6" type="checkbox">
+              <label for="checkbox-6"></label>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<div class="notification-bl">
+  <a id="popup-show" class="btn btn-radius btn-border bg-blue font-white" href="#">Affectation groupée</a>
+  <a class="btn btn-radius btn-border bg-black font-white" href="#">Annulation groupée</a>
+</div>
+  <footer>
   
-  @@include('templates/scripts.html')
+</footer>
+
+
+
+  
+  <div id="popup" class="popup">
+  <div class="popup-container bg-light-grey">
+    <section class="affectation-home">
+      <div class="table-responsive">
+        <div class="table-wrapp">
+           <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>DÉLAIS<br>TACHE</th>
+            <th>HT</th>
+            <th>SENS</th>
+            <th>ÉTAT</th>
+            <th>INFOS VOL</th>
+            <th>TERM/ PRG</th>
+            <th>PHMR</th>
+            <th>SMI</th>
+            <th>AGENT(S)</th>
+            <th>JALONS</th>
+            <th>CORRESPONDANCE</th>
+            <th>OBS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-tr">
+            <td>
+                <span class="font-dark-blue">- 87min</span>
+            </td>
+            <td>
+                <span class="font-dark-blue">09:50</span>
+            </td>
+            <td>
+                <strong class="font-dark-blue">A</strong>
+            </td>
+            <td>
+               <a class="status-link border-blue" href="#">
+                 <svg class="fill-black" width="37" height="25"><use xlink:href='/img/img.svg#passenger'></svg>
+                </a>
+                <a class="status-link border-red" href="#">
+                 <svg class="fill-black" width="37" height="25"><use xlink:href='/img/img.svg#bus'></svg>
+                </a>
+                <a class="status-link border-red" href="#">
+                  <svg class="fill-black" width="37" height="37"><use xlink:href='/img/img.svg#passenger-big'></svg>
+                </a>
+                <a class="status-link border-red" href="#">
+                 <svg class="fill-black" width="37" height="25"><use xlink:href='/img/img.svg#passenger'></svg>
+                </a>
+                <a class="status-link border-red" href="#">
+                 <svg class="fill-black" width="37" height="25"><use xlink:href='/img/img.svg#helping-wheelchair'></svg>
+                </a>
+            </td>
+            <td>
+                <table class="info-flight">
+                  <tr>
+                    <td>
+                      <strong>
+                        <span class="font-dark-blue">AF7648</span>
+                        <span class="ico font-red">
+                          <svg class="fill-red" width="6" height="8"><use xlink:href='/img/img.svg#arrow-left'></svg>
+                        </span>
+                      </strong> <br> 
+                      <small class="font-grey">07 06 2016<br>Initialisation</small>
+                    </td>
+                    <td class="text-center">
+                      <strong><span class="font-dark-blue">(BIO)</span></strong><br>
+                      <small class="font-grey"><span class="font-red">12:15</span></small>
+                    </td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <div>
+                <span class="font-dark-blue">2A/ <strong>A08</strong></span> <br>
+                <span class="font-grey">N385AM/76</span>
+              </div>
+            </td>
+            <td>
+                <small>
+                  <strong class="font-dark-blue">
+                   WCHR
+                  </strong> 
+                  <span class="ico"><svg class="fill-grey" width="9" height="12"><use xlink:href='/img/img.svg#chair'></svg></span>
+                  <span class="font-grey">11A</span><br>
+                </small>
+
+                <strong class="font-light-blue">FABRESSE Martine</strong><br>
+                <small><strong>RV</strong> 07 06 2016 12:15<br>
+                 <strong>LIEU</strong> T2F ZONE 1<br>
+                 <strong class="font-red">Module K</strong>
+              </small>
+            </td>
+            <td>
+              <strong class="font-dark-blue">
+               <span class="ico">
+                <svg class="fill-green" width="14" height="14"><use xlink:href='/img/img.svg#exclamation-poin'></svg>
+               </span>
+                PSM 
+                <br>+48h
+              </strong>
+            </td>
+            <td>
+              <span class="font-dark-blue">HUGUES</span> <br>
+              <span class="font-dark-blue">Jean-Pierre</span>
+              <span class="ico ">
+              </span><br>
+              <small class="font-light-blue">Renforcement</small><br>
+            </td>
+            <td>
+              <span class="font-dark-blue">INITA</span>
+            </td>
+            <td>
+              <table class="info-flight">
+                  <tr>
+                    <td>
+                      <small class="font-grey">25j 5h24</small><br>
+                      <strong>
+                        <span class="font-dark-blue">AF7648</span>
+                        <span class="ico font-red">
+                          <svg class="fill-green" width="6" height="8"><use xlink:href='/img/img.svg#arrow-right'></svg>
+                        </span>
+                      </strong> <br> 
+                      <small class="font-grey">07 06 2016<br>2E/F15/532</small>
+                    </td>
+                    <td class="text-center v-align-middle">
+                      <strong><span class="font-dark-blue">(LYS)</span></strong><br>
+                      <small class="font-grey"><span class="font-blue">12:15</span></small>
+                    </td>
+                  </tr>
+                </table>
+            </td>
+            <td>
+              <a href="#" class="edit-stats">
+              <svg class="fill-black" width="19" height="20"><use xlink:href='/img/img.svg#un-check'></svg>
+            </a>
+          </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      </div>
+    </section>
+
+    <div class="arrival-info">
+      <section>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>CHOIX</th>
+                <th>AFFECTATION</th>
+                <th></th>
+                <th>TACHES</th>
+                <th>JALONS</th>
+                <th>DEBUT</th>
+                <th>FIN</th>
+                <th>COULEURS</th>
+                <th>ACTION(S)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-tr even border-solid border-white">
+                <td>
+                    <span class="ratio-box">
+                      <input id="radio-1" name="radio-group1" type="radio">
+                      <label for="radio-1"></label>
+                    </span>
+                </td>
+                <td>
+                    <span class="font-grey">Assigné à l’agent</span>
+                    <span class="font-light-blue">LEFEBRE Virgil</span>
+                </td>
+                <td>
+                   <span class="affectation-icon">
+                      <svg class="fill-blue" width="37" height="25"><use xlink:href='/img/img.svg#passenger'></svg>
+                    </span>
+                </td>
+                 <td>
+                    <strong class="font-dark-blue">ARRIVEE</strong>
+                </td>
+                <td>
+                    <span class="font-green">INITA <strong class="font-black">-</strong> GO A <strong class="font-black">-</strong>  MISE A <strong class="font-black">-</strong>  SORTIR <strong class="font-black">-</strong>  CORNIR</span>
+                </td>
+                 <td>
+                    <span class="font-grey">07 06 2016</span>
+                    <span class="font-blue">07:15</span>
+                </td>
+                <td>
+                    <span class="font-grey">07 06 2016</span>
+                    <span class="font-blue">08:30</span>
+                </td>
+                 <td>
+                    <span class="color-block bg-red"></span>
+                </td>
+                <td>
+                  <a class="action-link" href="#">
+                      <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-delete"></use></svg>
+                    </a>
+                    <a class="action-link" href="#">
+                      <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-medical"></use></svg>
+                    </a>
+                </td>
+              </tr>
+
+              <tr class="border-tr">
+                <td>
+                    <span class="ratio-box">
+                      <input id="radio-2" name="radio-group1" type="radio">
+                      <label for="radio-2"></label>
+                    </span>
+                </td>
+                <td>
+                    <span class="font-grey">Assigné à l’agent</span>
+                    <span class="font-light-blue">ANDRANI Francois</span>
+                   
+                </td>
+                <td>
+                   <span class="text-right">
+                      <svg class="fill-red" width="37" height="25"><use xlink:href='/img/img.svg#helping-wheelchair'></svg>
+                    </span>
+                </td>
+                 <td>
+                    <strong class="font-dark-blue">TRANSFERT</strong>
+                </td>
+                <td>
+                    <span class="font-green">DEBCNX <strong class="font-black"> - </strong>  FINCNX</span>
+                </td>
+                 <td>
+                    <span class="font-grey">07 06 2016</span>
+                    <span class="font-blue">08:30</span>
+                </td>
+                <td>
+                    <span class="font-grey">07 06 2016</span>
+                    <span class="font-blue">09:45</span>
+                </td>
+                 <td>
+                    <span class="color-block bg-blue"></span>
+                </td>
+                <td>
+                  <a class="action-link" href="#">
+                      <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-lock"></use></svg>
+                    </a>
+                    <a class="action-link" href="#">
+                      <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-delete"></use></svg>
+                    </a>
+                </td>
+              </tr>
+
+               <tr class="border-tr even">
+                <td>
+                    <span class="ratio-box">
+                      <input id="radio-3" name="radio-group1" type="radio">
+                      <label for="radio-3"></label>
+                    </span>
+                </td>
+                <td>
+                    <span class="font-grey">Assigné à l’agent</span>
+                    <span class="font-light-black">ABRY Philippe</span>
+                    
+                </td>
+                <td>
+                  <span class="text-right">
+                      <svg class="fill-black" width="37" height="25"><use xlink:href='/img/img.svg#passenger'></svg>
+                    </span>
+                </td>
+                 <td>
+                    <strong class="font-dark-black">EMBARQUEMENT</strong>
+                </td>
+                <td>
+                    <span class="font-grey">PEMBR <strong class="font-black">-</strong>  FINI</span>
+                </td>
+                 <td>
+                    <span class="font-grey">07 06 2016</span>
+                    <span class="font-blue">08:55</span>
+                </td>
+                <td>
+                    <span class="font-grey">07 06 2016</span>
+                    <span class="font-blue">09:34</span>
+                </td>
+                 <td>
+                    <span class="color-block bg-yellow"></span>
+                </td>
+                <td>
+                  <a class="action-link" href="#">
+                      <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-lock"></use></svg>
+                    </a>
+                    <a class="action-link" href="#">
+                      <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-delete"></use></svg>
+                    </a>
+                </td>
+              </tr>
+
+              <tr class="border-tr">
+                <td>
+                    <span class="ratio-box">
+                      <input id="radio-4" name="radio-group1" type="radio">
+                      <label for="radio-4"></label>
+                    </span>
+                </td>
+                <td>
+                    <span class="font-grey">Assigné à l’agent</span>
+                    <span class="font-light-blue">FRANÇOIS Brice</span>
+                   
+                </td>
+                <td>
+                   <span class="text-right">
+                      <svg class="fill-blue" width="37" height="25"><use xlink:href='/img/img.svg#bus'></svg>
+                    </span>
+                </td>
+                 <td>
+                    <strong class="font-dark-blue">MISE EN SALLE</strong>
+                </td>
+                <td>
+                    <span class="font-grey">DEPVEH <strong class="font-black">-</strong>  ABOARD <strong class="font-black">-</strong>  ENDD</span>
+                </td>
+                 <td>
+                    <span class="font-grey">07 06 2016</span>
+                    <span class="font-blue">09:10</span>
+                </td>
+                <td>
+                    <span class="font-grey">07 06 2016</span>
+                    <span class="font-blue">10:25</span>
+                </td>
+                 <td>
+                    <span class="color-block bg-green"></span>
+                </td>
+                <td>
+                    <a class="action-link" href="#">
+                      <svg class="fill-red" width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#support-delete"></use></svg>
+                    </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </section>
+      </div>
+
+    <section class="affectation-home">
+    <div class="info-container">
+      <form class="personal-info">
+        <button class="refresh bg-grey font-white">
+          REFRESH
+          <svg class="fill-white refresh-svg" width="13" height="13"><use xlink:href='/img/img.svg#refresh'></svg>
+        </button>
+      </form>
+      <div class="select-block">
+        <div class="custome-select">
+          <select>
+            <option>TRI MISSION</option>
+            <option>TRI MISSION 2</option>
+            <option>TRI MISSION 3</option>
+          </select>
+           <span class="arrow-normal">
+             <svg class="fill-black" width="14" height="14"><use xlink:href='/img/img.svg#arrow-bottom-fill'></svg>
+           </span>
+        </div>
+        <div class="custome-select">
+           <select class="custome-select">
+            <option>FILTRE AGENT</option>
+            <option>FILTRE AGENT 2</option>
+            <option>FILTRE AGENT 3</option>
+        </select>
+         <span class="arrow-normal">
+             <svg class="fill-black" width="14" height="14"><use xlink:href='/img/img.svg#arrow-bottom-fill'></svg>
+           </span>
+        </div>
+       <div class="custome-select">
+         <select class="custome-select strong">
+            <option>ZONE</option>
+            <option>ZONE 2</option>
+            <option>ZONE 3</option>
+        </select>
+         <span class="arrow-normal">
+             <svg class="fill-black" width="14" height="14"><use xlink:href='/img/img.svg#arrow-bottom-fill-strong'></svg>
+           </span>
+       </div>
+      </div>
+    </div>
+
+    <div class="table-responsive">
+      <table class="table table-striped table-agents">
+      <thead>
+        <tr>
+          <th>AP</th>
+          <th>RENF</th>
+          <th>AGENT</th>
+          <th>ZONE</th>
+          <th>TÉLÉPHONE</th>
+          <th>ÉTAT PDA</th>
+          <th class="no-space wh">
+            <table class="no-space separator-th table-stretch vh">
+              <tr>
+                <th class="wh-100 text-center">VOL ARR. T</th>
+                <th class="wh-60 text-center">SAT </th>
+                <th class="wh-40 text-center">P </th>
+                <th class="wh-90 text-center">JALON </th>
+                <th class="wh-60 text-center">HJ </th>
+                <th class="wh-90 text-center">VOL DEP. T </th>
+                <th class="wh-60 text-center">SAT </th>
+                <th class="wh-40 text-center">P </th>
+                <th class="wh-140 ">PAX</th>
+              </tr>
+            </table>
+          </th>
+          <th>PS: DÉBUT - FIN</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!--first-type-->
+       <tr class="border-tr border-solid border-white even">
+         <td>
+           <div class="border-line ratio-box">
+           <span class="ratio-box">
+            <input id="radio-5" name="radio-group1" type="radio">
+            <label for="radio-5"></label>
+           </span>
+         </div>
+         </td>
+         <td>
+            <input id="checkbox-11" name="checkbox-1" type="checkbox">
+            <label for="checkbox-11"></label>
+         </td>
+         <td>
+           <span class="font-red">YACOUBHI Saharan</span>
+         </td>
+         <td>
+           <span class="font-dark-blue">Acc AC</span>
+         </td>
+         <td>
+           <span class="font-blue">098</span><br>
+           <span class="font-dark-blue">07 55 67 34 41</span>
+         </td>
+         <td>
+           <span class="font-green">14 : 45</span>
+         </td>
+         <td class="no-space-td wh">
+           <table class="table-stretch separator-table vh">
+              <tr>
+                <td class="wh-100 fixing-space border-td-after">
+                   <strong class="font-red">OS411</strong><br>
+                   <span class="font-grey">2E</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">C45</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">A40</span>
+                 </td>
+                 <td class="wh-90 text-center no-space"><span class="border-red jalon">FINI</span></td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-blue">10 : 45</span>
+                 </td>
+                 <td class="wh-90 fixing-space"> 
+                   <strong class="font-green">SU636</strong><br>
+                   <span class="font-grey">2E</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">C45</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">A40</span>
+                 </td>
+                 <td class="wh-140 border-td-before">
+                   <span class="font-blue">VALBRUGUEU<br>Vladimir</span>
+                 </td>
+              </tr>
+            </table>
+         </td>
+         <td>
+           <div class="border-line">
+           <span class="font-dark-blue text-centering">
+            08:17 - 14:00<br>
+            dans 97 min
+          </span><br>
+        </div>
+         </td>
+       </tr>
+
+        <tr class="border-tr">
+         <td>
+           <div class="border-line">
+           <span class="ratio-box">
+            <input id="radio-6" name="radio-group1" type="radio">
+            <label for="radio-6"></label>
+           </span>
+         </div>
+         </td>
+         <td>
+            <input id="checkbox-21" name="checkbox-1" type="checkbox">
+            <label for="checkbox-21"></label>
+         </td>
+         <td>
+           <span class="font-red">SAIDOU Aicha</span>
+         </td>
+         <td>
+           <span class="font-dark-blue">Acc AC</span>
+         </td>
+         <td>
+           <span class="font-blue">034</span><br>
+           <span class="font-dark-blue">07 45 12 56 89</span>
+         </td>
+         <td>
+           <span class="font-green">12 : 45</span>
+         </td>
+         <td class="no-space-td vh">
+          <table class="table-stretch-container border-light-grey vh">
+            <tr class="border border-light-grey border-tr-bottom">
+              <td class="wh-100 fixing-space">
+               <strong class="font-red">AF385</strong><br>
+               <span class="font-grey">2A</span>
+               </td>
+               <td class="wh-60 text-center no-space">
+                 <span class="font-grey">S46</span>
+               </td>
+               <td class="wh-40 text-center no-space">
+                 <span class="font-grey">C85</span>
+               </td>
+               <td class="wh-90 text-center no-space"><span class="border-yellow jalon">FINI</span></td>
+               <td class="wh-60 text-center no-space">
+                 <span class="font-blue">12 : 45</span>
+               </td>
+               <td class="wh-90 fixing-space"> 
+                 <strong class="font-green">AH103</strong><br>
+                 <span class="font-grey">2A</span>
+               </td>
+               <td class="wh-60 text-center no-space">
+                 <span class="font-grey">S46</span>
+               </td>
+               <td class="wh-40 text-center no-space">
+                 <span class="font-grey">C85</span>
+               </td>
+               <td class="wh-140">
+                 <span class="font-blue">SMIRNOV Alex</span>
+               </td>
+            </tr>
+            <tr class="border border-light-grey border-tr-bottom">
+              <td class="wh-100 fixing-space">
+               <strong class="font-red">AF385</strong><br>
+               <span class="font-grey">2A</span>
+               </td>
+               <td class="wh-60 text-center no-space">
+                 <span class="font-grey">VGJ</span>
+               </td>
+               <td class="wh-40 text-center no-space">
+                 <span class="font-grey">C85</span>
+               </td>
+               <td class="wh-90 text-center no-space">
+                 <span class="border-green jalon">END</span>
+               </td>
+               <td class="wh-60 text-center no-space">
+                 <span class="font-blue">12 : 45</span>
+               </td>
+               <td class="wh-90 fixing-space"> 
+                 <strong class="font-green">AH103</strong><br>
+                 <span class="font-grey">2A</span>
+               </td>
+               <td class="wh-60 text-center no-space">
+                 <span class="font-grey">VGJ</span>
+               </td>
+               <td class="wh-40 text-center no-space">
+                 <span class="font-grey">C85</span>
+               </td>
+               <td class="wh-140">
+                 <span class="font-blue">SMIRNOV Alex</span>
+               </td>
+            </tr>
+            <tr class="border border-light-grey border-tr-bottom">
+              <td class="wh-100 fixing-space">
+               </td>
+               <td class="wh-60 text-center no-space">
+                 <span class="font-grey">07U</span>
+               </td>
+               <td class="wh-40 text-center no-space">
+                 <span class="font-grey">C85</span>
+               </td>
+               <td class="wh-90 text-center no-space">
+                 <span class="border-yellow jalon">END</span>
+               </td>
+               <td class="wh-60 text-center no-space">
+                 <span class="font-blue">12 : 45</span>
+               </td>
+               <td class="wh-90 fixing-space"> 
+                 <strong class="font-green">AH103</strong><br>
+               </td>
+               <td class="wh-60 text-center no-space">
+                 <span class="font-grey">07U</span>
+               </td>
+               <td class="wh-40 text-center no-space">
+                 <span class="font-grey">C85</span>
+               </td>
+               <td class="wh-140">
+                 <span class="font-blue">SMIRNOV Alex</span>
+               </td>
+            </tr>
+            <tr class="border">
+              <td class="wh-100 fixing-space">
+               </td>
+               <td class="wh-60 text-center no-space">
+                 <span class="font-grey">58B</span>
+               </td>
+               <td class="wh-40 text-center no-space">
+                 <span class="font-grey">C85</span>
+               </td>
+               <td class="wh-90 text-center no-space">
+                 <span class="border-green jalon">END</span>
+               </td>
+               <td class="wh-60 text-center no-space">
+                 <span class="font-blue">12 : 45</span>
+               </td>
+               <td class="wh-90 fixing-space"> 
+                 <strong class="font-green">AH103</strong><br>
+               </td>
+               <td class="wh-60 text-center no-space">
+                 <span class="font-grey">56B</span>
+               </td>
+               <td class="wh-40 text-center no-space">
+                 <span class="font-grey">C85</span>
+               </td>
+               <td class="wh-140">
+                 <span class="font-blue">SMIRNOV Alex</span>
+               </td>
+            </tr>
+          </table>
+         </td>
+         <td>
+           <div class="border-line">
+           <span class="font-dark-blue text-centering">
+            08:17 - 14:00<br>
+            dans 97 min
+          </span><br>
+        </div>
+         </td>
+       </tr>
+
+       <!--second-type-->
+        <tr class="border-tr border-solid border-white even" rowspan="6">
+         <td>
+           <div class="border-line">
+           <span class="ratio-box">
+            <input id="radio-7" name="radio-group1" type="radio">
+            <label for="radio-7"></label>
+           </span>
+         </div>
+         </td>
+         <td>
+            <input id="checkbox-31" name="checkbox-1" type="checkbox">
+            <label for="checkbox-31"></label>
+         </td>
+         <td>
+           <span class="font-green">BENJERT Icham</span>
+         </td>
+         <td>
+           <span class="font-dark-blue">2D</span>
+         </td>
+         <td>
+           <span class="font-blue">078</span><br>
+           <span class="font-dark-blue">07 43 23 78 06</span>
+         </td>
+         <td>
+           <span class="font-green">12 : 45</span>
+         </td>
+         <td class="no-space-td vh">
+           <table class="table-stretch vh">
+            <tr class="no-space bg-light-grey">
+              <td class="vh" colspan="10">
+                <div class="separator-line line-super-light line-grey"><span class="font-grey">Tache(s) realisee(s): <strong class="font-black">2</strong></span></div>
+              </td>
+             </tr>
+              <tr class="bg-white">
+                <td class="wh-100 fixing-space">
+                   <p class="rotate-text bg-blue font-white">EN COURS</p>
+                   <span class="font-grey">
+                    <strong class="font-red">GB132</strong><br>
+                    2D
+                   </span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">F86</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">C32</span>
+                 </td>
+                 <td class="wh-90 text-center no-space">
+                   <span class="border-yellow jalon">END</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-blue">12 : 30</span>
+                 </td>
+                 <td class="wh-90 fixing-space"> 
+                   <strong class="font-green">EF568</strong><br>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">37H</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">B28</span>
+                 </td>
+                 <td class="wh-140">
+                   <span class="font-blue">LABATIER<br>Philippe</span>
+                 </td>
+              </tr>
+            </table>
+         </td>
+         <td>
+           <div class="border-line">
+           <span class="font-dark-blue text-centering">
+            08:17 - 14:00<br>
+            dans 97 min
+          </span><br>
+        </div>
+         </td>
+       </tr>
+
+        <tr class="border-tr">
+         <td>
+           <div class="border-line">
+           <span class="ratio-box">
+            <input id="radio-8" name="radio-group1" type="radio">
+            <label for="radio-8"></label>
+           </span>
+         </div>
+         </td>
+         <td>
+              <input id="checkbox-41" name="checkbox-1" type="checkbox">
+              <label for="checkbox-41"></label>
+         </td>
+         <td>
+           <span class="font-red">ADREANI Izia</span>
+         </td>
+         <td>
+           <span class="font-dark-blue">2A</span>
+         </td>
+         <td>
+           <span class="font-blue">014</span><br>
+           <span class="font-dark-blue">07 67 95 37 52</span>
+         </td>
+         <td>
+           <span class="font-green">12 : 45</span>
+         </td>
+         <td class="no-space-td vh">
+           <table class="table-stretch vh">
+              <tr>
+                <td class="wh-100 fixing-space">
+                   <strong class="font-red">ER456</strong><br>
+                   <span class="font-grey">34T</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">F23</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">A39</span>
+                 </td>
+                 <td class="wh-90 text-center no-space">
+                   <span class="border-yellow jalon">PEMB</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-red">12 : 20</span>
+                 </td>
+                 <td class="wh-90 fixing-space"> 
+                   <strong class="font-green">XF534</strong><br>
+                   <span class="font-grey">2D</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">F23</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">A39</span>
+                 </td>
+                 <td class="wh-140">
+                   <span class="font-blue">BOUCHER<br>Henri</span>
+                 </td>
+              </tr>
+            </table>
+         </td>
+         <td>
+           <div class="border-line">
+           <span class="font-dark-blue text-centering">
+            08:17 - 14:00<br>
+            dans 97 min
+          </span><br>
+        </div>
+         </td>
+       </tr>
+
+       <tr class="border-tr border-solid border-white even" rowspan="6">
+         <td>
+           <div class="border-line">
+           <span class="ratio-box">
+            <input id="radio-9" name="radio-group1" type="radio">
+            <label for="radio-9"></label>
+           </span>
+         </div>
+         </td>
+         <td>
+            <input id="checkbox-51" name="checkbox-1" type="checkbox">
+            <label for="checkbox-51"></label>
+         </td>
+         <td>
+           <span class="font-green">PHILIPPOTI Jean Marc</span>
+         </td>
+         <td>
+           <span class="font-dark-blue">T2 ABCD</span>
+         </td>
+         <td>
+           <span class="font-blue">070</span><br>
+           <span class="font-dark-blue">07 32 11 59 04</span>
+         </td>
+         <td>
+           <span class="font-green">12 : 45</span>
+         </td>
+         <td class="no-space-td vh">
+           <table class="table-stretch vh">
+            <tr class="no-space bg-light-grey">
+              <td class="vh" colspan="10">
+                <div class="separator-line line-super-light line-grey"><span class="font-grey">Tache(s) realisee(s): <strong class="font-black">4</strong></span></div>
+              </td>
+             </tr>
+              <tr class="bg-white">
+                <td class="wh-100 fixing-space">
+                   <p class="rotate-text bg-blue font-white">EN COURS</p>
+                   <span class="font-grey">
+                    <strong class="font-red">IZ301</strong><br>
+                    2D
+                   </span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">A80</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">C78</span>
+                 </td>
+                 <td class="wh-90 text-center no-space">
+                   <span class="border-yellow jalon">FINI</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-blue">12 : 30</span>
+                 </td>
+                 <td class="wh-90 fixing-space"> 
+                   <strong class="font-green">EF340</strong><br>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">37H</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">F64</span>
+                 </td>
+                 <td class="wh-140">
+                   <span class="font-blue">BIR<br>Francis</span>
+                 </td>
+              </tr>
+            </table>
+         </td>
+         <td>
+           <div class="border-line">
+           <span class="font-dark-blue text-centering">
+            08:17 - 14:00<br>
+            dans 97 min
+          </span><br>
+        </div>
+         </td>
+       </tr>
+
+        <tr class="border-tr" rowspan="6">
+         <td>
+           <div class="border-line">
+           <span class="ratio-box">
+            <input id="radio-10" name="radio-group1" type="radio">
+            <label for="radio-10"></label>
+           </span>
+         </div>
+         </td>
+         <td>
+            <input id="checkbox-61" name="checkbox-1" type="checkbox">
+            <label for="checkbox-61"></label>
+         </td>
+         <td>
+           <span class="font-green">TOUBISSRHA Virginie</span>
+         </td>
+         <td>
+           <span class="font-dark-blue">2C</span>
+         </td>
+         <td>
+           <span class="font-blue">093</span><br>
+           <span class="font-dark-blue">07 21 44 83 68</span>
+         </td>
+         <td>
+           <span class="font-green">12 : 45</span>
+         </td>
+         <td class="no-space-td vh">
+           <table class="table-stretch vh">
+            <tr class="no-space bg-white">
+              <td class="vh" colspan="10">
+                <div class="separator-line line-super-light line-grey"><span class="font-grey">Tache(s) realisee(s): <strong class="font-black">1</strong></span></div>
+              </td>
+             </tr>
+              <tr>
+                <td class="wh-100 fixing-space">
+                   <p class="rotate-text bg-blue font-white">EN COURS</p>
+                   <span class="font-grey">
+                    <strong class="font-red">TY210</strong><br>
+                    2D
+                   </span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">F86</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">C32</span>
+                 </td>
+                 <td class="wh-90 text-center no-space">
+                   <span class="border-red jalon">END</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-blue">12 : 30</span>
+                 </td>
+                 <td class="wh-90 fixing-space"> 
+                   <strong class="font-green">UI809</strong><br>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">45F</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">FG56</span>
+                 </td>
+                 <td class="w-160">
+                   <span class="font-blue">MAMOUDA<br>Imani</span>
+                 </td>
+              </tr>
+            </table>
+         </td>
+         <td>
+           <div class="border-line">
+           <span class="font-dark-blue text-centering">
+            08:17 - 14:00<br>
+            dans 97 min
+          </span><br>
+        </div>
+         </td>
+       </tr>
+
+        <tr class="border-tr border-solid border-white even">
+         <td>
+           <div class="border-line">
+           <span class="ratio-box">
+            <input id="radio-11" name="radio-group1" type="radio">
+            <label for="radio-11"></label>
+           </span>
+         </div>
+         </td>
+         <td>
+              <input id="checkbox-71" name="checkbox-1" type="checkbox">
+              <label for="checkbox-71"></label>
+         </td>
+         <td>
+           <span class="font-red">BREGUIER Yves</span>
+         </td>
+         <td>
+           <span class="font-dark-blue">2A</span>
+         </td>
+         <td>
+           <span class="font-blue">098</span><br>
+           <span class="font-dark-blue">07 55 88 92 13</span>
+         </td>
+         <td>
+           <span class="font-green">12 : 45</span>
+         </td>
+         <td class="no-space-td vh">
+           <table class="table-stretch separator-table vh">
+              <tr>
+                <td class="wh-100 fixing-space border-td-after">
+                   <strong class="font-red">JIY123</strong><br>
+                   <span class="font-grey">1F</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">098</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">D58</span>
+                 </td>
+                 <td class="wh-90 text-center no-space">
+                   <span class="border-yellow jalon">PEMB</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-red">12 : 10</span>
+                 </td>
+                 <td class="wh-90 fixing-space"> 
+                   <strong class="font-green">ZEA321</strong><br>
+                   <span class="font-grey">1F</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">098</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">D58</span>
+                 </td>
+                 <td class="wh-140 border-td-before">
+                   <span class="font-blue">FRANCISQUAIS<br>Benoit</span>
+                 </td>
+              </tr>
+            </table>
+         </td>
+         <td>
+           <div class="border-line">
+           <span class="font-dark-blue text-centering">
+            08:17 - 14:00<br>
+            dans 97 min
+          </span><br>
+        </div>
+         </td>
+       </tr>
+
+       <tr class="border-tr" rowspan="6">
+         <td>
+           <div class="border-line">
+           <span class="ratio-box">
+            <input id="radio-12" name="radio-group1" type="radio">
+            <label for="radio-12"></label>
+           </span>
+         </div>
+         </td>
+         <td>
+            <input id="checkbox-81" name="checkbox-1" type="checkbox">
+            <label for="checkbox-81"></label>
+         </td>
+         <td>
+           <span class="font-green">PHILIPPOTI Jean Marcs</span>
+         </td>
+         <td>
+           <span class="font-dark-blue">2C</span>
+         </td>
+         <td>
+           <span class="font-blue">014</span><br>
+           <span class="font-dark-blue">07 67 95 37 52</span>
+         </td>
+         <td>
+           <span class="font-green">12 : 45</span>
+         </td>
+         <td class="no-space-td vh">
+           <table class="table-stretch vh">
+            <tr class="no-space bg-white">
+              <td class="vh" colspan="10">
+                <div class="separator-line line-super-light line-grey"><span class="font-grey">Tache(s) realisee(s): <strong class="font-black">2</strong></span></div>
+              </td>
+             </tr>
+              <tr class="bg-white">
+                <td class="wh-100 fixing-space">
+                   <p class="rotate-text bg-blue font-white">EN COURS</p>
+                   <span class="font-grey">
+                    <strong class="font-red">IZ301</strong><br>
+                    2D
+                   </span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">A80</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">C78</span>
+                 </td>
+                 <td class="wh-90 text-center no-space">
+                   <span class="border-yellow jalon">FINI</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-blue">12 : 30</span>
+                 </td>
+                 <td class="wh-90 fixing-space"> 
+                   <strong class="font-green">EF340</strong><br>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">37H</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">F68</span>
+                 </td>
+                 <td class="wh-140">
+                   <span class="font-blue">BIR<br>Francis</span>
+                 </td>
+              </tr>
+            </table>
+         </td>
+         <td>
+           <div class="border-line">
+           <span class="font-dark-blue text-centering">
+            08:17 - 14:00<br>
+            dans 97 min
+          </span><br>
+        </div>
+         </td>
+       </tr>
+
+        <tr class="border-tr border-solid border-white even">
+         <td>
+           <div class="border-line">
+           <span class="ratio-box">
+            <input id="radio-13" name="radio-group1" type="radio">
+            <label for="radio-13"></label>
+           </span>
+         </div>
+         </td>
+         <td>
+            <input id="checkbox-91" name="checkbox-1" type="checkbox">
+            <label for="checkbox-91"></label>
+         </td>
+         <td>
+           <span class="font-red">ANDREANI Izia</span>
+         </td>
+         <td>
+           <span class="font-dark-blue">2A</span>
+         </td>
+         <td>
+           <span class="font-blue">098</span><br>
+           <span class="font-dark-blue">07 55 88 92 13</span>
+         </td>
+         <td>
+           <span class="font-green">12 : 45</span>
+         </td>
+         <td class="no-space-td vh">
+           <table class="table-stretch separator-table vh">
+              <tr>
+                <td class="wh-100 fixing-space border-td-after">
+                   <strong class="font-red">GR944</strong><br>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">F23</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">C85</span>
+                 </td>
+                 <td class="wh-90 text-center no-space">
+                   <span class="border-green jalon">END</span>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-blue">12 : 45</span>
+                 </td>
+                 <td class="wh-90 fixing-space"> 
+                   <strong class="font-green">JF243</strong><br>
+                 </td>
+                 <td class="wh-60 text-center no-space">
+                   <span class="font-grey">07U</span>
+                 </td>
+                 <td class="wh-40 text-center no-space">
+                   <span class="font-grey">G67</span>
+                 </td>
+                 <td class="wh-140 border-td-before">
+                   <span class="font-blue">MANGEOTTE<br>Emanuelle</span>
+                 </td>
+              </tr>
+            </table>
+         </td>
+         <td>
+          <div class="border-line">
+           <span class="font-dark-blue text-centering">
+            08:17 - 14:00<br>
+            dans 97 min
+          </span><br>
+        </div>
+         </td>
+       </tr> 
+      </tbody>
+    </table>
+    </div>
+  </section><!--affectation-home-->
+   <div class="valid-block font-white bg-light-blue">
+      <a href="#" id="popup-hide" class="font-white bg-dark-blue">VALIDER</a>
+    </div>
+  </div>
+</div>
+  
+  <script src="js/app.min.js" charset="utf-8"></script>
+
 </body>
 </html>
 

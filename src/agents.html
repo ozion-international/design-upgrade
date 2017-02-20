@@ -1,38 +1,409 @@
-@@include('templates/head.html',{"title": "Index"})
-<body>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>Ozion - Index</title>
+	<!-- <link rel="icon" type="image/png" href="img/favicon.png"> -->
+	<link rel="stylesheet" href="css/app.min.css">
+	</head>
 
-	@@include('templates/header-agents.html')
+<body>
+<header>
+  <div class="top-head">
+  <div class="left-group">
+    <a class="logo" href="#">
+      <img src="/img/ozion.png" alt="">
+      <span>PHMR MANAGER</span>
+    </a>
+    <div class="search-field">
+      <input type="text" name="" id="">
+      <button type="submit"><svg class="fill-grey" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#search"></use></svg></button>
+    </div>
+  </div><!-- .left-group -->
+  <div class="time">
+   <strong>TIME</strong>
+    <span>20</span> : <span>37</span> : <span>12</span>
+  </div><!-- .time -->
+
+  <div class="right-group">
+  <div class="slider-container">
+    <div class="prevSlider" onclick="jsTopSlider(1);">
+      <svg class="fill-grey" width="11" height="11"><use xlink:href='/img/img.svg#arrow-left-fill'></svg>
+    </div>
+    <div class="nextSlider" onclick="jsTopSlider(2);">
+      <svg class="fill-grey" width="11" height="11"><use xlink:href='/img/img.svg#arrow-right-fill'></svg>
+    </div>
+    <input type="hidden" id="curentslider" value="1">
+    <div class="sliderStat">
+       <ul>
+          <li id="box1" class="boxslider">
+          <a id="slide" class="status-link border-green" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              <sup>214</sup>
+            </a>
+        </li>
+        <li id="box2" class="boxslider">
+          <a id="slide" class="status-link border-blue" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              <sup>27</sup>
+            </a>
+        </li>
+        <li id="box3" class="boxslider">
+          <a id="slide" class="status-link border-red" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              <sup>11</sup>
+            </a>
+        </li>
+        <li id="box4" class="boxslider no-active">
+           <a id="slide" class="status-link border-green" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              <sup>214</sup>
+            </a>
+        </li>
+        <li id="box5" class="boxslider no-active">
+           <a id="slide" class="status-link border-green" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              <sup>214</sup>
+            </a>
+        </li>
+        <li id="box6" class="boxslider no-active">
+           <a id="slide" class="status-link border-blue" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              <sup>27</sup>
+            </a>
+        </li>
+       </ul>
+    </div>
+  </div><!--.slide-container-->
+
+    <div class="info-bl">
+      <a class="link-with-sup" href="#">
+        <svg class="fill-red" width="27" height="27"><use xlink:href='/img/img.svg#bell'></svg>
+        <sup>324</sup>
+      </a>
+    </div>
+    <div class="info-bl">
+      <a class="link-with-sup" href="#">
+        <svg class="fill-blue" width="27" height="27"><use xlink:href='/img/img.svg#clock'></svg>
+        <sup><span class="font-blue">1</span>/<span class="font-blue">9</span></sup>
+      </a>
+    </div>
+      
+    <nav class="logged-nav">
+      <a href="#">
+        <svg class="fill-black" width="28" height="28"><use xlink:href='/img/img.svg#home'></svg>
+      </a>
+      <a href="#">
+        <svg class="fill-black" width="28" height="28"><use xlink:href='/img/img.svg#profile'></svg>
+      </a>
+      <a href="#">
+        <svg class="fill-black" width="28" height="28"><use xlink:href='/img/img.svg#dashboard'></svg>
+      </a>
+    </nav><!-- .logged-nav -->  
+  </div><!-- .right-group -->
+</div><!-- .top-head -->
+  <nav class="top-nav">
+  <a href="#">
+    <svg class="fill-white" width="25" height="36"><use xlink:href='/img/img.svg#wheelchair'></svg>
+    PHMR
+  </a>
+  <a href="#">
+    <svg class="fill-white" width="40" height="36"><use xlink:href='/img/img.svg#attention'></svg>
+    INCIDENTS
+  </a>
+  <a href="#">
+    <svg class="fill-white" width="47" height="36"><use xlink:href='/img/img.svg#hands-care'></svg>
+    PRETS
+  </a>
+  <a href="#">
+    <svg class="fill-white" width="28" height="36"><use xlink:href='/img/img.svg#flag'></svg>
+    FIL D'ACTUALITE
+  </a>
+  <a href="#">
+    <svg class="fill-white" width="35" height="36"><use xlink:href='/img/img.svg#clock'></svg>
+    SERVICE
+  </a>
+  <a href="#">
+    <svg class="fill-white" width="29" height="36"><use xlink:href='/img/img.svg#list'></svg>
+    DOCUMENTS
+  </a>
+  <a href="#">
+    <svg class="fill-white" width="31" height="36"><use xlink:href='/img/img.svg#contacts'></svg>
+    ANNUAIRE
+  </a>
+  <a href="#">
+     <svg class="fill-white" width="40" height="36"><use xlink:href='/img/img.svg#book'></svg>
+    CONSIGNES
+  </a>
+</nav>
+  <div class="top-filter">
+    <div class="left-info-bl">
+      <ul class="breadcrumb">
+        <li>
+          <svg class="fill-blue" width="15" height="21"><use xlink:href='/img/img.svg#wheelchair'></svg>
+          <a href="">PHMR</a>
+
+        </li>
+        <li>
+          <svg class="fill-grey arrow" width="12" height="12"><use xlink:href='/img/img.svg#arrow-right-fill'></svg>
+          <span>MISSIONS</span>
+        </li>
+      </ul>
+      
+      <a class="round-link-icon" href="#">
+        <svg class="fill-blue" width="25" height="25"><use xlink:href='/img/img.svg#add'></svg>
+      </a>
+      <a class="round-link-icon" href="#">
+        <svg class="fill-blue" width="25" height="25"><use xlink:href='/img/img.svg#protect-user'></svg>
+      </a>
+      <a class="round-link-icon" href="#">
+        <svg class="fill-blue" width="25" height="25"><use xlink:href='/img/img.svg#goforward'></svg>
+      </a>
+
+    </div>
+
+    <div class="select-filter-group">
+      <div class="group-filter group-filter-left">
+      <div class="select-custom">
+        <select>
+          <option>OUVRIR LES FILTRES</option>
+          <option>TRI PAR TACHE 2</option>
+          <option>TRI PAR TACHE 3</option>
+        </select>
+        <span class="arrow-normal">
+           <svg class="fill-grey" width="14" height="14"><use xlink:href='/img/img.svg#arrow-bottom-fill'></svg>
+        </span>
+      </div>
+      <ul class="filter-selected">
+          <li class="bg-white font-dark-blue" href="#">
+              <svg width="9px" height="9px" viewBox="0 0 9 9">
+                  <g stroke-width="1" fill-rule="evenodd">
+                      <g id="remove-ico" stroke-width="0.8">
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                      </g>
+                  </g>
+              </svg>
+              <span class="font-grey">Or.Date</span> 21.11.16
+          </li>
+          <li class="bg-white font-dark-blue" href="#">
+              <svg width="9px" height="9px" viewBox="0 0 9 9">
+                  <g stroke-width="1" fill-rule="evenodd">
+                      <g id="remove-ico" stroke-width="0.8">
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                      </g>
+                  </g>
+              </svg>
+              <span>Exp.Date</span> 23.11.16      
+          </li>
+          <li class="bg-white font-dark-blue" href="#">
+            <svg width="9px" height="9px" viewBox="0 0 9 9">
+                  <g stroke-width="1" fill-rule="evenodd">
+                      <g id="remove-ico" stroke-width="0.8">
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                      </g>
+                  </g>
+              </svg>
+              Boing 747
+          </li>
+          <li class="bg-white font-dark-blue" href="#">
+            <svg width="9px" height="9px" viewBox="0 0 9 9">
+                  <g stroke-width="1" fill-rule="evenodd">
+                      <g id="remove-ico" stroke-width="0.8">
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                      </g>
+                  </g>
+              </svg>
+              HONG KONG
+          </li>
+          <li class="bg-white font-dark-blue" href="#">
+            <svg width="9px" height="9px" viewBox="0 0 9 9">
+                  <g stroke-width="1" fill-rule="evenodd">
+                      <g id="remove-ico" stroke-width="0.8">
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                      </g>
+                  </g>
+              </svg>
+              Air France
+          </li>
+          <li class="bg-white  font-dark-blue" href="#">
+            <svg width="9px" height="9px" viewBox="0 0 9 9">
+                  <g stroke-width="1" fill-rule="evenodd">
+                      <g id="remove-ico" stroke-width="0.8">
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                      </g>
+                  </g>
+              </svg>
+              <span>Agent</span> MAURICE VALLOIS   
+          </li>
+          <li class="bg-white  font-dark-blue" href="#">
+            <svg width="9px" height="9px" viewBox="0 0 9 9">
+                  <g stroke-width="1" fill-rule="evenodd">
+                      <g id="remove-ico" stroke-width="0.8">
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                      </g>
+                  </g>
+              </svg>
+              <span>Agent</span> MAURICE VALLOIS   
+          </li>
+          <li class="bg-white  font-dark-blue" href="#">
+            <svg width="9px" height="9px" viewBox="0 0 9 9">
+                  <g stroke-width="1" fill-rule="evenodd">
+                      <g id="remove-ico" stroke-width="0.8">
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                      </g>
+                  </g>
+              </svg>
+              <span>Agent</span> MAURICE VALLOIS   
+          </li>
+          <li class="bg-white  font-dark-blue" href="#">
+            <svg width="9px" height="9px" viewBox="0 0 9 9">
+                  <g stroke-width="1" fill-rule="evenodd">
+                      <g id="remove-ico" stroke-width="0.8">
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                      </g>
+                  </g>
+              </svg>
+              <span>Agent</span> MAURICE VALLOIS   
+          </li>
+      </ul>
+      </div>
+      <!-- <div class="clearfix"></div> -->
+      <div class="group-filter">
+       <div class="select-custom">
+        <select>
+          <option>TRI PAR TACHE</option>
+          <option>TRI PAR TACHE 2</option>
+          <option>TRI PAR TACHE 3</option>
+        </select>
+          <span class="arrow-normal">
+           <svg class="fill-grey" width="14" height="14"><use xlink:href='/img/img.svg#arrow-bottom-fill'></svg>
+        </span>
+      </div>
+      <ul class="filter-selected">
+          <li class="bg-blue" href="#">
+              <svg width="9px" height="9px" viewBox="0 0 9 9">
+                  <g stroke-width="1" fill-rule="evenodd">
+                      <g id="remove-ico" stroke-width="0.8">
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                      </g>
+                  </g>
+              </svg>
+              Agent
+          </li>
+          <li class="bg-blue" href="#">
+              <svg width="9px" height="9px" viewBox="0 0 9 9">
+                  <g stroke-width="1" fill-rule="evenodd">
+                      <g id="remove-ico" stroke-width="0.8">
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                      </g>
+                  </g>
+              </svg>
+              Shuttle
+          </li>
+          <li class="bg-blue" href="#">
+            <svg width="9px" height="9px" viewBox="0 0 9 9">
+                  <g stroke-width="1" fill-rule="evenodd">
+                      <g id="remove-ico" stroke-width="0.8">
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                          <path d="M0.4,0.4 L8.4,8.4"/>
+                          <path d="M0.4,8.4 L8.4,0.4"/>
+                      </g>
+                  </g>
+              </svg>
+              Schelduled
+          </li>
+      </ul>
+      </div>
+    </div>
+  </div><!-- .top-filter -->
+
+	<div class="list-of-agents bg-white">
+  	<span class="font-dark-blue">LISTE DES AGENTS <strong>PHMR</strong></span>
+	</div>
+
+</header>
 	
   <section>
 	  <div class="info-container">
 	    <form class="personal-info">
-	      <button class="refresh font-white">
+	      <button class="refresh bg-grey font-white">
 	        REFRESH
-	        <img src="img/refresh.png" alt="refresh">
+	       <svg class="fill-white refresh-svg" width="13" height="13"><use xlink:href='/img/img.svg#refresh'></svg>
 	      </button>
 	      <input type="text" placeholder="Nom">
 	      <input type="text" placeholder="Prénom">
 	      <button class="btn search bg-dark-blue" type="submit">
-	      <img width="13px" src="/img/search-white.svg" alt="">
+	      <svg class="fill-white search-svg" width="13" height="13"><use xlink:href='/img/img.svg#search'></svg>
 	  </button>
 	    </form>
-	    <div class="select-block">
-	      <select class="custome-select">
-	          <option>TRI MISSION</option>
-	          <option>TRI MISSION 2</option>
-	          <option>TRI MISSION 3</option>
-	        </select>
-	         <select class="custome-select">
-	          <option>FILTRE AGENT</option>
-	          <option>FILTRE AGENT 2</option>
-	          <option>FILTRE AGENT 3</option>
-	        </select>
+	     <div class="select-block">
+	        <div class="custome-select">
+	          <select>
+	            <option>TRI MISSION</option>
+	            <option>TRI MISSION 2</option>
+	            <option>TRI MISSION 3</option>
+	          </select>
+	           <span class="arrow-normal">
+	             <svg class="fill-black" width="14" height="14"><use xlink:href='/img/img.svg#arrow-bottom-fill'></svg>
+	           </span>
+	        </div>
+	        <div class="custome-select">
+	           <select class="custome-select">
+	            <option>FILTRE AGENT</option>
+	            <option>FILTRE AGENT 2</option>
+	            <option>FILTRE AGENT 3</option>
+	        	</select>
+	         	<span class="arrow-normal">
+	            	 <svg class="fill-black" width="14" height="14"><use xlink:href='/img/img.svg#arrow-bottom-fill'></svg>
+	           </span>
+	        </div>
+	       <div class="custome-select">
 	         <select class="custome-select strong">
-	          <option>ZONE</option>
-	          <option>ZONE 2</option>
-	          <option>ZONE 3</option>
+	            <option>ZONE</option>
+	            <option>ZONE 2</option>
+	            <option>ZONE 3</option>
 	        </select>
-	    </div>
+	         <span class="arrow-normal">
+	             <svg class="fill-black" width="14" height="14"><use xlink:href='/img/img.svg#arrow-bottom-fill-strong'></svg>
+	           </span>
+	       </div>
+      	</div>
 	  </div>
 
 	  <div class="table-responsive">
@@ -70,8 +441,8 @@
 	       <td>
 	         <div class="border-line ratio-box">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-1" name="radio-group1" type="radio">
+	          <label for="radio-1"></label>
 	         </span>
 	       </div>
 	       </td>
@@ -95,7 +466,7 @@
 	       <td class="no-space-td wh">
 	         <table class="table-stretch separator-table vh">
 	            <tr>
-	              <td class="wh-100 fixing-space">
+	              <td class="wh-100 fixing-space border-td-after">
 	                 <strong class="font-red">OS411</strong><br>
 	                 <span class="font-grey">2E</span>
 	               </td>
@@ -119,7 +490,7 @@
 	               <td class="wh-40 text-center no-space">
 	                 <span class="font-grey">A40</span>
 	               </td>
-	               <td class="wh-140">
+	               <td class="wh-140 border-td-before">
 	                 <span class="font-blue">VALBRUGUEU<br>Vladimir</span>
 	               </td>
 	            </tr>
@@ -139,14 +510,14 @@
 	       <td>
 	         <div class="border-line">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-2" name="radio-group1" type="radio">
+	          <label for="radio-2"></label>
 	         </span>
 	       </div>
 	       </td>
 	       <td>
-	          <input id="checkbox-1" name="checkbox-1" type="checkbox">
-	          <label for="checkbox-1"></label>
+	          <input id="checkbox-2" name="checkbox-1" type="checkbox">
+	          <label for="checkbox-2"></label>
 	       </td>
 	       <td>
 	         <span class="font-red">YACOUBHI Saharan</span>
@@ -163,7 +534,7 @@
 	       </td>
 	       <td class="no-space-td vh">
 	        <table class="table-stretch-container border-light-grey vh">
-	          <tr class="border border-light-grey">
+	          <tr class="border border-light-grey border-tr-bottom">
 	            <td class="wh-100 fixing-space">
 	             <strong class="font-red">AF385</strong><br>
 	             <span class="font-grey">2A</span>
@@ -192,7 +563,7 @@
 	               <span class="font-blue">SMIRNOV Alex</span>
 	             </td>
 	          </tr>
-	          <tr class="border border-light-grey">
+	          <tr class="border border-light-grey border-tr-bottom">
 	            <td class="wh-100 fixing-space">
 	             <strong class="font-red">AF385</strong><br>
 	             <span class="font-grey">2A</span>
@@ -223,7 +594,7 @@
 	               <span class="font-blue">SMIRNOV Alex</span>
 	             </td>
 	          </tr>
-	          <tr class="border border-light-grey">
+	          <tr class="border border-light-grey border-tr-bottom">
 	            <td class="wh-100 fixing-space">
 	             </td>
 	             <td class="wh-60 text-center no-space">
@@ -296,14 +667,14 @@
 	       <td>
 	         <div class="border-line">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-3" name="radio-group1" type="radio">
+	          <label for="radio-3"></label>
 	         </span>
 	       </div>
 	       </td>
 	       <td>
-	          <input id="checkbox-1" name="checkbox-1" type="checkbox">
-	          <label for="checkbox-1"></label>
+	          <input id="checkbox-3" name="checkbox-1" type="checkbox">
+	          <label for="checkbox-3"></label>
 	       </td>
 	       <td>
 	         <span class="font-green">BENJERT Icham</span>
@@ -327,7 +698,7 @@
 	           </tr>
 	            <tr class="bg-white">
 	              <td class="wh-100 fixing-space">
-	                 <p class="rotate-text bg-blue font-white">Vertical</p>
+	                 <p class="rotate-text bg-blue font-white">EN COURS</p>
 	                 <span class="font-grey">
 	                  <strong class="font-red">GB132</strong><br>
 	                  2D
@@ -374,14 +745,14 @@
 	       <td>
 	         <div class="border-line">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-4" name="radio-group1" type="radio">
+	          <label for="radio-4"></label>
 	         </span>
 	       </div>
 	       </td>
 	       <td>
-	            <input id="checkbox-1" name="checkbox-1" type="checkbox">
-	            <label for="checkbox-1"></label>
+	            <input id="checkbox-4" name="checkbox-1" type="checkbox">
+	            <label for="checkbox-4"></label>
 	       </td>
 	       <td>
 	         <span class="font-red">ADREANI Izia</span>
@@ -445,14 +816,14 @@
 	       <td>
 	         <div class="border-line">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-5" name="radio-group1" type="radio">
+	          <label for="radio-5"></label>
 	         </span>
 	       </div>
 	       </td>
 	       <td>
-	          <input id="checkbox-1" name="checkbox-1" type="checkbox">
-	          <label for="checkbox-1"></label>
+	          <input id="checkbox-5" name="checkbox-1" type="checkbox">
+	          <label for="checkbox-5"></label>
 	       </td>
 	       <td>
 	         <span class="font-green">PHILIPPOTI Jean Marc</span>
@@ -476,7 +847,7 @@
 	           </tr>
 	            <tr class="bg-white">
 	              <td class="wh-100 fixing-space">
-	                 <p class="rotate-text bg-blue font-white">Vertical</p>
+	                 <p class="rotate-text bg-blue font-white">EN COURS</p>
 	                 <span class="font-grey">
 	                  <strong class="font-red">IZ301</strong><br>
 	                  2D
@@ -523,14 +894,14 @@
 	       <td>
 	         <div class="border-line">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-6" name="radio-group1" type="radio">
+	          <label for="radio-6"></label>
 	         </span>
 	       </div>
 	       </td>
 	       <td>
-	          <input id="checkbox-1" name="checkbox-1" type="checkbox">
-	          <label for="checkbox-1"></label>
+	          <input id="checkbox-6" name="checkbox-1" type="checkbox">
+	          <label for="checkbox-6"></label>
 	       </td>
 	       <td>
 	         <span class="font-green">TOUBISSRHA Virginie</span>
@@ -547,14 +918,14 @@
 	       </td>
 	       <td class="no-space-td vh">
 	         <table class="table-stretch vh">
-	          <tr class="no-space bg-light-grey">
+	          <tr class="no-space bg-whyte">
 	            <td class="vh" colspan="10">
 	              <div class="separator-line line-super-light line-grey"><span class="font-grey">Tache(s) realisee(s): <strong class="font-black">1</strong></span></div>
 	            </td>
 	           </tr>
 	            <tr>
 	              <td class="wh-100 fixing-space">
-	                 <p class="rotate-text bg-blue font-white">Vertical</p>
+	                 <p class="rotate-text bg-blue font-white">EN COURS</p>
 	                 <span class="font-grey">
 	                  <strong class="font-red">TY210</strong><br>
 	                  2D
@@ -601,14 +972,14 @@
 	       <td>
 	         <div class="border-line">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-7" name="radio-group1" type="radio">
+	          <label for="radio-7"></label>
 	         </span>
 	       </div>
 	       </td>
 	       <td>
-	            <input id="checkbox-1" name="checkbox-1" type="checkbox">
-	            <label for="checkbox-1"></label>
+	            <input id="checkbox-7" name="checkbox-1" type="checkbox">
+	            <label for="checkbox-7"></label>
 	       </td>
 	       <td>
 	         <span class="font-red">BREGUIER Yves</span>
@@ -626,7 +997,7 @@
 	       <td class="no-space-td vh">
 	         <table class="table-stretch separator-table vh">
 	            <tr>
-	              <td class="wh-100 fixing-space">
+	              <td class="wh-100 fixing-space border-td-after">
 	                 <strong class="font-red">JIY123</strong><br>
 	                 <span class="font-grey">1F</span>
 	               </td>
@@ -652,7 +1023,7 @@
 	               <td class="wh-40 text-center no-space">
 	                 <span class="font-grey">D58</span>
 	               </td>
-	               <td class="wh-140">
+	               <td class="wh-140 border-td-before">
 	                 <span class="font-blue">FRANCISQUAIS<br>Benoit</span>
 	               </td>
 	            </tr>
@@ -672,14 +1043,14 @@
 	       <td>
 	         <div class="border-line">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-8" name="radio-group1" type="radio">
+	          <label for="radio-8"></label>
 	         </span>
 	       </div>
 	       </td>
 	       <td>
-	          <input id="checkbox-1" name="checkbox-1" type="checkbox">
-	          <label for="checkbox-1"></label>
+	          <input id="checkbox-8" name="checkbox-1" type="checkbox">
+	          <label for="checkbox-8"></label>
 	       </td>
 	       <td>
 	         <span class="font-green">PHILIPPOTI Jean Marcs</span>
@@ -696,14 +1067,14 @@
 	       </td>
 	       <td class="no-space-td vh">
 	         <table class="table-stretch vh">
-	          <tr class="no-space bg-light-grey">
+	          <tr class="no-space bg-white">
 	            <td class="vh" colspan="10">
 	              <div class="separator-line line-super-light line-grey"><span class="font-grey">Tache(s) realisee(s): <strong class="font-black">2</strong></span></div>
 	            </td>
 	           </tr>
 	            <tr class="bg-white">
 	              <td class="wh-100 fixing-space">
-	                 <p class="rotate-text bg-blue font-white">Vertical</p>
+	                 <p class="rotate-text bg-blue font-white">EN COURS</p>
 	                 <span class="font-grey">
 	                  <strong class="font-red">IZ301</strong><br>
 	                  2D
@@ -750,14 +1121,14 @@
 	       <td>
 	         <div class="border-line">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-9" name="radio-group1" type="radio">
+	          <label for="radio-9"></label>
 	         </span>
 	       </div>
 	       </td>
 	       <td>
-	          <input id="checkbox-1" name="checkbox-1" type="checkbox">
-	          <label for="checkbox-1"></label>
+	          <input id="checkbox-9" name="checkbox-1" type="checkbox">
+	          <label for="checkbox-9"></label>
 	       </td>
 	       <td>
 	         <span class="font-green">CARLOTTI Jean</span>
@@ -781,7 +1152,7 @@
 	           </tr>
 	            <tr class="bg-white">
 	              <td class="wh-100 fixing-space">
-	                 <p class="rotate-text bg-blue font-white">Vertical</p>
+	                 <p class="rotate-text bg-blue font-white">EN COURS</p>
 	                 <span class="font-grey">
 	                  <strong class="font-red">IZ301</strong><br>
 	                  2D
@@ -828,14 +1199,14 @@
 	       <td>
 	         <div class="border-line">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-10" name="radio-group1" type="radio">
+	          <label for="radio-10"></label>
 	         </span>
 	       </div>
 	       </td>
 	       <td>
-	          <input id="checkbox-1" name="checkbox-1" type="checkbox">
-	          <label for="checkbox-1"></label>
+	          <input id="checkbox-10" name="checkbox-1" type="checkbox">
+	          <label for="checkbox-10"></label>
 	       </td>
 	       <td>
 	         <span class="font-green">HAURION Edouard</span>
@@ -859,7 +1230,7 @@
 	           </tr>
 	            <tr class="bg-white">
 	              <td class="wh-100 fixing-space">
-	                 <p class="rotate-text bg-blue font-white">Vertical</p>
+	                 <p class="rotate-text bg-blue font-white">EN COURS</p>
 	                 <span class="font-grey">
 	                  <strong class="font-red">TY210</strong><br>
 	                  2D
@@ -906,14 +1277,14 @@
 	       <td>
 	         <div class="border-line">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-11" name="radio-group1" type="radio">
+	          <label for="radio-11"></label>
 	         </span>
 	       </div>
 	       </td>
 	       <td>
-	            <input id="checkbox-1" name="checkbox-1" type="checkbox">
-	            <label for="checkbox-1"></label>
+	            <input id="checkbox-11" name="checkbox-1" type="checkbox">
+	            <label for="checkbox-11"></label>
 	       </td>
 	       <td>
 	         <span class="font-red">MARTIN Vladimir</span>
@@ -931,7 +1302,7 @@
 	       <td class="no-space-td vh">
 	         <table class="table-stretch separator-table vh">
 	            <tr>
-	              <td class="wh-100 fixing-space">
+	              <td class="wh-100 fixing-space border-td-after">
 	                 <strong class="font-red">JIY123</strong><br>
 	                 <span class="font-grey">1F</span>
 	               </td>
@@ -957,7 +1328,7 @@
 	               <td class="wh-40 text-center no-space">
 	                 <span class="font-grey">D58</span>
 	               </td>
-	               <td class="wh-140">
+	               <td class="wh-140 border-td-before">
 	                 <span class="font-blue">FRANCISQUAIS<br>Benoit</span>
 	               </td>
 	            </tr>
@@ -977,14 +1348,14 @@
 	       <td>
 	         <div class="border-line">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-12" name="radio-group1" type="radio">
+	          <label for="radio-12"></label>
 	         </span>
 	       </div>
 	       </td>
 	       <td>
-	          <input id="checkbox-1" name="checkbox-1" type="checkbox">
-	          <label for="checkbox-1"></label>
+	          <input id="checkbox-12" name="checkbox-1" type="checkbox">
+	          <label for="checkbox-12"></label>
 	       </td>
 	       <td>
 	         <span class="font-green">ALBERT Alban</span>
@@ -1008,7 +1379,7 @@
 	           </tr>
 	            <tr class="bg-white">
 	              <td class="wh-100 fixing-space">
-	                 <p class="rotate-text bg-blue font-white">Vertical</p>
+	                 <p class="rotate-text bg-blue font-white">EN COURS</p>
 	                 <span class="font-grey">
 	                  <strong class="font-red">IZ301</strong><br>
 	                  2D
@@ -1055,14 +1426,14 @@
 	       <td>
 	         <div class="border-line">
 	         <span class="ratio-box">
-	          <input id="radio-31" name="radio-group1" type="radio">
-	          <label for="radio-31"></label>
+	          <input id="radio-13" name="radio-group1" type="radio">
+	          <label for="radio-13"></label>
 	         </span>
 	       </div>
 	       </td>
 	       <td>
-	          <input id="checkbox-1" name="checkbox-1" type="checkbox">
-	          <label for="checkbox-1"></label>
+	          <input id="checkbox-13" name="checkbox-1" type="checkbox">
+	          <label for="checkbox-13"></label>
 	       </td>
 	       <td>
 	         <span class="font-red">FIGUIER Maurice</span>
@@ -1080,7 +1451,7 @@
 	       <td class="no-space-td vh">
 	         <table class="table-stretch separator-table vh">
 	            <tr>
-	              <td class="wh-100 fixing-space">
+	              <td class="wh-100 fixing-space border-td-after">
 	                 <strong class="font-red">GR944</strong><br>
 	               </td>
 	               <td class="wh-60 text-center no-space">
@@ -1104,7 +1475,7 @@
 	               <td class="wh-40 text-center no-space">
 	                 <span class="font-grey">G67</span>
 	               </td>
-	               <td class="wh-140">
+	               <td class="wh-140 border-td-before">
 	                 <span class="font-blue">MANGEOTTE<br>Emanuelle</span>
 	               </td>
 	            </tr>
@@ -1119,14 +1490,18 @@
 	      </div>
 	       </td>
 	     </tr> 
-
-
 	    </tbody>
 	  </table>
 	    </div>
 	  </div>
 	</section>
-  @@include('templates/footer.html')
-  @@include('templates/scripts.html')
+  <footer>
+  
+</footer>
+
+
+
+  <script src="js/app.min.js" charset="utf-8"></script>
+
 </body>
 </html>
