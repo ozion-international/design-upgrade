@@ -59,17 +59,6 @@ header{
 		vertical-align:top;
 		padding:25px 20px 0 16px;
 	}
-
-	.list-of-agents {
-		text-align: center;
-		border-bottom: 2px solid $dark-blue;
-		padding: 5px 0 1px 0;
-		span{
-			font-size: 18px;
-			line-height: 33px;
-			letter-spacing: 2px;
-		}
-	}
 }
 
 .logo{
@@ -236,4 +225,16 @@ section{
 	padding:0px 10px;
 }
 
+
+.list-of-agents {
+  text-align: center;
+  border-bottom: 2px solid $dark-blue;
+  padding: 5px 0 1px 0;
+  margin-bottom: 20px;
+  span{
+    font-size: 18px;
+	line-height: 33px;
+	letter-spacing: 2px;
+  }
+}
 

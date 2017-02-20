@@ -14,6 +14,7 @@ body{
 
 
 .notification-bl{
+    display: none;
 	background-color:rgba(31,151,243,0.62);
 	text-align:center;
 	padding:12px 0px 10px;
@@ -29,6 +30,10 @@ body{
 		padding-top:5px;
 		padding-bottom:5px;
 	}
+
+    form{
+        display: inline-block;
+    }
 }
 
 
@@ -38,6 +43,7 @@ body{
 }
 
 .popup-icon{
+    position: relative;
 	padding-top:10px;
 	&:hover .popover {
 		-webkit-animation: move-up .3s linear 1;
@@ -59,10 +65,10 @@ body{
 
 .popover {
 	position: absolute;
-	min-width: 189px;
+	width: 200px;
 	padding: 5px 7px 10px 7px;
-	top:-100px;
-	left: calc(50% - 94px);
+	bottom: calc(100% + 20px);
+	left: calc(50% - 100px);
 	box-shadow: 1px 1px 17px 0px rgba(172, 176, 178, 0.75);
   	transition: all 0.2s ease-in-out;
   	display: none;
@@ -107,6 +113,22 @@ body{
 			padding-left: 6px;
 		}
 	}
+
+    .comments-list{
+        padding: 0 0 0 20px;
+        margin: 0;
+        
+        li{
+            white-space: normal; 
+            margin-bottom: 10px;
+
+            h5{
+                font-size: 12px;
+                text-transform: capitalize;
+                margin: 0 0 5px 0;
+            }
+        }
+    }
 }
 
 /*agents home style*/

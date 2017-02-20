@@ -52,7 +52,3 @@ function jsTopSlider(dir) {
 }
 
 document.addEventListener('DOMContentLoaded', documentReady , false);
-
-
-
-	
