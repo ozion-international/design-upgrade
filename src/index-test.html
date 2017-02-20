@@ -1,4 +1,14 @@
-@@include('templates/head.html',{"title": "Index"})
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>Ozion - Index</title>
+	<!-- <link rel="icon" type="image/png" href="img/favicon.png"> -->
+	<link rel="stylesheet" href="css/app.min.css">
+	</head>
+
 <body>
 
 
@@ -40,14 +50,16 @@
 
   <svg class="fill-dark-blue" width="25" height="25"><use xlink:href='/img/img.svg#add'></svg>
 
-
-
 <svg class="fill-red" width="25" height="25"><use xlink:href='/img/img.svg#goforward'></svg>
 <svg class="fill-red" width="25" height="25"><use xlink:href='/img/img.svg#protect-user'></svg>
 <br>
 
 <svg class="fill-red" width="6" height="8"><use xlink:href='/img/img.svg#arrow-left'></svg>
 <svg class="fill-red" width="6" height="8"><use xlink:href='/img/img.svg#arrow-right'></svg>
+<br>
+
+<svg class="fill-dark-blue" width="25" height="25"><use xlink:href='/img/img.svg#search'></svg>
+<svg class="fill-dark-blue" width="25" height="25"><use xlink:href='/img/img.svg#refresh'></svg>
 
 <br>
 
@@ -147,7 +159,32 @@
        <svg class="fill-white" width="40" height="36"><use xlink:href='/img/img.svg#book'></svg>
       CONSIGNES
     </a>
-  </nav>
+  </nav><br>
+
+  <div class="select-block">
+    <div class="custome-select">
+        <select>
+          <option>TRI MISSION</option>
+          <option>TRI MISSION 2</option>
+          <option>TRI MISSION 3</option>
+        </select>
+         <span class="arrow-normal">
+           <svg class="fill-black" width="14" height="14"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#arrow-bottom-fill"></use></svg>
+         </span>
+      </div>
+  </div><br><br>
+
+  <form class="personal-info">
+        <button class="refresh bg-grey font-white">
+          REFRESH
+         <svg class="fill-white refresh-svg" width="13" height="13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#refresh"></use></svg>
+        </button>
+        <input type="text" placeholder="Nom">
+        <input type="text" placeholder="Prénom">
+        <button class="btn search bg-dark-blue" type="submit">
+        <svg class="fill-white search-svg" width="13" height="13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#search"></use></svg>
+    </button>
+   </form><br>
 
 
   <br><br><strong>Links with title and icon horizontal : DONE</strong><br><br>
@@ -181,6 +218,25 @@
   <a class="round-link-icon bg-blue" href="#"><svg class="fill-black" width="25" height="25"><use xlink:href="/img/img.svg#passenger"/></svg></a>
 
   <br><br><strong>Links with square icon : DONE</strong><br>I will need better images because designer are used border in image<br><br>
+
+  <div class="top-head securite"> 
+    <div class="info-bl">
+      <a class="link-with-sup" href="#">
+        <svg class="fill-grey" width="27" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#clock"></use></svg>
+        <sup>
+          <span class="font-blue first-sup">3</span>
+          <span class="font-green second-sup">0</span>
+          <span class="font-red third-sup">1</span>
+        </sup>
+      </a>
+    </div>
+  </div><br>
+
+  <div class="bg-dark-blue admin-window">
+    <svg class="fill-black" width="74" height="77"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#profile"></use></svg>
+    <span class="user-name font-white">Laura Durand</span>
+    <span class="user-profile font-blue">Admin e-Sécurité</span>
+   </div><br>
 
 
   <a class="action-link" href="#"><svg class="fill-red" width="37" height="37"><use xlink:href='/img/img.svg#support-medical'></svg></a>
@@ -354,6 +410,73 @@
     RECHERCHER 
     <img width="16px" src="/img/search-white.svg" alt="">
   </button>
+  hover efect
+  <a class="status-link border-red popup-icon" href="#">
+       <svg class="fill-black" width="37" height="37"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger-big"></use></svg>
+        <div class="popover bg-white">
+          <h4 class="font-red bg-light-grey">ARRIVEE</h4>
+          <span class="font-grey">Jalons :<small class="font-dark-blue">INITA</small></span>
+          <span class="font-grey">Début :<small class="font-dark-blue">07 06 2016</small></span>
+        </div>
+   </a><br>
+
+   <div class="slider-container">
+    <div class="prevSlider" onclick="jsTopSlider(1);">
+      <svg class="fill-grey" width="11" height="11"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#arrow-left-fill"></use></svg>
+    </div>
+    <div class="nextSlider" onclick="jsTopSlider(2);">
+      <svg class="fill-grey" width="11" height="11"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#arrow-right-fill"></use></svg>
+    </div>
+    <input type="hidden" id="curentslider" value="1">
+    <div class="sliderStat">
+       <ul>
+          <li id="box1" class="boxslider">
+          <a id="slide" class="status-link border-green" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              <sup>214</sup>
+            </a>
+        </li>
+        <li id="box2" class="boxslider">
+          <a id="slide" class="status-link border-blue" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              <sup>27</sup>
+            </a>
+        </li>
+        <li id="box3" class="boxslider">
+          <a id="slide" class="status-link border-red" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              <sup>11</sup>
+            </a>
+        </li>
+        <li id="box4" class="boxslider no-active">
+           <a id="slide" class="status-link border-green" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              <sup>214</sup>
+            </a>
+        </li>
+        <li id="box5" class="boxslider no-active">
+           <a id="slide" class="status-link border-green" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              <sup>214</sup>
+            </a>
+        </li>
+        <li id="box6" class="boxslider no-active">
+           <a id="slide" class="status-link border-blue" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              <sup>27</sup>
+            </a>
+        </li>
+       </ul>
+    </div>
+  </div><br>
+
+  &nbsp;&nbsp;<button id="popup-show" class="btn">open popup</button>
+  <div id="popup" class="popup">
+    <div class="popup-container bg-light-grey">
+      some text<br>
+      <a href="" id="popup-hide" class="font-whitebg-dark-blue">CLOSE POPUP</a>
+    </div>
+  </div>  
 
   <br><br><strong>Search field : DONE</strong><br><br>
 
@@ -363,6 +486,7 @@
   </div>
 
   <br><br><strong>Light navigation : DONE </strong><br><br>
+
 
    <nav class="light-nav">
     <a class="active" href="#">Arrives</a>
@@ -464,7 +588,13 @@
   </table>
   </div>
   
-  @@include('templates/footer.html')
-  @@include('templates/scripts.html')
+  <footer>
+  
+</footer>
+
+
+
+  <script src="js/app.min.js" charset="utf-8"></script>
+
 </body>
 </html>
