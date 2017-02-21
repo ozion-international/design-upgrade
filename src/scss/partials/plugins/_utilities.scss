@@ -1,5 +1,5 @@
 body{
-  min-width:1024px;
+  min-width:1000px;
 }
 
 .decoration-none{
@@ -54,6 +54,7 @@ body{
   &-light-grey{ background-color:$light-grey;}
   &-yellow{ background-color:$yellow;}
   &-black{ background-color:$black;}
+  &-secondary-light-grey{background-color:$secondary-light-grey;}
 }
 
 
@@ -67,6 +68,7 @@ body{
   &-grey{ color:$grey !important;}
   &-yellow{ color:$yellow !important;}
   &-black{ color:$black !important;}
+  &-secondary-blue{color:$secondary-blue!important};
 }
 
 
@@ -95,7 +97,7 @@ body{
   transform: rotate(270deg);  
   display:inline-block; 
   position: absolute;
-  padding: 5px 14.5px;
+  padding: 5px 8.5px;
   margin: 3px 0;
   left: -17px;
   font-family:$font-family-base-cond;

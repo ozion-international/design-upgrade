@@ -15,24 +15,56 @@
   </div><!-- .time -->
 
   <div class="right-group">
-    <div class="slide-wrapper">
-      <a class="prev"></a>
-      <div class="slider">
-        <a class="status-link border-green" href="#">
-          <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
-          <sup>214</sup>
-        </a>
-        <a class="status-link border-blue" href="#">
-          <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
-          <sup>27</sup>
-        </a>
-        <a class="status-link border-red" href="#">
-          <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
-          <sup>11</sup>
-        </a>
-      </div>
-      <a class="next"></a>
-    </div><!-- .slide-wrapper -->
+  <div class="slider-container">
+    <div class="prevSlider" onclick="jsTopSlider(1);">
+      <svg class="fill-grey" width="11" height="11"><use xlink:href='/img/img.svg#arrow-left-fill'></svg>
+    </div>
+    <div class="nextSlider" onclick="jsTopSlider(2);">
+      <svg class="fill-grey" width="11" height="11"><use xlink:href='/img/img.svg#arrow-right-fill'></svg>
+    </div>
+    <input type="hidden" id="curentslider" value="1">
+    <div class="sliderStat">
+       <ul>
+          <li id="box1" class="boxslider">
+          <a id="slide" class="status-link border-green" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              <sup>214</sup>
+            </a>
+        </li>
+        <li id="box2" class="boxslider">
+          <a id="slide" class="status-link border-blue" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              <sup>27</sup>
+            </a>
+        </li>
+        <li id="box3" class="boxslider">
+          <a id="slide" class="status-link border-red" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              <sup>11</sup>
+            </a>
+        </li>
+        <li id="box4" class="boxslider no-active">
+           <a id="slide" class="status-link border-green" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              <sup>214</sup>
+            </a>
+        </li>
+        <li id="box5" class="boxslider no-active">
+           <a id="slide" class="status-link border-green" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              <sup>214</sup>
+            </a>
+        </li>
+        <li id="box6" class="boxslider no-active">
+           <a id="slide" class="status-link border-blue" href="#">
+              <svg class="fill-black" width="37" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#passenger"></use></svg>
+              <sup>27</sup>
+            </a>
+        </li>
+       </ul>
+    </div>
+  </div><!--.slide-container-->
+
     <div class="info-bl">
       <a class="link-with-sup" href="#">
         <svg class="fill-red" width="27" height="27"><use xlink:href='/img/img.svg#bell'></svg>
