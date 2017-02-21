@@ -1,557 +1,34 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,shrink-to-fit=no">
-	<meta name="format-detection" content="telephone=no">
-	<title>Ozion - Index</title>
-	<!-- <link rel="icon" type="image/png" href="img/favicon.png"> -->
-	<link rel="stylesheet" href="css/app.min.css">
-	</head>
-
+@@include('templates/head.html',{"title": "Index"})
 <body class="login-wrapper">
-<header class="securite-accuiel">
-  <div class="top-head securite">
-  <div class="left-group">
-    <a class="logo" href="#">
-      <img src="/img/securite/logo.png" alt="">
-    </a>
-    <div class="search-field">
-      <input type="text" name="" id="">
-      <button type="submit"><svg class="fill-grey" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#search"></use></svg></button>
-    </div>
-  </div><!-- .left-group -->
-  <div class="time">
-   <strong>TIME</strong>
-    <span>20</span> : <span>37</span> : <span>12</span>
-  </div><!-- .time -->
+@@include('templates/securite-accuiel-header.html')	
+    	<div class="visitor-container">
+    		<div class="visitor-breadcrumb">
+    			<svg class="fill-blue" width="25" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#attention"></use></svg>
 
-  <div class="right-group">
-    <div class="info-bl">
-      <a class="link-with-sup" href="#">
-        <svg class="fill-grey" width="27" height="27"><use xlink:href='/img/img.svg#bell'></svg>
-        <sup class="font-dark-blue">324</sup>
-      </a>
-    </div>
-    <div class="info-bl">
-      <a class="link-with-sup" href="#">
-        <svg class="fill-grey" width="27" height="27"><use xlink:href='/img/img.svg#clock'></svg>
-        <sup>
-          <span class="font-blue first-sup">3</span>
-          <span class="font-green second-sup">0</span>
-          <span class="font-red third-sup">1</span>
-        </sup>
-      </a>
-    </div>
-     <div class="info-bl">
-      <a class="link-with-sup" href="#">
-        <svg class="fill-grey" width="27" height="27"><use xlink:href='/img/img.svg#bell'></svg>
-        <sup class="font-dark-blue">3</sup>
-      </a>
-    </div>
-      
-    <nav class="logged-nav">
-      <a href="#">
-        <svg class="fill-black" width="28" height="28"><use xlink:href='/img/img.svg#home'></svg>
-      </a>
-      <a href="#">
-        <svg class="fill-black" width="28" height="28"><use xlink:href='/img/img.svg#profile'></svg>
-      </a>
-      <a href="#">
-        <svg class="fill-black" width="28" height="28"><use xlink:href='/img/img.svg#dashboard'></svg>
-      </a>
-    </nav><!-- .logged-nav -->  
-  </div><!-- .right-group -->
-</div><!-- .top-head -->
-  <nav class="top-nav">
-  <div class="slider-container">
-    <div class="prevSlider" onclick="jsTopSliderSecurite(1);">
-      <svg class="fill-white" width="11" height="11"><use xlink:href='/img/img.svg#arrow-left-fill'></svg>
-    </div>
-    <div class="nextSlider" onclick="jsTopSliderSecurite(2);">
-      <svg class="fill-white" width="11" height="11"><use xlink:href='/img/img.svg#arrow-right-fill'></svg>
-    </div>
-    <input type="hidden" id="curentslider-securite" value="1">
-    <div class="sliderStat">
-       <ul>
-          <li id="box1" class="boxslider-securite">
-          <a id="slide" class="status-link" href="#">
-              <svg class="fill-white" width="25" height="36"><use xlink:href='/img/img.svg#clock'></svg>
-              SERVICE
-            </a>
-        </li>
-        <li id="box2" class="boxslider-securite">
-          <a id="slide" class="status-link" href="#">
-              <svg class="fill-white" width="40" height="36"><use xlink:href='/img/img.svg#attention'></svg>
-              roundes
-            </a>
-        </li>
-        <li id="box3" class="boxslider-securite">
-          <a id="slide" class="status-link" href="#">
-              <svg class="fill-white" width="47" height="36"><use xlink:href='/img/img.svg#attention'></svg>
-              DEMANDES CLIENTS
-            </a>
-        </li>
-        <li id="box4" class="boxslider-securite">
-           <a id="slide" class="status-link" href="#">
-              <svg class="fill-white" width="28" height="36"><use xlink:href='/img/img.svg#list'></svg>
-              DOCUMENTS
-            </a>
-        </li>
-        <li id="box5" class="boxslider-securite">
-           <a id="slide" class="status-link" href="#">
-             <svg class="fill-white" width="28" height="36"><use xlink:href='/img/img.svg#contacts'></svg>
-            ANNUAIRE
-            </a>
-        </li>
-        <li id="box6" class="boxslider-securite">
-           <a id="slide" class="status-link" href="#">
-             <svg class="fill-white" width="28" height="36"><use xlink:href='/img/img.svg#bell'></svg>
-              ALERTES
-            </a>
-        </li>
-         <li id="box7" class="boxslider-securite">
-           <a id="slide" class="status-link" href="#">
-             <svg class="fill-white" width="28" height="36"><use xlink:href='/img/img.svg#book'></svg>
-              CONSIGNES
-            </a>
-        </li>
-        <li id="box8" class="boxslider-securite">
-          <a id="slide" class="status-link" href="#">
-              <svg class="fill-white" width="47" height="36"><use xlink:href='/img/img.svg#attention'></svg>
-              visiteurs
-            </a>
-        </li>
-        <li id="box9" class="boxslider-securite">
-          <a id="slide" class="status-link" href="#">
-              <svg class="fill-white" width="47" height="36"><use xlink:href='/img/img.svg#attention'></svg>
-              VIE DU SITE
-            </a>
-        </li>
-        <li id="box10" class="boxslider-securite">
-          <a id="slide" class="status-link" href="#">
-              <svg class="fill-white" width="47" height="36"><use xlink:href='/img/img.svg#attention'></svg>
-              TÂCHES
-            </a>
-        </li>
-        <li id="box11" class="boxslider-securite">
-          <a id="slide" class="status-link" href="#">
-              <svg class="fill-white" width="47" height="36"><use xlink:href='/img/img.svg#flag'></svg>
-              ÉVÈNEMENTS
-            </a>
-        </li>
-        <li id="box12" class="boxslider-securite no-active">
-          <a id="slide" class="status-link" href="#">
-              <svg class="fill-white" width="47" height="36"><use xlink:href='/img/img.svg#attention'></svg>
-              APPELS
-            </a>
-        </li>
-        <li id="box13" class="boxslider-securite no-active">
-          <a id="slide" class="status-link" href="#">
-              <svg class="fill-white" width="25" height="36"><use xlink:href='/img/img.svg#clock'></svg>
-              SERVICE
-            </a>
-        </li>
-        <li id="box14" class="boxslider-securite no-active">
-          <a id="slide" class="status-link" href="#">
-              <svg class="fill-white" width="40" height="36"><use xlink:href='/img/img.svg#attention'></svg>
-              roundes
-            </a>
-        </li>
-        <li id="box15" class="boxslider-securite no-active">
-          <a id="slide" class="status-link" href="#">
-              <svg class="fill-white" width="47" height="36"><use xlink:href='/img/img.svg#attention'></svg>
-              DEMANDES CLIENTS
-            </a>
-        </li>
-        <li id="box16" class="boxslider-securite no-active">
-           <a id="slide" class="status-link" href="#">
-              <svg class="fill-white" width="28" height="36"><use xlink:href='/img/img.svg#list'></svg>
-              DOCUMENTS
-            </a>
-        </li>
-        <li id="box17" class="boxslider-securite no-active">
-           <a id="slide" class="status-link" href="#">
-             <svg class="fill-white" width="28" height="36"><use xlink:href='/img/img.svg#contacts'></svg>
-            ANNUAIRE
-            </a>
-        </li>
-        <li id="box18" class="boxslider-securite no-active">
-           <a id="slide" class="status-link" href="#">
-             <svg class="fill-white" width="28" height="36"><use xlink:href='/img/img.svg#bell'></svg>
-              ALERTES
-            </a>
-        </li>
-         <li id="box19" class="boxslider-securite no-active">
-           <a id="slide" class="status-link" href="#">
-             <svg class="fill-white" width="28" height="36"><use xlink:href='/img/img.svg#book'></svg>
-              CONSIGNES
-            </a>
-        </li>
-        <li id="box20" class="boxslider-securite no-active">
-          <a id="slide" class="status-link" href="#">
-              <svg class="fill-white" width="47" height="36"><use xlink:href='/img/img.svg#attention'></svg>
-              visiteurs
-            </a>
-        </li>
-        <li id="box21" class="boxslider-securite no-active">
-          <a id="slide" class="status-link" href="#">
-              <svg class="fill-white" width="47" height="36"><use xlink:href='/img/img.svg#attention'></svg>
-              VIE DU SITE
-            </a>
-        </li>
-        <li id="box22" class="boxslider-securite no-active">
-          <a id="slide" class="status-link" href="#">
-              <svg class="fill-white" width="47" height="36"><use xlink:href='/img/img.svg#attention'></svg>
-              TÂCHES
-            </a>
-        </li>
-        <li id="box23" class="boxslider-securite no-active">
-          <a id="slide" class="status-link" href="#">
-              <svg class="fill-white" width="47" height="36"><use xlink:href='/img/img.svg#flag'></svg>
-              ÉVÈNEMENTS
-            </a>
-        </li>
-        <li id="box24" class="boxslider-securite">
-          <a id="slide" class="status-link" href="#">
-              <svg class="fill-white" width="47" height="36"><use xlink:href='/img/img.svg#attention'></svg>
-              APPELS
-            </a>
-        </li>
-       </ul>
-    </div>
-  </div><!--.slide-container-->
-</nav>
+    			<ul class="breadcrumb">
+    		        <li>
+    		          <a id="popup-show" href="#">VISITEUR</a>
 
-   
-
-
-</header>
-	
-	<div class="visitor-container">
-		<div class="visitor-breadcrumb">
-			<svg class="fill-blue" width="25" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#attention"></use></svg>
-
-			<ul class="breadcrumb">
-		        <li>
-		          <a id="popup-show" href="#">VISITEUR</a>
-
-		        </li>
-		        <li>
-		          <svg class="fill-grey arrow" width="12" height="12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#arrow-right-fill-strong"></use></svg>
-		          <span>VISITES</span>
-		        </li>
-		    </ul>
-            <div id="popup" class="popup popup-securite">
-	<div class="popup-container bg-light-grey">
-		<div class="visitor-breadcrumb bg-dark-blue">
-			<svg id="popup-hide" class="fill-blue" width="25" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#attention"></use></svg>
-			<ul class="breadcrumb">
-		        <li>
-		          <a class="font-white" href="">VISITEUR</a>
-		        </li>
-		        <li>
-		          <svg class="fill-white arrow" width="12" height="12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#arrow-right-fill-strong"></use></svg>
-		          <span class="font-white">VISITES</span>
-		        </li>
-		        <li>
-		          <svg class="fill-white arrow" width="12" height="12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#arrow-right-fill-strong"></use></svg>
-		          <span class="font-white">Mansouri Étienne </span>
-		        </li>
-		        <li>
-		          <svg class="fill-white arrow" width="12" height="12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#arrow-right-fill-strong"></use></svg>
-		          <span class="font-white">07 06 2016  12:08 - 07 06 2016  12:15 </span>
-		        </li>
-		    </ul>
-		</div>
-		<div class="row popup-table-container">
-		  <div class="col-sm-4">
-				<div class="theory-block">
-					<h2 class="font-dark-blue">Chemin de ronde théorique</h2>
-					  <table class="table table-striped bg-white">
-					    <thead>
-					      <tr>
-					        <th>IDENTIFIANT</th>
-					        <th>DESCRIPTIONS</th>
-					        <th>Zone</th>
-					        <th>ÉTAT</th>
-					      </tr>
-					    </thead>
-					    <tbody>
-					      <tr>
-					        <td class="font-secondary-blue">A2B27E25</td>
-					        <td class="font-secondary-blue">
-					        	Salle Serveur<br>
-					        	informatique
-					        </td>
-					        <td class="font-secondary-blue">
-					        	Bâtiment<br>
-					        	N°1 
-					        </td>
-					        <td class="font-green">OK</td>
-					      </tr>
-
-					      <tr>
-					        <td class="font-secondary-blue">A2B27E25</td>
-					        <td class="font-secondary-blue">
-					        	PCS
-					        </td>
-					        <td class="font-secondary-blue">
-					        	Bâtiment<br>
-					        	N°2 
-					        </td>
-					        <td class="font-green">OK</td>
-					      </tr>
-
-					      <tr>
-					        <td class="font-secondary-blue">A2B27E25</td>
-					        <td class="font-secondary-blue">
-					        	Hall d’accueil
-					        </td>
-					        <td class="font-secondary-blue">
-					        	 
-					        </td>
-					        <td class="font-red">KO</td>
-					      </tr>
-
-					      <tr>
-					        <td class="font-secondary-blue">A2B27E25</td>
-					        <td class="font-secondary-blue">
-					        	Bloc extincteur
-					        </td>
-					        <td class="font-secondary-blue">
-					        	 Bâtiment<br>
-					        	 N°1 
-					        </td>
-					        <td class="font-green">OK</td>
-					      </tr>
-					    </tbody>
-					  </table>
-				</div>
-		  </div>
-		  <div class="col-sm-8">
-				<div class="theory-block">
-					<h2 class="font-dark-blue">Chemin de ronde RÉEL</h2>
-					<table class="table table-striped bg-white">
-					    <thead>
-					      <tr>
-					        <th>IDENTIFIANT</th>
-					        <th>DESCRIPTIONS / REMARQUES</th>
-					        <th>TEMPS</th>
-					        <th>ÉTAT</th>
-					      </tr>
-					    </thead>
-					    <tbody>
-					      <tr>
-					        <td>
-					        	<span class="font-secondary-blue">
-					        		A2B27E25
-					        	</span>
-					        </td>
-					        <td>
-					        	<span class="font-secondary-blue">
-					        		PCS - Ronde Principale
-					        	</span>
-					        </td>
-					        <td class="font-secondary-blue">
-					        	<span class="font-secondary-blue">07 06 2016</span>
-					        	<span class="font-light-blue">12:08</span>
-					        </td>
-					        <td>
-					        	<span class="font-secondary-blue">
-					        		Heure fin de ronde<br>
-					        		non spécifiée
-					        	</span>
-					        </td>
-					      </tr>
-
-					      <tr class="bg-secondary-light-grey">
-					        <td>
-					        	<span class="font-secondary-blue">
-					        		84BCE723
-					        	</span>
-					        </td>
-					        <td>
-					        	<span class="font-secondary-blue">
-					        		Salle serveur informatique<br>
-					        		(Ronde principale)
-					        	</span>
-					        </td>
-					        <td class="font-secondary-blue">
-					        	<span class="font-secondary-blue">07 06 2016</span>
-					        	<span class="font-light-blue">12:13</span>
-					        </td>
-					        <td>
-					        	<span class="font-secondary-blue">
-					        		Heure fin de ronde<br>
-					        		non spécifiée
-					        	</span>
-					        </td>
-					      </tr>
-
-					      <tr>
-					        <td>
-					        	<span class="font-secondary-blue">
-					        		A2B27E25
-					        	</span>
-					        </td>
-					        <td>
-					        	<span class="font-secondary-blue">
-					        		PCS - Ronde Principale
-					        	</span>
-					        </td>
-					        <td class="font-secondary-blue">
-					        	<span class="font-secondary-blue">07 06 2016</span>
-					        	<span class="font-light-blue">12:13</span>
-					        </td>
-					        <td>
-					        	<span class="font-secondary-blue">
-					        		Heure fin de ronde<br>
-					        		non spécifiée
-					        	</span>
-					        </td>
-					      </tr>
-
-					       <tr class="bg-secondary-light-grey">
-					        <td>
-					        	<span class="font-secondary-blue">
-					        		84BCE723
-					        	</span>
-					        </td>
-					        <td>
-					        	<span class="font-secondary-blue">
-					        		Heure Ronde théorique
-					        	</span>
-					        	<span class="font-light-blue">(PCS)</span>
-					        </td>
-					        <td class="font-secondary-blue">
-					        	<span class="font-secondary-blue">07 06 2016</span>
-					        	<span class="font-light-blue">12:14</span>
-					        </td>
-					        <td>
-					        	<span class="font-secondary-blue">
-					        		Heure fin de ronde<br>
-					        		non spécifiée
-					        	</span>
-					        </td>
-					      </tr>
-
-					       <tr>
-					        <td>
-					        	<span class="font-secondary-blue">
-					        		A2B27E25
-					        	</span>
-					        </td>
-					        <td>
-					        	<span class="font-secondary-blue">
-					        		Heure Ronde théorique
-					        	</span>
-					        	<span class="font-light-blue">(Entrée A)</span>
-					        </td>
-					        <td class="font-secondary-blue">
-					        	<span class="font-secondary-blue">07 06 2016</span>
-					        	<span class="font-light-blue">12:14</span>
-					        </td>
-					        <td>
-					        	<span class="font-secondary-blue">
-					        		Heure fin de ronde<br>
-					        		non spécifiée
-					        	</span>
-					        </td>
-					      </tr>
-
-					       <tr class="bg-secondary-light-grey">
-					        <td>
-					        	<span class="font-secondary-blue">
-					        		84BCE723
-					        	</span>
-					        </td>
-					        <td>
-					        	<span class="font-secondary-blue">
-					        		Hall d’accueil
-					        	</span><br>
-					        	<span class="font-secondary-blue">(Ronde principale)</span>
-					        </td>
-					        <td class="font-secondary-blue">
-					        	<span class="font-secondary-blue">07 06 2016</span>
-					        	<span class="font-light-blue">12:14</span>
-					        </td>
-					        <td>
-					        	<span class="font-secondary-blue">
-					        		Heure fin de ronde<br>
-					        		non spécifiée
-					        	</span>
-					        </td>
-					      </tr>
-
-					      <tr>
-					        <td>
-					        	<span class="font-secondary-blue">
-					        		A2B27E25
-					        	</span>
-					        </td>
-					        <td>
-					        	<span class="font-secondary-blue">
-					        		Heure Ronde théorique
-					        	</span>
-					        	<span class="font-light-blue">(Sanitaire)</span>
-					        </td>
-					        <td class="font-secondary-blue">
-					        	<span class="font-secondary-blue">07 06 2016</span>
-					        	<span class="font-light-blue">12:14</span>
-					        </td>
-					        <td>
-					        	<span class="font-secondary-blue">
-					        		Heure fin de ronde<br>
-					        		non spécifiée
-					        	</span>
-					        </td>
-					      </tr>
-
-
-					       <tr class="bg-secondary-light-grey">
-					        <td>
-					        	<span class="font-secondary-blue">
-					        		84BCE723
-					        	</span>
-					        </td>
-					        <td>
-					        	<span class="font-secondary-blue">
-					        		Salle serveur informatique
-					        	</span><br>
-					        	<span class="font-secondary-blue">(Ronde principale)</span>
-					        </td>
-					        <td class="font-secondary-blue">
-					        	<span class="font-secondary-blue">07 06 2016</span>
-					        	<span class="font-light-blue">12:15</span>
-					        </td>
-					        <td>
-					        	<span class="font-secondary-blue">
-					        		Heure fin de ronde<br>
-					        		non spécifiée
-					        	</span>
-					        </td>
-					      </tr>
-					    </tbody>
-					  </table>
-				</div>	
-		  </div>
-		</div>
-	</div>
-</div>
- 
-		    <form class="personal-info">
-		    	<input type="text" placeholder="Recherche">
-		    	<span class="arrow-normal">
-	             <svg class="fill-grey" width="15" height="15"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#search"></use></svg>
-	           </span>
-		    	<input type="text" placeholder="Rapports">
-		    	<span class="arrow-normal reports">
-	             <svg class="fill-blue" width="14" height="14"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#attention"></use></svg>
-	           </span>
-		    </form>
-		</div>
-		<nav class="light-nav">
+    		        </li>
+    		        <li>
+    		          <svg class="fill-grey arrow" width="12" height="12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#arrow-right-fill-strong"></use></svg>
+    		          <span>VISITES</span>
+    		        </li>
+    		    </ul>
+                @@include('templates/securite-visite-popup.html') 
+    		    <form class="personal-info">
+    		    	<input type="text" placeholder="Recherche">
+    		    	<span class="arrow-normal">
+    	             <svg class="fill-grey" width="15" height="15"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#search"></use></svg>
+    	           </span>
+    		    	<input type="text" placeholder="Rapports">
+    		    	<span class="arrow-normal reports">
+    	             <svg class="fill-blue" width="14" height="14"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#attention"></use></svg>
+    	           </span>
+    		    </form>
+    		</div>
+        </div>
+		<nav class="light-nav nav-visite">
 		  <a class="active" href="#">
 		  	Visites
 		  	<svg class="fill-grey" width="22" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#add"></use></svg>
@@ -559,6 +36,7 @@
 		  <a href="#">Personnes</a>
 		  <a href="#">Véhicules</a>
 		</nav>
+        <div class="visitor-container">
 		<form class="filter">
 			<div class="calendar select-block">
 				<span class="font-dark-blue filter-span">Filter:</span>
@@ -580,7 +58,7 @@
 			          <option>10</option>
 			        </select>
 			         <span class="arrow-normal">
-			           <svg class="fill-grey" width="14" height="7"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#arrow-right"></use></svg>
+			          <svg class="fill-grey" width="14" height="7"><use xlink:href='/img/img.svg#arrow-down-input'></svg>
 			         </span>
 			      </div>
 
@@ -599,7 +77,7 @@
 			          <option>Octomber</option>
 			        </select>
 			         <span class="arrow-normal">
-			           <svg class="fill-grey" width="14" height="7"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#arrow-right"></use></svg>
+			           <svg class="fill-grey" width="14" height="7"><use xlink:href='/img/img.svg#arrow-down-input'></svg>
 			         </span>
 			      </div>
 
@@ -618,7 +96,7 @@
 			          <option>2017</option>
 			        </select>
 			         <span class="arrow-normal">
-			           <svg class="fill-grey" width="14" height="7"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#arrow-right"></use></svg>
+			           <svg class="fill-grey" width="14" height="7"><use xlink:href='/img/img.svg#arrow-down-input'></svg>
 			         </span>
 			      </div>
 			      <a href="#" class="second-arrow">
@@ -626,11 +104,11 @@
 			      </a>
 
 			     <div class="personal-info find-block">
-			    	<input type="text" placeholder="Nom">
-			    	<input type="text" placeholder="Immatriculation">
-			    	<input type="text" placeholder="Société">
+			    	<input class="font-grey" type="text" placeholder="Nom">
+			    	<input class="font-grey" type="text" placeholder="Immatriculation">
+			    	<input class="font-grey" type="text" placeholder="Société">
 			    	<button class="refresh bg-dark-blue font-white">
-				        RECHERCHER
+				        <span>RECHERCHER</span>
 				         <svg class="fill-white refresh-svg" width="13" height="13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/img.svg#search"></use></svg>
 				    </button>
 		    	</div>
@@ -843,8 +321,7 @@
       </tr>
     </tbody>
   </table>
-
+</div>
 	</div>
-      <script src="js/app.min.js" charset="utf-8"></script>
-
+      @@include('templates/scripts.html')
 </body>

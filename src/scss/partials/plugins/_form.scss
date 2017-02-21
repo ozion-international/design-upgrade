@@ -121,7 +121,7 @@ input[type=text]{
   border-bottom:1px solid $grey;
   overflow: hidden;
   font-size:12px;
-  background: url("/img/down-arrow.svg") 100% 50% / 16px no-repeat ;
+  position:relative;
 
   select {
     padding: 1px 4px;
@@ -133,11 +133,22 @@ input[type=text]{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    z-index:2;
+    position:relative;
+    cursor:pointer;
     
 
     &:focus {
 	    outline: none;
 		}
+	}
+
+	.arrow-normal {
+		vertical-align: middle;
+		position: absolute;
+		top:0;
+		right:0;
+		z-index:1;
 	}
 }
 
