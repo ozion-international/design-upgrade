@@ -1,0 +1,96 @@
+.login-wrapper {
+	padding-bottom:0;
+	
+
+	&.background-img {
+		background: url('../img/securite/login/login-bg.jpg') no-repeat;
+		background-size:cover;
+		background-position:center;
+	}
+}
+.login-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 100vh;
+	width: 930px;
+	margin: 0 auto;
+}
+
+.login-content {
+	text-align: center;
+	max-width: 396px;
+	width: 100%;
+	box-shadow: 6px 0px 24px rgba(0,0,0,0.18);
+	padding: 35px 61px 52px 61px;
+
+	h1 {
+		font-size: 24px;
+		border-bottom: 5px solid $light-blue;
+		display: inline-block;
+		line-height: 43px;
+		margin-bottom: 21px;
+		text-transform: uppercase;
+	}
+
+	.login-form {
+
+		.search-field {
+			padding-bottom:4px;
+			margin-bottom: 25px;
+			width:100%;
+		}
+
+		label {
+			font-size: 12px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			display: block;
+			text-align: left;
+			margin-bottom: 3px;
+			color:red;
+		}
+
+		input {
+			outline: none;
+			font-size: 17px;
+			letter-spacing: 2px;
+			border: none;
+			width:100%;
+			color:$dark-blue;
+
+		}
+
+		input[placeholder], [placeholder], *[placeholder] {
+    		color: $dark-blue;
+		}
+
+		button {
+			width: 100%;
+			font-size: 16px;
+			letter-spacing: 2px;
+			outline: none;
+		}
+	}
+
+	.select-block {
+		display: block;
+		margin-bottom:44px;
+		padding-top: 9px;
+	}
+
+	.custome-select {
+		width:130px;
+		margin-right:0;
+
+			select {
+				box-shadow:none;
+				border:1px solid $grey;
+				width:138px;
+			}
+
+			.arrow-normal {
+				right: calc(100% - 128px);
+			}
+		}
+}
