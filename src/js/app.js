@@ -1,98 +1,28 @@
-var documentReady = function () {
-	var link = document.getElementById("popup-show");
-	var close = document.getElementById("popup-hide");
-	var target = document.getElementById("popup");
-	var body = document.querySelector('body');
-	var isOpen = false;
+// Animations are made using scriptaculous.js
 
-	function displayToggle() {
-		if (isOpen) {
-			target.classList.remove('show');
-			body.classList.remove('popover-open');
-			isOpen = false;
-		} else {
-			target.classList.add('show');
-			body.classList.add('popover-open');
-			isOpen = true;
-		}
-	}
+function horizontalSlide(event){
+  var screenWidth = event.currentTarget.parentElement.offsetWidth;
+  var menu = event.currentTarget.parentElement.querySelector("ul");
+  var menuFullWidth = menu.offsetWidth;
+  var left = parseInt(window.getComputedStyle(menu, null).getPropertyValue("left"));
+  var right = menuFullWidth - screenWidth + left;
 
-	link.addEventListener("click", displayToggle, false);
-	close.addEventListener("click", displayToggle, false);
-
-};
-
-function jsTopSlider(dir) {
-    var seletPositionSlider = document.getElementById('curentslider');
-    var seletItemSlider = document.getElementsByClassName("boxslider");
-    var numberItemsSlider = seletItemSlider.length;
-    var curentslider = Number(seletPositionSlider.value);
-    
-    if(dir == 1){
-        if(curentslider>1){
-             seletPositionSlider.value = curentslider-1;
-        }
+  if(event.currentTarget.className == "nextSlider"){
+    if(right >= screenWidth){
+      left -= screenWidth;
+    }else if(right < screenWidth && right > 0){
+      left -= right; 
     }
-    
-    if(dir == 2) {
-        if(curentslider<numberItemsSlider-2){
-        seletPositionSlider.value = curentslider+1;
-        }
+  }else{
+    if(-left >= screenWidth){
+      left += screenWidth;
+    }else{
+      left = 0; 
     }
-    
-    for(var i = 0, length = seletItemSlider.length; i < length; i++) {
-        seletItemSlider[i].style.display = 'none';
-    }
-    var newPositionslider = Number(seletPositionSlider.value);
-    
-    document.getElementById('box'+newPositionslider).style.display = 'block';
-    document.getElementById('box'+(newPositionslider+1)).style.display = 'block';
-    document.getElementById('box'+(newPositionslider+2)).style.display = 'block';
+  }
 
+  new Effect.Move(menu.id, {x: left, y: 0, mode: "absolute"}); 
 }
-
-document.addEventListener('DOMContentLoaded', documentReady , false);
-
-function jsTopSliderSecurite(dir) {
-    var seletPositionSlider = document.getElementById('curentslider-securite');
-    var seletItemSlider = document.getElementsByClassName("boxslider-securite");
-    var numberItemsSlider = seletItemSlider.length;
-    var curentslider = Number(seletPositionSlider.value);
-    
-    if(dir == 1){
-        if(curentslider>1){
-             seletPositionSlider.value = curentslider-1;
-        }
-    }
-    
-    if(dir == 2) {
-        if(curentslider<numberItemsSlider-11){
-        seletPositionSlider.value = curentslider+1;
-        }
-    }
-    
-    for(var i = 0, length = seletItemSlider.length; i < length; i++) {
-        seletItemSlider[i].style.display = 'none';
-    }
-    var newPositionslider = Number(seletPositionSlider.value);
-    
-    document.getElementById('box'+newPositionslider).style.display = 'block';
-    document.getElementById('box'+(newPositionslider+1)).style.display = 'block';
-    document.getElementById('box'+(newPositionslider+2)).style.display = 'block';
-    document.getElementById('box'+(newPositionslider+3)).style.display = 'block';
-    document.getElementById('box'+(newPositionslider+4)).style.display = 'block';
-    document.getElementById('box'+(newPositionslider+5)).style.display = 'block';
-    document.getElementById('box'+(newPositionslider+6)).style.display = 'block';
-    document.getElementById('box'+(newPositionslider+7)).style.display = 'block';
-    document.getElementById('box'+(newPositionslider+8)).style.display = 'block';
-    document.getElementById('box'+(newPositionslider+9)).style.display = 'block';
-    document.getElementById('box'+(newPositionslider+10)).style.display = 'block';
-    document.getElementById('box'+(newPositionslider+11)).style.display = 'block';
-
-}
-
-document.addEventListener('DOMContentLoaded', documentReady , false);
-
 
 function victorShadowBox(content){
   // Set the background layer  
