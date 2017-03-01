@@ -45,12 +45,14 @@ body{
 
 .popup-icon{
     position: relative;
-	padding-top:10px;
-	&:hover .popover {
-		-webkit-animation: move-up .3s linear 1;
-		transition: all 0.2s ease-in-out;
-		display: block;
-	}
+    padding-top:10px;
+
+    &:hover .popover {
+	    -webkit-animation: move-up .3s linear 1;
+	    transition: all 0.2s ease-in-out;
+	    display: block;
+    }
+
 }
 @-webkit-keyframes move-up {
 	0%{
