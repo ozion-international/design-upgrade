@@ -52,6 +52,18 @@ header{
 		border-left:1px solid $grey;
 		min-height:73px;
 		padding-top:25px;
+
+        > ul{
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          
+          > li{
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
 		
 		a{
 			text-decoration: none;
@@ -115,7 +127,7 @@ header{
 	padding:0px 10px;
 	display: flex;
 	flex-wrap: nowrap;
-	justify-content:space-between;
+	justify-content: initial;
 }
 
 
@@ -261,14 +273,15 @@ section{
         > ul {
             padding: 0 57px 0 0;
             margin:0;
-            display: inline-block;
+            display: inline-table;
+            height: 100%;
             position: relative;
             top: 0px;
             left: 0px;
             white-space: nowrap;
 
 		    > li {
-                display: inline-block;
+                display: table-cell;
 			    padding:0;
                 float: none;
 		    }
@@ -310,12 +323,78 @@ section{
 
 .top-nav{
   .slider-container{
+    .sliderStat{
+      overflow-x: visible !important;
+    }
+
+    li.active{
+      background-color: $secondary-blue;
+    }
+
     a{
       padding: 12px 12px 0;
 	  text-transform:uppercase;
 
       &:hover{
 		color:$white;
+      }
+    }
+  }
+
+  ul#slider-list{
+
+    > li {
+      position: relative;
+
+      &:hover{ 
+        background-color: $secondary-blue;
+
+        
+        > .dropdown-menu{
+          display: block; 
+        }
+      }
+
+      > .dropdown-menu{
+        display: none;
+        position: absolute;
+        z-index: 100;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        min-width: 100%;
+        -webkit-box-shadow: 0px 2px 5px 0px rgba(163,163,163,1);
+        -moz-box-shadow: 0px 2px 5px 0px rgba(163,163,163,1);
+        box-shadow: 0px 2px 5px 0px rgba(163,163,163,1);
+
+        li{
+          text-align: center;
+          text-transform: uppercase;
+          background-color: white;
+          border-bottom: 1px solid $grey;
+          min-width: 100%;
+          
+          &.active a{
+            color: $blue; 
+          }
+
+          &:hover{
+            a{
+              background-color: white;
+              color: $blue; 
+            }
+          }
+
+          &:last-child{
+            border-bottom: none;
+          }
+
+          a{
+            display: block;
+            color: $grey;
+            padding: 10px;
+          }
+        }
       }
     }
   }

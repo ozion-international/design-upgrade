@@ -1,0 +1,12 @@
+.btn-action{
+  margin-right: 10px;
+  padding: 0;
+  background-color: $dark-blue;
+
+  a{
+    display: block;
+    padding: 10px 20px;
+    color: $dark-blue;
+    background-color: $light-grey;
+  }
+}
