@@ -430,3 +430,55 @@ CalendarDateSelect.prototype = {
   },
   callback: function(name, param) { if (this.options.get(name)) { this.options.get(name).bind(this.target_element)(param); } }
 }
+
+// Formats date and time as "01 January 2000 17:00"
+Date.prototype.toFormattedString = function(include_time)
+{
+   str = Date.padded2(this.getDate()) + " " + Date.months[this.getMonth()] + " " + this.getFullYear();
+   if (include_time) { str += " " + this.getHours() + ":" + this.getPaddedMinutes() }
+   return str;
+}
+
+
+
+ _translations = {
+    "OK": "OK",
+    "Now": "maintenant",
+    "Today": "aujourd hui"
+  }
+
+  Date.weekdays = $w("L Ma Me J V S D");
+
+  Date.months = $w("Janvier Fevrier Mars Avril Mai Juin Juillet Aout Septembre Octobre Novembre Decembre" );
+  Date.months2 = $w("01 02 03 04 05 06 07 08 09 10 11 12");
+
+Date.first_day_of_week = 1;
+
+Date.prototype.getAMPMHour = function() { var hour = this.getHours();  return hour;  }
+Date.prototype.getAMPM = function() { return (this.getHours() < 12) ? "" : ""; }
+
+
+Date.parseFormattedString = function (string) {
+  var regexp = '([0-9]{1,2})/(([0-9]{1,2})/(([0-9]{4})( ([0-9]{1,2}):([0-9]{2})? *)?)?)?';
+  var d = string.match(new RegExp(regexp, "i"));
+  if (d==null) return Date.parse(string); // at least give javascript a crack at it.
+  var offset = 0;
+  var date = new Date(d[5], 0, 1);
+  if (d[3]) { date.setMonth(d[3] - 1); }
+  if (d[5]) { date.setDate(d[1]); }
+  if (d[7]) {
+    date.setHours(parseInt(d[7], 10));
+  }
+  if (d[8]) { date.setMinutes(d[8]); }
+  if (d[10]) { date.setSeconds(d[10]); }
+  return date;
+}
+
+
+Date.prototype.toFormattedString = function(include_time)
+{
+   str = Date.padded2(this.getDate()) + "/" + Date.months2[this.getMonth()] + "/" + this.getFullYear();
+   if (include_time) { str += " " + this.getHours() + ":" + this.getPaddedMinutes() }
+   return str;
+}
+

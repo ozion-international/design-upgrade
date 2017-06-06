@@ -18,8 +18,8 @@ header{
 		}
 	}
 	.search-field{
-		vertical-align: top;
-		margin-top:14px;
+		vertical-align: middle;
+        display: inline-block;
 	}
 
 	.time{
@@ -193,7 +193,8 @@ section{
 /*securite-header*/
 .securite {
 	.logo {
-		vertical-align:bottom;
+        vertical-align: middle;
+        display: inline-block;
 	}
 
 	.link-with-sup {
@@ -223,7 +224,7 @@ section{
 	position:relative;
 	vertical-align:top;
     padding: 10px 18px 18px 18px;
-    width: 250px;
+    width: 230px;
 
 	.nextSlider,
 	.prevSlider {
@@ -346,6 +347,18 @@ section{
     > li {
       position: relative;
 
+
+      > a{
+        padding: 60px 20px 15px 20px;
+
+        > svg{
+          position: absolute;
+          top: 15px;
+          left: 50%;
+          margin-left: -20px;
+        }
+      }
+
       &:hover{ 
         background-color: $secondary-blue;
 
@@ -412,3 +425,137 @@ section{
   }
 }
 
+#action-bar{
+  margin-right: 40px;
+  display: table-cell;
+}
+
+.table-tab{
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+#default-search{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.submit-box{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+
+    .advanced-link{
+        position: absolute;
+        font-size: 12px;
+        top: 38px;
+        left: 0;
+        width: 300px;
+
+        a{
+            margin-right: 10px;
+        }
+    }
+
+}
+
+.back-button{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#table-header-bar{
+    > div{
+        display: table-cell;
+        padding-right: 20px;
+    }
+}
+
+#filter-box{
+    > span, > form{
+        display: inline-block;
+                 vertical-align: top;
+    }
+
+    form{
+        #datecalfind{
+          margin-right: 3px;
+        }
+
+        .form-group{
+            margin: 15px 0px;
+        }
+
+        img{
+          margin-right: 6px;
+        }
+
+		input {
+			width: 123px;
+			padding-right:10px;
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.35);
+            -moz-box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.35);
+            box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.35);
+		}
+
+
+        select {
+            font-size: 13px;
+            outline: none;
+            letter-spacing: 1px;
+            color: $grey; 
+			padding-right:10px;
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.35);
+            -moz-box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.35);
+            box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.35);
+		}
+
+
+		.refresh {
+			margin-right:0;
+			padding: 10px 25px 8px 31px;
+
+			svg {
+				margin-left: 10px;
+		    }
+        }
+
+    }
+}
+
+#breadcrumb-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .breadpart{
+    display: inline-block;
+    vertical-align: middle;
+
+    > *{
+      display: inline-block;
+      vertical-align: middle;   
+    }
+  }
+
+  .bright{
+  
+  }
+
+  .bleft{
+    
+  }
+}
+
+.profile-img{
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border: 5px solid black;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

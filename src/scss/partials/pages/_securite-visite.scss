@@ -1,4 +1,4 @@
-.visitor-container {
+.page-container, .visitor-container {
 	padding:0 20px;
 
 
@@ -52,7 +52,6 @@
 		position: absolute;
 	    top: calc(50% - 10px);
 	    right: calc(100% - 129px);
-	    z-index: 1;
 
 	    &.reports {
 	    	left: calc(100% - 29px);
@@ -70,10 +69,10 @@
 	margin-bottom: 26px;
 
 	.calendar {
-		-webkit-display: inline-flex;
-		-moz-display: inline-flex;
-		-o-display: inline-flex;
-		display: inline-flex;
+		-webkit-display: inline-table;
+		-moz-display: inline-table;
+		-o-display: inline-table;
+		display: inline-table;
 		-webkit-align-items:center;
 		-moz-align-items:center;
 		-o-align-items:center;
@@ -82,10 +81,11 @@
 
 	.filter-span {
 		letter-spacing:1px;
+        padding-right: 20px;
+        display: table-cell;
 	}
 
 	.custome-select {
-		width: 90px;
 		margin-right:10px;
 
 		&:last-child {
@@ -93,8 +93,7 @@
 		}
 
 		select {
-			width: 90px;
-			box-shadow: none;
+		  box-shadow: none;
 		}
 
 		.arrow-normal {
@@ -117,21 +116,8 @@
 
 	.find-block {
 		margin-right:0;
+        display: table-cell;
 
-		input {
-			width: 123px;
-			padding-right:10px;
-		}
-
-
-		.refresh {
-			margin-right:0;
-			padding: 10px 25px 8px 31px;
-
-			svg {
-				margin-left: 10px;
-			}
-		}
 	}
 }
 

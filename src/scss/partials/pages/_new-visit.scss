@@ -1,0 +1,142 @@
+.titre_recherche{
+  text-align: center;
+  width: 473px;
+  margin-top: 10px;
+
+  label{
+    color: $blue;
+    margin: 0;
+  }
+
+}
+
+
+.search-wrapper{
+  padding: 20px;
+  max-width: 473px;
+  margin: 0;
+
+  input[type="button"]{
+    display: inline-block;
+    background-color: $dark-blue;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+  }
+}
+
+#cadre_iopc{
+    margin: 20px 20px 10px 20px;
+}
+
+#pagination_visiteur, #pagination_vehicle, #pagination_resident{
+  font-size: 12px;
+  padding: 0 20px 10px 20px;
+  display: table;
+  
+  .col-block{
+    display: table-cell;
+  }
+
+  .row-block{
+    display: table-row;
+  }
+}
+
+#pagination_visiteur input[type="checkbox"], #pagination_vehicle input[type="checkbox"], #pagination_resident input[type="checkbox"] {
+  opacity: 1;
+  position: initial;
+  margin: 0 5px 0 0;
+}
+
+
+.new-visitor-scan-form{
+  padding: 20px;
+
+  h4{
+    font-size: 18px;
+  }
+
+  input{
+    font-size: 16px;
+  }
+
+  #radio-wrapper{
+    max-width: 440px;
+  }
+
+  #submit_divvisiteur{
+    margin-top: 20px;
+    text-align: left;
+
+    button{
+      background-color: $grey;
+      color: black;
+      border: none;
+      padding: 10px;
+
+      a{
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+#button-complete-handler{
+  margin: 10px 0;
+
+  a{
+    background-color: $dark-blue;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+  }
+}
+
+#list_visit_visiteur , #list_visit_resident{
+  
+  > p{
+    width: 28px;
+    float: right;
+
+    a{
+        display: block;
+        font-size: 8px;
+        padding: 0px 10px;
+        margin: 0;
+
+        &:hover{
+            background-color: $light-blue;
+            color: white;
+            text-decoration: none;
+        }
+    }
+  }
+
+  > p:first-child{
+    text-align: center;
+    margin: 5px;
+    font-size: 12px;
+  }
+}
+
+#div_enter{
+    input{
+      border: 1px solid #176fb8;
+      border-radius: 0px;
+      -moz-border-radius: 0px;
+      -webkit-border-radius: 0px;
+      height: 30px;
+      background-color: #176fb8;
+      color: white;
+      margin: 10px 0 20px 0;
+    }
+}

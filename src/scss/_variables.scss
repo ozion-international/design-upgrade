@@ -9,7 +9,9 @@ $secondary-blue: rgba(99,182,247,1);
 
 $dark-blue: rgba(23,111,184,1);
 
-$green: rgba(43,222,126,1);
+$green: rgba(27,181,16,1);
+
+$orange: rgba(255,143,38,1);
 
 $red: rgba(255,101,95,1);
 
@@ -24,7 +26,6 @@ $yellow: rgba(255,174,0,1);
 $black: rgba(0,0,0,1);
 
 
-
 /* Colors */ 
 
 $font-family-base: "Futura LT Com", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -36,4 +37,13 @@ $font-family-base-book: "Futura LT Com Book", "Futura LT Com", "Helvetica Neue",
 $font-family-base-heavy: "Futura LT Com Heavy", "Futura LT Com", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
 
-/* Buttons */ 
+/* padding & margin */ 
+$top: top;
+$right: right;
+$bottom: bottom;
+$left: left;
+
+$sizes: (
+      10,
+      20
+    );

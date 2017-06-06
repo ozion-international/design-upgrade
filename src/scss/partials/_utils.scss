@@ -1,12 +1,362 @@
+.nostyle{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .btn-action{
-  margin-right: 10px;
+  margin-right: 5px;
   padding: 0;
   background-color: $dark-blue;
 
   a{
     display: block;
-    padding: 10px 20px;
-    color: $dark-blue;
-    background-color: $light-grey;
+    padding: 8px 20px;
+    color: $white;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+}
+
+a.btn-action{
+  display: inline-block;
+  padding: 8px 20px;
+  color: $white;
+  font-size: 12px;
+  margin-right: 5px;
+  background-color: $dark-blue;
+  text-transform: uppercase;
+}
+
+
+
+.color-white{
+  color: white;
+
+  a{
+    color: white;
   }
 }
+
+.box-with-shadow{
+  padding: 10px 20px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(82, 82, 82, 0.35);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(82, 82, 82, 0.35);
+  box-shadow: 0px 0px 10px 0px rgba(82, 82, 82, 0.35); 
+
+  &.with-header{
+    padding: 0 0 10px 0;
+
+  }
+
+  .dark-blue-header{
+    background-color: #176fb8;
+    padding: 10px 80px;
+ 
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      color: white;
+      font-size: 18px;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+.inline-form{
+  margin: 20px;
+
+  .buttons-wrapper, .input-with-label{
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .buttons-wrapper{
+
+    input, button{
+      border: 1px solid $dark-blue;
+      border-radius: 0px;
+      -moz-border-radius: 0px;
+      -webkit-border-radius: 0px;
+      height: 30px; 
+      background-color: $dark-blue;
+      color: white;
+    }
+
+    .erase{
+      background-color: white;
+      text-align: center;
+      padding: 0 12px;
+    }
+  }
+
+  .input-with-label{
+    height: 30px;
+    border: 1px solid $blue;
+
+    span{
+     color: white; 
+     padding: 5px 15px;
+     font-size: 12px;
+     display: inline-block;
+      vertical-align: middle;
+    }
+
+    textarea, input{
+      display: inline-block;
+      vertical-align: middle;
+      border: none;
+      resize: none;
+      height: 28px;
+      
+      &:focus{
+        border: none;
+        outline: none;
+      }
+    }
+  }
+}
+
+
+.inline-fields-light{
+  border: 1px solid $grey;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: inline-block;
+  padding: 0 5px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  
+  label{
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+  }
+
+  input{
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 150px;
+
+    &:focus{
+      outline: none;
+    }
+  }
+}
+
+.simple-container{
+  padding: 20px;
+}
+
+.bottom-border-separator{
+  border-bottom: 1px solid #dadada;
+}
+
+.link-with-icon-top{
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  padding: 0 5px;
+
+  svg{
+    display: block;
+    margin: auto;
+    width: 20px;
+  }
+
+  &:hover{
+    color: white;
+    background-color: $blue;
+    text-decoration: none;
+
+    svg{
+      fill: white;
+    }
+  }
+}
+
+.blue-button{
+  padding: 8px 20px;
+  color: white;
+  font-size: 12px;
+  border: none;
+  text-transform: uppercase;
+  background-color: $dark-blue;
+
+  input#{&}{
+    display: block;
+  }
+
+  a#{&}{
+    display: inline-block;
+
+  }
+}
+
+a.blue-button:hover{
+      text-decoration: none;
+      color: white;
+      background-color: $blue;
+    }
+
+
+.grey-button{
+  display: inline-block;
+  padding: 8px 20px;
+  color: white;
+  font-size: 12px;
+  border: none;
+  text-transform: uppercase;
+  background-color: $grey;
+
+  &:hover{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+  }
+  
+  &:focus{
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.no{
+  &-padding{
+    &-top{padding-top: 0 !important;}
+    &-right{padding-right: 0 !important;}
+    &-bottom{padding-bottom: 0 !important;}
+    &-left{padding-left: 0 !important;}
+  }
+
+  &-margin{
+    &-top{margin-top: 0 !important;}
+    &-right{margin-right: 0 !important;}
+    &-bottom{margin-bottom: 0 !important;}
+    &-left{margin-left: 0 !important;}
+  }
+}
+
+.with{
+  @each $value in $sizes {
+    &-#{nth($value,1)} {
+      &-top{
+        &-padding{ padding-top: #{$value}px; }
+        &-margin{ margin-top: #{$value}px; }
+      }
+      &-right{
+        &-padding{ padding-right: #{$value}px; }
+        &-margin{ margin-right: #{$value}px; }
+      }
+      &-bottom{
+        &-padding{ padding-bottom: #{$value}px; }
+        &-margin{ margin-bottom: #{$value}px; }
+      }
+      &-left{
+        &-padding{ padding-left: #{$value}px; }
+        &-margin{ margin-left: #{$value}px; }
+      }
+    }
+  }
+}
+
+.list-with-checkboxes{
+  margin-top: 20px;
+
+  label{
+    display: block;
+    color: black;
+    font-size: 14px;
+
+    input[type="checkbox"]{
+      opacity: 1;
+      position: initial;
+      margin: 0 5px 0 0;
+    }
+  } 
+}
+
+.list-with-radio{
+  margin-top: 20px;
+
+  label{
+    display: block;
+    color: black;
+    font-size: 14px;
+
+    input[type="radio"]{
+      opacity: 1;
+      position: initial;
+      margin: 0 5px 0 0;
+    }
+  } 
+}
+
+.pagination-wrapper{
+  margin: 10px 0;
+
+  a{
+    display: inline-block;
+    padding: 5px;
+
+    &:hover{
+      cursor: pointer;
+      color: white;
+      background-color: $blue;
+      text-decoration: none;
+    }
+   
+    &.active{
+      color: white;
+      background-color: $blue;
+      text-decoration: none;
+
+      &:hover{
+        cursor: default;
+      }
+    }
+  }
+}
+
+.transparent-box{
+  padding: 20px;
+  border-bottom: 1px solid #dadada;
+}
+
+.table.table-bordered{
+  td{
+    input[type='checkbox']{
+      opacity: 1;
+      position: initial;
+
+    }
+  }
+}
+
+.warning{
+  background-color: #ffb100;
+  padding: 10px;
+}
+
+.template-table{
+  tr{
+    td:first-child{
+      font-weight: bold;   
+      font-size: 14px;   
+      text-align: right;
+      padding-right: 10px;
+    }
+
+    td:last-child{
+      font-size: 12px;   
+    }
+  }
+}
+

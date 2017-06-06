@@ -1,0 +1,51 @@
+#edit-visit{
+  > .row{
+    margin-top: 20px;
+  }
+  p{
+    font-size: 14px;
+    margin: 0;
+
+    label{
+      margin: 0;
+      color: $black;
+    }
+  }
+
+  .separator-line{
+    margin-bottom: 10px;
+    margin-top: 20px;
+
+    &:first-child{
+      margin-top: 0px;
+    }
+
+    strong{
+      font-size: 18px;
+    }
+  }
+
+  #table_signatures{
+    td, b{
+      font-size: 14px;
+    }
+
+    b{
+      color: $black;
+    }
+  }
+
+ }
+
+#ferme_visit{
+   p{
+     margin-top: 20px
+   }
+
+  #signature_visit{
+    *{
+      font-size: 14px;
+    }
+  }
+}
+
