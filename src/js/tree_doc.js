@@ -736,7 +736,7 @@ function occupation_materiel(statut, id, message)
 function agent(){
   a = document.getElementById("turn_agent");
   b = document.getElementById("turn_agent_id");
-  c = document.getElementById("materiel_list");
+  c = document.getElementById("new-materiel-button");
   a.value = b.value;
   if (b.value == "")
   {c.style.display = "none"}

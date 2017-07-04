@@ -192,9 +192,12 @@ a.btn-action{
     display: block;
   }
 
+  &:hover{
+    cursor: pointer; 
+  }
+
   a#{&}{
     display: inline-block;
-
   }
 }
 

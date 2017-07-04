@@ -351,7 +351,7 @@ section{
       > a{
         padding: 60px 20px 15px 20px;
 
-        > svg{
+        > svg, > img{
           position: absolute;
           top: 15px;
           left: 50%;
@@ -431,7 +431,6 @@ section{
 }
 
 .table-tab{
-  margin-left: 40px;
   margin-bottom: 20px;
 }
 
@@ -472,9 +471,18 @@ section{
 }
 
 #filter-box{
-    > span, > form{
+    > span, > form, h3{
         display: inline-block;
-                 vertical-align: top;
+        vertical-align: top;
+    }
+
+    h3{
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+        color: black;
+        font-size: 18px;
+        letter-spacing: 2px;
     }
 
     form{
