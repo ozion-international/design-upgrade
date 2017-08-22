@@ -16,14 +16,27 @@ header{
 		&.securite {
 			padding:0 22px;
 		}
+
+        .left-group{
+          display:-moz-inline-stack;
+          display:inline-block;
+          zoom: 1;
+          *display: inline;
+        }
 	}
 	.search-field{
 		vertical-align: middle;
-        display: inline-block;
+        display:-moz-inline-stack;
+		display:inline-block;
+        zoom: 1;
+        *display: inline;
 	}
 
 	.time{
+        display:-moz-inline-stack;
 		display:inline-block;
+        zoom: 1;
+        *display: inline;
 		font-family: $font-family-base-cond;
 		text-align:center;
 		font-size:26px;
@@ -425,11 +438,6 @@ section{
   }
 }
 
-#action-bar{
-  margin-right: 40px;
-  display: table-cell;
-}
-
 .table-tab{
   margin-bottom: 20px;
 }
@@ -465,7 +473,8 @@ section{
 
 #table-header-bar{
     > div{
-        display: table-cell;
+        display: inline-block;
+        vertical-align: top;
         padding-right: 20px;
     }
 }
@@ -501,9 +510,9 @@ section{
 		input {
 			width: 123px;
 			padding-right:10px;
-            -webkit-box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.35);
-            -moz-box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.35);
-            box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.35);
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.55);
+            -moz-box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.55);
+            box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.55);
 		}
 
 
@@ -513,9 +522,9 @@ section{
             letter-spacing: 1px;
             color: $grey; 
 			padding-right:10px;
-            -webkit-box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.35);
-            -moz-box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.35);
-            box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.35);
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.55);
+            -moz-box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.55);
+            box-shadow: 0px 0px 10px 0px rgba(82,82,82,0.55);
 		}
 
 

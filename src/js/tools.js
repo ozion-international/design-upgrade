@@ -1287,5 +1287,148 @@ function checkAllByClass(klass,checkAll){
     }
   }
 }
+ 
 
 
+  function check_saria()
+  {
+    if(document.getElementById('saria_id').value == "")
+    {
+      return false;
+    }
+  }
+
+  function remove_div_passenger(event)
+  {
+    document.getElementById("passenger_"+this.readAttribute('id')).remove();
+  }
+
+
+function addDivPassenger(event){
+
+  var nb_passenger = Date.now();
+  var attributes = ["id_adp_phmr", "LastName", "FirstName", "Seat", "MeetingTime", "Location", "Remark", "id_adp_owphmr", "SSRRemark"];
+  var select_attr = ["Class", "AloneWithChild"];
+
+    var new_passenger = document.getElementById('template_passenger_fields').clone(true)
+    new_passenger.removeAttribute('id')
+    new_passenger.removeAttribute('lastname')
+
+    new_passenger.writeAttribute('id', "passenger_"+nb_passenger);
+
+    i = 0
+    while(i < 8 )
+    {
+      attribute_value = "passenger["+nb_passenger+"]["+attributes[i]+"]";
+      new_passenger.getElementsBySelector("input")[i].writeAttribute('id', attribute_value);
+      new_passenger.getElementsBySelector("input")[i].writeAttribute('name', attribute_value);
+      new_passenger.getElementsBySelector("input")[i].value = "";
+      i++;
+    }
+
+    attribute_value = "ssr["+nb_passenger+"][SSRTyp]";
+    new_passenger.getElementsBySelector("select")[2].writeAttribute('id', attribute_value);
+    new_passenger.getElementsBySelector("select")[2].writeAttribute('name', attribute_value);
+    new_passenger.getElementsBySelector("select")[2].value = "";
+
+    attribute_value = "ssr["+nb_passenger+"][SSRRemark]";
+    new_passenger.getElementsBySelector("input")[i].writeAttribute('id', attribute_value);
+    new_passenger.getElementsBySelector("input")[i].writeAttribute('name', attribute_value);
+    new_passenger.getElementsBySelector("input")[i].value = "";
+
+    i = 0;
+    while(i < 2)
+    {
+      attribute_value = "passenger["+nb_passenger+"]["+select_attr[i]+"]";
+      new_passenger.getElementsBySelector("select")[i].writeAttribute('id', attribute_value);
+      new_passenger.getElementsBySelector("select")[i].writeAttribute('name', attribute_value);
+      new_passenger.getElementsBySelector("select")[i].value = "";
+      i++;
+    }
+
+    new_passenger.getElementsBySelector(".btn-remove-passenger")[0].writeAttribute('id', ""+nb_passenger+"" )
+    new_passenger.getElementsBySelector(".btn-remove-passenger")[0].observe('click', remove_div_passenger )
+    nb_passenger++;
+    document.getElementById('new_passengers').appendChild(new_passenger);
+  }
+
+
+
+function addDivPassenger2(event){
+
+  var nb_passenger = Date.now();
+  var attributes = ["id_adp_phmr", "LastName", "FirstName", "MeetingTime", "Location", "Remark", "id_adp_owphmr"];
+  var select_attr = ["Class", "AloneWithChild"];
+
+    var new_passenger = document.getElementById('template_passenger_fields').clone(true)
+     new_passenger.removeAttribute('id')
+    new_passenger.removeAttribute('lastname')
+
+    new_passenger.writeAttribute('id', "passenger_"+nb_passenger);
+
+    i = 0
+    while(i < 6)
+    {
+      console.log(attributes[i]);
+      attribute_value = "passenger["+nb_passenger+"]["+attributes[i]+"]";
+      new_passenger.getElementsBySelector("input")[i].writeAttribute('id', attribute_value);
+      new_passenger.getElementsBySelector("input")[i].writeAttribute('name', attribute_value);
+      new_passenger.getElementsBySelector("input")[i].value = "";
+      i++;
+    }
+
+    attribute_value = "ssr["+nb_passenger+"][SSRTyp]";
+    new_passenger.getElementsBySelector("select")[0].writeAttribute('id', attribute_value);
+    new_passenger.getElementsBySelector("select")[0].writeAttribute('name', attribute_value);
+    new_passenger.getElementsBySelector("select")[0].value = "";
+
+    new_passenger.getElementsBySelector(".btn-remove-passenger")[0].writeAttribute('id', ""+nb_passenger+"" )
+    new_passenger.getElementsBySelector(".btn-remove-passenger")[0].observe('click', remove_div_passenger )
+    nb_passenger++;
+    document.getElementById('new_passengers').appendChild(new_passenger);
+  }
+
+function checkFieldsAndDateFields(ids, displayed_names, ids_date_fields) {
+  var ids = ids.split('/')
+  var displayed_names = displayed_names.split('/')
+  var pass1 = "";
+  for(var i = 0 ; i < ids.length ; i++ ) {
+    var el = document.getElementById(ids[i]);
+    if (el) {
+      if (ids[i] == 'password1') {
+          pass1 = el.value; 
+      }
+      if (ids[i] == 'password2') {
+        var pass2 = el.value;
+        if (pass2 != pass1) {
+          alert('Les mots de passe ne concordent pas !');
+          return false;
+        }
+      }
+      if (el.value == "" || el.value == " ") {
+        //alert(displayed_names[i] + " must be filled");
+        alert(displayed_names[i] + " doit être renseigné(e)");
+        return false;
+      }
+    }
+  }
+
+  if(ids_date_fields){
+  var ids_date_fields = ids_date_fields.split("/");
+  for(var i = 0 ; i < ids_date_fields.length ; i++ ) {
+//    alert("ids_date_f : "+ids_date_fields[i]);
+    var element = document.getElementById(ids_date_fields[i]);
+    var date = element.value; 
+
+    var hours = parseInt(date[0]+date[1],10);
+    var mins = parseInt(date[2]+date[3],10);
+//    alert("h : "+hours+" ; "+"m : " + mins);
+
+    if ((hours > 23)||(mins > 59)||(date.length != 4)) {
+      element.style.border = "solid 1px red";
+      alert("The date entered is not in the correct format.");
+      return false; 
+    }
+  }
+  }
+}

@@ -160,6 +160,11 @@ bottom: 0;
 		}
 	}
 
+    label{
+      margin-right: 15px;
+      font-size: 13px;
+    }
+
 	input{
 		background-color: $white;
 		width: 160px;
@@ -170,6 +175,17 @@ bottom: 0;
 		margin-right: 10px;
 	}
 
+    input[type=checkbox]{
+position: static;
+      width: auto !important;
+      opacity: 1;
+      padding: 0;
+               margin-left: 0px;
+      -webkit-box-shadow: none !important;
+      -moz-box-shadow: none !important;
+      box-shadow: none !important;
+    }
+
     .select-block{
 	  margin-right: 10px;
     }
@@ -177,9 +193,8 @@ bottom: 0;
 
 	input,
 	textarea {
-		color: $blue;
+		color: #353535;
 		text-shadow: 0px 0px 0px #000;
-		-webkit-text-fill-color: transparent;
 	}
 
 	.btn{
@@ -206,9 +221,10 @@ bottom: 0;
 	.custome-select{
 		display: inline-block;
 		position:relative;
-		margin-right: 36px;
+	    // margin-right: 36px;
 		width: 160px;
 		background: $white;
+
 			select {
 			-webkit-appearance: none;
 			-moz-appearance: none;
@@ -224,10 +240,28 @@ bottom: 0;
 			background-color: transparent;
 			cursor: pointer;
 			position:relative;
-		
+		        
+            &::-ms-expand {
+              /* IE 8 */
+              -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+              /* IE 5-7 */
+              filter: alpha(opacity=0);
+              /* Good browsers :) */
+              opacity:0;
+            }
+
 			&.strong{
 				font-weight: 700;
 			}
+
+            select::-ms-expand {
+              /* IE 8 */
+              -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+              /* IE 5-7 */
+              filter: alpha(opacity=0);
+              /* Good browsers :) */
+              opacity:0;
+            }
 		}
 		.arrow-normal {
 			position: absolute;
